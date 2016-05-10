@@ -1,0 +1,3933 @@
+
+projecto.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         000001e2  00800100  00001544  000015d8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00001544  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000002e  008002e2  008002e2  000017ba  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000017ba  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000190  00000000  00000000  000017ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00002f3e  00000000  00000000  0000197a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000595  00000000  00000000  000048b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000a63  00000000  00000000  00004e4d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000408  00000000  00000000  000058b0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000007d0  00000000  00000000  00005cb8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000e8a  00000000  00000000  00006488  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000170  00000000  00000000  00007312  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	27 c0       	rjmp	.+78     	; 0x50 <__ctors_end>
+       2:	41 c0       	rjmp	.+130    	; 0x86 <__bad_interrupt>
+       4:	40 c0       	rjmp	.+128    	; 0x86 <__bad_interrupt>
+       6:	3f c0       	rjmp	.+126    	; 0x86 <__bad_interrupt>
+       8:	3e c0       	rjmp	.+124    	; 0x86 <__bad_interrupt>
+       a:	3d c0       	rjmp	.+122    	; 0x86 <__bad_interrupt>
+       c:	3c c0       	rjmp	.+120    	; 0x86 <__bad_interrupt>
+       e:	3b c0       	rjmp	.+118    	; 0x86 <__bad_interrupt>
+      10:	3a c0       	rjmp	.+116    	; 0x86 <__bad_interrupt>
+      12:	39 c0       	rjmp	.+114    	; 0x86 <__bad_interrupt>
+      14:	38 c0       	rjmp	.+112    	; 0x86 <__bad_interrupt>
+      16:	37 c0       	rjmp	.+110    	; 0x86 <__bad_interrupt>
+      18:	36 c0       	rjmp	.+108    	; 0x86 <__bad_interrupt>
+      1a:	35 c0       	rjmp	.+106    	; 0x86 <__bad_interrupt>
+      1c:	78 c2       	rjmp	.+1264   	; 0x50e <__vector_14>
+      1e:	33 c0       	rjmp	.+102    	; 0x86 <__bad_interrupt>
+      20:	32 c0       	rjmp	.+100    	; 0x86 <__bad_interrupt>
+      22:	31 c0       	rjmp	.+98     	; 0x86 <__bad_interrupt>
+      24:	30 c0       	rjmp	.+96     	; 0x86 <__bad_interrupt>
+      26:	2f c0       	rjmp	.+94     	; 0x86 <__bad_interrupt>
+      28:	2e c0       	rjmp	.+92     	; 0x86 <__bad_interrupt>
+      2a:	2d c0       	rjmp	.+90     	; 0x86 <__bad_interrupt>
+      2c:	2c c0       	rjmp	.+88     	; 0x86 <__bad_interrupt>
+      2e:	2b c0       	rjmp	.+86     	; 0x86 <__bad_interrupt>
+      30:	2a c0       	rjmp	.+84     	; 0x86 <__bad_interrupt>
+      32:	29 c0       	rjmp	.+82     	; 0x86 <__bad_interrupt>
+      34:	28 c6       	rjmp	.+3152   	; 0xc86 <acerta_dia+0xc0>
+      36:	2e c6       	rjmp	.+3164   	; 0xc94 <acerta_dia+0xce>
+      38:	34 c6       	rjmp	.+3176   	; 0xca2 <acerta_dia+0xdc>
+      3a:	3a c6       	rjmp	.+3188   	; 0xcb0 <acerta_dia+0xea>
+      3c:	40 c6       	rjmp	.+3200   	; 0xcbe <acerta_dia+0xf8>
+      3e:	46 c6       	rjmp	.+3212   	; 0xccc <acerta_dia+0x106>
+      40:	4c c6       	rjmp	.+3224   	; 0xcda <acerta_dia+0x114>
+      42:	1c ca       	rjmp	.-3016   	; 0xfffff47c <__eeprom_end+0xff7ef47c>
+      44:	22 ca       	rjmp	.-3004   	; 0xfffff48a <__eeprom_end+0xff7ef48a>
+      46:	28 ca       	rjmp	.-2992   	; 0xfffff498 <__eeprom_end+0xff7ef498>
+      48:	2e ca       	rjmp	.-2980   	; 0xfffff4a6 <__eeprom_end+0xff7ef4a6>
+      4a:	34 ca       	rjmp	.-2968   	; 0xfffff4b4 <__eeprom_end+0xff7ef4b4>
+      4c:	3a ca       	rjmp	.-2956   	; 0xfffff4c2 <__eeprom_end+0xff7ef4c2>
+      4e:	40 ca       	rjmp	.-2944   	; 0xfffff4d0 <__eeprom_end+0xff7ef4d0>
+
+00000050 <__ctors_end>:
+      50:	11 24       	eor	r1, r1
+      52:	1f be       	out	0x3f, r1	; 63
+      54:	cf ef       	ldi	r28, 0xFF	; 255
+      56:	d4 e0       	ldi	r29, 0x04	; 4
+      58:	de bf       	out	0x3e, r29	; 62
+      5a:	cd bf       	out	0x3d, r28	; 61
+
+0000005c <__do_copy_data>:
+      5c:	12 e0       	ldi	r17, 0x02	; 2
+      5e:	a0 e0       	ldi	r26, 0x00	; 0
+      60:	b1 e0       	ldi	r27, 0x01	; 1
+      62:	e4 e4       	ldi	r30, 0x44	; 68
+      64:	f5 e1       	ldi	r31, 0x15	; 21
+      66:	02 c0       	rjmp	.+4      	; 0x6c <__do_copy_data+0x10>
+      68:	05 90       	lpm	r0, Z+
+      6a:	0d 92       	st	X+, r0
+      6c:	a2 3e       	cpi	r26, 0xE2	; 226
+      6e:	b1 07       	cpc	r27, r17
+      70:	d9 f7       	brne	.-10     	; 0x68 <__do_copy_data+0xc>
+
+00000072 <__do_clear_bss>:
+      72:	23 e0       	ldi	r18, 0x03	; 3
+      74:	a2 ee       	ldi	r26, 0xE2	; 226
+      76:	b2 e0       	ldi	r27, 0x02	; 2
+      78:	01 c0       	rjmp	.+2      	; 0x7c <.do_clear_bss_start>
+
+0000007a <.do_clear_bss_loop>:
+      7a:	1d 92       	st	X+, r1
+
+0000007c <.do_clear_bss_start>:
+      7c:	a0 31       	cpi	r26, 0x10	; 16
+      7e:	b2 07       	cpc	r27, r18
+      80:	e1 f7       	brne	.-8      	; 0x7a <.do_clear_bss_loop>
+      82:	e6 d8       	rcall	.-3636   	; 0xfffff250 <__eeprom_end+0xff7ef250>
+      84:	5d ca       	rjmp	.-2886   	; 0xfffff540 <__eeprom_end+0xff7ef540>
+
+00000086 <__bad_interrupt>:
+      86:	bc cf       	rjmp	.-136    	; 0x0 <__vectors>
+
+00000088 <LCDBusyLoop>:
+      88:	84 b1       	in	r24, 0x04	; 4
+      8a:	81 7e       	andi	r24, 0xE1	; 225
+      8c:	84 b9       	out	0x04, r24	; 4
+      8e:	2d 9a       	sbi	0x05, 5	; 5
+      90:	2f 98       	cbi	0x05, 7	; 5
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+      92:	00 00       	nop
+      94:	2e 9a       	sbi	0x05, 6	; 5
+      96:	00 00       	nop
+      98:	83 b1       	in	r24, 0x03	; 3
+      9a:	86 95       	lsr	r24
+      9c:	82 95       	swap	r24
+      9e:	80 7f       	andi	r24, 0xF0	; 240
+      a0:	00 00       	nop
+      a2:	2e 98       	cbi	0x05, 6	; 5
+      a4:	00 00       	nop
+      a6:	2e 9a       	sbi	0x05, 6	; 5
+      a8:	00 00       	nop
+      aa:	93 b1       	in	r25, 0x03	; 3
+      ac:	00 00       	nop
+      ae:	2e 98       	cbi	0x05, 6	; 5
+      b0:	00 00       	nop
+      b2:	88 23       	and	r24, r24
+      b4:	7c f3       	brlt	.-34     	; 0x94 <LCDBusyLoop+0xc>
+      b6:	2d 98       	cbi	0x05, 5	; 5
+      b8:	84 b1       	in	r24, 0x04	; 4
+      ba:	8e 61       	ori	r24, 0x1E	; 30
+      bc:	84 b9       	out	0x04, r24	; 4
+      be:	08 95       	ret
+
+000000c0 <LCDByte>:
+      c0:	28 2f       	mov	r18, r24
+      c2:	22 95       	swap	r18
+      c4:	2f 70       	andi	r18, 0x0F	; 15
+      c6:	8f 70       	andi	r24, 0x0F	; 15
+      c8:	61 11       	cpse	r22, r1
+      ca:	02 c0       	rjmp	.+4      	; 0xd0 <LCDByte+0x10>
+      cc:	2f 98       	cbi	0x05, 7	; 5
+      ce:	01 c0       	rjmp	.+2      	; 0xd2 <LCDByte+0x12>
+      d0:	2f 9a       	sbi	0x05, 7	; 5
+      d2:	00 00       	nop
+      d4:	2e 9a       	sbi	0x05, 6	; 5
+      d6:	95 b1       	in	r25, 0x05	; 5
+      d8:	22 0f       	add	r18, r18
+      da:	91 7e       	andi	r25, 0xE1	; 225
+      dc:	92 2b       	or	r25, r18
+      de:	95 b9       	out	0x05, r25	; 5
+      e0:	00 00       	nop
+      e2:	2e 98       	cbi	0x05, 6	; 5
+      e4:	00 00       	nop
+      e6:	2e 9a       	sbi	0x05, 6	; 5
+      e8:	95 b1       	in	r25, 0x05	; 5
+      ea:	88 0f       	add	r24, r24
+      ec:	91 7e       	andi	r25, 0xE1	; 225
+      ee:	89 2b       	or	r24, r25
+      f0:	85 b9       	out	0x05, r24	; 5
+      f2:	00 00       	nop
+      f4:	2e 98       	cbi	0x05, 6	; 5
+      f6:	00 00       	nop
+      f8:	c7 df       	rcall	.-114    	; 0x88 <LCDBusyLoop>
+      fa:	08 95       	ret
+
+000000fc <LCDWriteString>:
+      fc:	0f 93       	push	r16
+      fe:	1f 93       	push	r17
+     100:	cf 93       	push	r28
+     102:	df 93       	push	r29
+     104:	8c 01       	movw	r16, r24
+     106:	fc 01       	movw	r30, r24
+     108:	80 81       	ld	r24, Z
+     10a:	88 23       	and	r24, r24
+     10c:	e9 f0       	breq	.+58     	; 0x148 <LCDWriteString+0x4c>
+     10e:	85 32       	cpi	r24, 0x25	; 37
+     110:	91 f4       	brne	.+36     	; 0x136 <LCDWriteString+0x3a>
+     112:	e8 01       	movw	r28, r16
+     114:	21 96       	adiw	r28, 0x01	; 1
+     116:	f8 01       	movw	r30, r16
+     118:	81 81       	ldd	r24, Z+1	; 0x01
+     11a:	80 53       	subi	r24, 0x30	; 48
+     11c:	88 30       	cpi	r24, 0x08	; 8
+     11e:	18 f4       	brcc	.+6      	; 0x126 <LCDWriteString+0x2a>
+     120:	61 e0       	ldi	r22, 0x01	; 1
+     122:	ce df       	rcall	.-100    	; 0xc0 <LCDByte>
+     124:	0b c0       	rjmp	.+22     	; 0x13c <LCDWriteString+0x40>
+     126:	61 e0       	ldi	r22, 0x01	; 1
+     128:	85 e2       	ldi	r24, 0x25	; 37
+     12a:	ca df       	rcall	.-108    	; 0xc0 <LCDByte>
+     12c:	61 e0       	ldi	r22, 0x01	; 1
+     12e:	f8 01       	movw	r30, r16
+     130:	81 81       	ldd	r24, Z+1	; 0x01
+     132:	c6 df       	rcall	.-116    	; 0xc0 <LCDByte>
+     134:	03 c0       	rjmp	.+6      	; 0x13c <LCDWriteString+0x40>
+     136:	61 e0       	ldi	r22, 0x01	; 1
+     138:	c3 df       	rcall	.-122    	; 0xc0 <LCDByte>
+     13a:	e8 01       	movw	r28, r16
+     13c:	8e 01       	movw	r16, r28
+     13e:	0f 5f       	subi	r16, 0xFF	; 255
+     140:	1f 4f       	sbci	r17, 0xFF	; 255
+     142:	89 81       	ldd	r24, Y+1	; 0x01
+     144:	81 11       	cpse	r24, r1
+     146:	e3 cf       	rjmp	.-58     	; 0x10e <LCDWriteString+0x12>
+     148:	df 91       	pop	r29
+     14a:	cf 91       	pop	r28
+     14c:	1f 91       	pop	r17
+     14e:	0f 91       	pop	r16
+     150:	08 95       	ret
+
+00000152 <LCDWriteInt>:
+     152:	ef 92       	push	r14
+     154:	ff 92       	push	r15
+     156:	0f 93       	push	r16
+     158:	1f 93       	push	r17
+     15a:	cf 93       	push	r28
+     15c:	df 93       	push	r29
+     15e:	00 d0       	rcall	.+0      	; 0x160 <LCDWriteInt+0xe>
+     160:	00 d0       	rcall	.+0      	; 0x162 <LCDWriteInt+0x10>
+     162:	1f 92       	push	r1
+     164:	cd b7       	in	r28, 0x3d	; 61
+     166:	de b7       	in	r29, 0x3e	; 62
+     168:	7b 01       	movw	r14, r22
+     16a:	fe 01       	movw	r30, r28
+     16c:	31 96       	adiw	r30, 0x01	; 1
+     16e:	25 e0       	ldi	r18, 0x05	; 5
+     170:	df 01       	movw	r26, r30
+     172:	1d 92       	st	X+, r1
+     174:	2a 95       	dec	r18
+     176:	e9 f7       	brne	.-6      	; 0x172 <LCDWriteInt+0x20>
+     178:	00 97       	sbiw	r24, 0x00	; 0
+     17a:	51 f0       	breq	.+20     	; 0x190 <LCDWriteInt+0x3e>
+     17c:	35 96       	adiw	r30, 0x05	; 5
+     17e:	2a e0       	ldi	r18, 0x0A	; 10
+     180:	30 e0       	ldi	r19, 0x00	; 0
+     182:	b9 01       	movw	r22, r18
+     184:	b6 d9       	rcall	.-3220   	; 0xfffff4f2 <__eeprom_end+0xff7ef4f2>
+     186:	82 93       	st	-Z, r24
+     188:	86 2f       	mov	r24, r22
+     18a:	97 2f       	mov	r25, r23
+     18c:	00 97       	sbiw	r24, 0x00	; 0
+     18e:	c9 f7       	brne	.-14     	; 0x182 <LCDWriteInt+0x30>
+     190:	bf ef       	ldi	r27, 0xFF	; 255
+     192:	eb 16       	cp	r14, r27
+     194:	fb 06       	cpc	r15, r27
+     196:	69 f4       	brne	.+26     	; 0x1b2 <LCDWriteInt+0x60>
+     198:	29 81       	ldd	r18, Y+1	; 0x01
+     19a:	21 11       	cpse	r18, r1
+     19c:	0f c0       	rjmp	.+30     	; 0x1bc <LCDWriteInt+0x6a>
+     19e:	fe 01       	movw	r30, r28
+     1a0:	32 96       	adiw	r30, 0x02	; 2
+     1a2:	00 e0       	ldi	r16, 0x00	; 0
+     1a4:	10 e0       	ldi	r17, 0x00	; 0
+     1a6:	0f 5f       	subi	r16, 0xFF	; 255
+     1a8:	1f 4f       	sbci	r17, 0xFF	; 255
+     1aa:	21 91       	ld	r18, Z+
+     1ac:	22 23       	and	r18, r18
+     1ae:	d9 f3       	breq	.-10     	; 0x1a6 <LCDWriteInt+0x54>
+     1b0:	07 c0       	rjmp	.+14     	; 0x1c0 <LCDWriteInt+0x6e>
+     1b2:	05 e0       	ldi	r16, 0x05	; 5
+     1b4:	10 e0       	ldi	r17, 0x00	; 0
+     1b6:	0e 19       	sub	r16, r14
+     1b8:	1f 09       	sbc	r17, r15
+     1ba:	02 c0       	rjmp	.+4      	; 0x1c0 <LCDWriteInt+0x6e>
+     1bc:	00 e0       	ldi	r16, 0x00	; 0
+     1be:	10 e0       	ldi	r17, 0x00	; 0
+     1c0:	99 23       	and	r25, r25
+     1c2:	1c f4       	brge	.+6      	; 0x1ca <LCDWriteInt+0x78>
+     1c4:	61 e0       	ldi	r22, 0x01	; 1
+     1c6:	8d e2       	ldi	r24, 0x2D	; 45
+     1c8:	7b df       	rcall	.-266    	; 0xc0 <LCDByte>
+     1ca:	05 30       	cpi	r16, 0x05	; 5
+     1cc:	11 05       	cpc	r17, r1
+     1ce:	9c f4       	brge	.+38     	; 0x1f6 <LCDWriteInt+0xa4>
+     1d0:	e1 e0       	ldi	r30, 0x01	; 1
+     1d2:	f0 e0       	ldi	r31, 0x00	; 0
+     1d4:	ec 0f       	add	r30, r28
+     1d6:	fd 1f       	adc	r31, r29
+     1d8:	0e 0f       	add	r16, r30
+     1da:	1f 1f       	adc	r17, r31
+     1dc:	7e 01       	movw	r14, r28
+     1de:	f6 e0       	ldi	r31, 0x06	; 6
+     1e0:	ef 0e       	add	r14, r31
+     1e2:	f1 1c       	adc	r15, r1
+     1e4:	d8 01       	movw	r26, r16
+     1e6:	8d 91       	ld	r24, X+
+     1e8:	8d 01       	movw	r16, r26
+     1ea:	61 e0       	ldi	r22, 0x01	; 1
+     1ec:	80 5d       	subi	r24, 0xD0	; 208
+     1ee:	68 df       	rcall	.-304    	; 0xc0 <LCDByte>
+     1f0:	0e 15       	cp	r16, r14
+     1f2:	1f 05       	cpc	r17, r15
+     1f4:	b9 f7       	brne	.-18     	; 0x1e4 <LCDWriteInt+0x92>
+     1f6:	0f 90       	pop	r0
+     1f8:	0f 90       	pop	r0
+     1fa:	0f 90       	pop	r0
+     1fc:	0f 90       	pop	r0
+     1fe:	0f 90       	pop	r0
+     200:	df 91       	pop	r29
+     202:	cf 91       	pop	r28
+     204:	1f 91       	pop	r17
+     206:	0f 91       	pop	r16
+     208:	ff 90       	pop	r15
+     20a:	ef 90       	pop	r14
+     20c:	08 95       	ret
+
+0000020e <LCDGotoXY>:
+     20e:	84 31       	cpi	r24, 0x14	; 20
+     210:	70 f4       	brcc	.+28     	; 0x22e <LCDGotoXY+0x20>
+     212:	62 30       	cpi	r22, 0x02	; 2
+     214:	31 f0       	breq	.+12     	; 0x222 <LCDGotoXY+0x14>
+     216:	63 30       	cpi	r22, 0x03	; 3
+     218:	31 f0       	breq	.+12     	; 0x226 <LCDGotoXY+0x18>
+     21a:	61 30       	cpi	r22, 0x01	; 1
+     21c:	29 f4       	brne	.+10     	; 0x228 <LCDGotoXY+0x1a>
+     21e:	80 64       	ori	r24, 0x40	; 64
+     220:	03 c0       	rjmp	.+6      	; 0x228 <LCDGotoXY+0x1a>
+     222:	8c 5e       	subi	r24, 0xEC	; 236
+     224:	01 c0       	rjmp	.+2      	; 0x228 <LCDGotoXY+0x1a>
+     226:	8c 5a       	subi	r24, 0xAC	; 172
+     228:	60 e0       	ldi	r22, 0x00	; 0
+     22a:	80 68       	ori	r24, 0x80	; 128
+     22c:	49 df       	rcall	.-366    	; 0xc0 <LCDByte>
+     22e:	08 95       	ret
+
+00000230 <LCDInit>:
+     230:	0f 93       	push	r16
+     232:	1f 93       	push	r17
+     234:	cf 93       	push	r28
+     236:	df 93       	push	r29
+     238:	c8 2f       	mov	r28, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     23a:	8b e4       	ldi	r24, 0x4B	; 75
+     23c:	9d e1       	ldi	r25, 0x1D	; 29
+     23e:	01 97       	sbiw	r24, 0x01	; 1
+     240:	f1 f7       	brne	.-4      	; 0x23e <LCDInit+0xe>
+     242:	00 c0       	rjmp	.+0      	; 0x244 <LCDInit+0x14>
+     244:	00 00       	nop
+     246:	84 b1       	in	r24, 0x04	; 4
+     248:	8e 61       	ori	r24, 0x1E	; 30
+     24a:	84 b9       	out	0x04, r24	; 4
+     24c:	26 9a       	sbi	0x04, 6	; 4
+     24e:	27 9a       	sbi	0x04, 7	; 4
+     250:	25 9a       	sbi	0x04, 5	; 4
+     252:	85 b1       	in	r24, 0x05	; 5
+     254:	81 7e       	andi	r24, 0xE1	; 225
+     256:	85 b9       	out	0x05, r24	; 5
+     258:	2e 98       	cbi	0x05, 6	; 5
+     25a:	2d 98       	cbi	0x05, 5	; 5
+     25c:	2f 98       	cbi	0x05, 7	; 5
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     25e:	00 00       	nop
+     260:	2e 9a       	sbi	0x05, 6	; 5
+     262:	2a 9a       	sbi	0x05, 2	; 5
+     264:	00 00       	nop
+     266:	2e 98       	cbi	0x05, 6	; 5
+     268:	00 00       	nop
+     26a:	0e df       	rcall	.-484    	; 0x88 <LCDBusyLoop>
+     26c:	60 e0       	ldi	r22, 0x00	; 0
+     26e:	8c 2f       	mov	r24, r28
+     270:	8c 60       	ori	r24, 0x0C	; 12
+     272:	26 df       	rcall	.-436    	; 0xc0 <LCDByte>
+     274:	60 e0       	ldi	r22, 0x00	; 0
+     276:	88 e2       	ldi	r24, 0x28	; 40
+     278:	23 df       	rcall	.-442    	; 0xc0 <LCDByte>
+     27a:	60 e0       	ldi	r22, 0x00	; 0
+     27c:	80 e4       	ldi	r24, 0x40	; 64
+     27e:	20 df       	rcall	.-448    	; 0xc0 <LCDByte>
+     280:	c0 e0       	ldi	r28, 0x00	; 0
+     282:	d1 e0       	ldi	r29, 0x01	; 1
+     284:	00 e4       	ldi	r16, 0x40	; 64
+     286:	11 e0       	ldi	r17, 0x01	; 1
+     288:	61 e0       	ldi	r22, 0x01	; 1
+     28a:	89 91       	ld	r24, Y+
+     28c:	19 df       	rcall	.-462    	; 0xc0 <LCDByte>
+     28e:	c0 17       	cp	r28, r16
+     290:	d1 07       	cpc	r29, r17
+     292:	d1 f7       	brne	.-12     	; 0x288 <LCDInit+0x58>
+     294:	60 e0       	ldi	r22, 0x00	; 0
+     296:	80 e0       	ldi	r24, 0x00	; 0
+     298:	ba df       	rcall	.-140    	; 0x20e <LCDGotoXY>
+     29a:	df 91       	pop	r29
+     29c:	cf 91       	pop	r28
+     29e:	1f 91       	pop	r17
+     2a0:	0f 91       	pop	r16
+     2a2:	08 95       	ret
+
+000002a4 <twi_init>:
+
+/*Function definations*/
+
+void twi_init()
+{
+TWSR=0x00;
+     2a4:	10 92 b9 00 	sts	0x00B9, r1
+TWBR=0x02;
+     2a8:	82 e0       	ldi	r24, 0x02	; 2
+     2aa:	80 93 b8 00 	sts	0x00B8, r24
+     2ae:	08 95       	ret
+
+000002b0 <twi_send_start>:
+}
+
+unsigned char twi_send_start()
+{
+TWCR = (1<<TWINT)|(1<<TWSTA)|(1<<TWEN); 	
+     2b0:	84 ea       	ldi	r24, 0xA4	; 164
+     2b2:	80 93 bc 00 	sts	0x00BC, r24
+while (!(TWCR & (1<<TWINT)))
+     2b6:	ec eb       	ldi	r30, 0xBC	; 188
+     2b8:	f0 e0       	ldi	r31, 0x00	; 0
+     2ba:	80 81       	ld	r24, Z
+     2bc:	88 23       	and	r24, r24
+     2be:	ec f7       	brge	.-6      	; 0x2ba <twi_send_start+0xa>
+	;
+return (TWSR & 0xf8);
+     2c0:	80 91 b9 00 	lds	r24, 0x00B9
+while((TWSR & 0xf8) != 0x08)
+	;
+}
+     2c4:	88 7f       	andi	r24, 0xF8	; 248
+     2c6:	08 95       	ret
+
+000002c8 <twi_send_repeated_start>:
+
+unsigned char twi_send_repeated_start(void)
+{
+TWCR = (1<<TWINT)|(1<<TWSTA)|(1<<TWEN); 		
+     2c8:	84 ea       	ldi	r24, 0xA4	; 164
+     2ca:	80 93 bc 00 	sts	0x00BC, r24
+while (!(TWCR & (1<<TWINT)))
+     2ce:	ec eb       	ldi	r30, 0xBC	; 188
+     2d0:	f0 e0       	ldi	r31, 0x00	; 0
+     2d2:	80 81       	ld	r24, Z
+     2d4:	88 23       	and	r24, r24
+     2d6:	ec f7       	brge	.-6      	; 0x2d2 <twi_send_repeated_start+0xa>
+	;   		
+return (TWSR & 0xf8);
+     2d8:	80 91 b9 00 	lds	r24, 0x00B9
+while((TWSR & 0xf8) != 0x10)
+	;   		  								
+}
+     2dc:	88 7f       	andi	r24, 0xF8	; 248
+     2de:	08 95       	ret
+
+000002e0 <twi_send_address_rw>:
+
+unsigned char twi_send_address_rw(unsigned char address_rw)
+{
+TWDR = address_rw; 
+     2e0:	80 93 bb 00 	sts	0x00BB, r24
+TWCR = (1<<TWINT)|(1<<TWEN);	   
+     2e4:	84 e8       	ldi	r24, 0x84	; 132
+     2e6:	80 93 bc 00 	sts	0x00BC, r24
+while (!(TWCR & (1<<TWINT)))
+     2ea:	ec eb       	ldi	r30, 0xBC	; 188
+     2ec:	f0 e0       	ldi	r31, 0x00	; 0
+     2ee:	80 81       	ld	r24, Z
+     2f0:	88 23       	and	r24, r24
+     2f2:	ec f7       	brge	.-6      	; 0x2ee <twi_send_address_rw+0xe>
+	;
+return (TWSR & 0xf8);
+     2f4:	80 91 b9 00 	lds	r24, 0x00B9
+while(((TWSR & 0xf8) != 0x18) || ((TWSR & 0xf8) != 0x40))
+	;		   
+}
+     2f8:	88 7f       	andi	r24, 0xF8	; 248
+     2fa:	08 95       	ret
+
+000002fc <twi_master_send_data>:
+
+unsigned char twi_master_send_data(unsigned char data)
+{
+TWDR = data; 
+     2fc:	80 93 bb 00 	sts	0x00BB, r24
+TWCR = (1<<TWINT) |(1<<TWEN);	   
+     300:	84 e8       	ldi	r24, 0x84	; 132
+     302:	80 93 bc 00 	sts	0x00BC, r24
+while (!(TWCR & (1<<TWINT)))
+     306:	ec eb       	ldi	r30, 0xBC	; 188
+     308:	f0 e0       	ldi	r31, 0x00	; 0
+     30a:	80 81       	ld	r24, Z
+     30c:	88 23       	and	r24, r24
+     30e:	ec f7       	brge	.-6      	; 0x30a <twi_master_send_data+0xe>
+;	   
+return (TWSR & 0xf8);
+     310:	80 91 b9 00 	lds	r24, 0x00B9
+while((TWSR & 0xf8) != 0x28)
+	;   		 		   					   
+}
+     314:	88 7f       	andi	r24, 0xF8	; 248
+     316:	08 95       	ret
+
+00000318 <twi_master_receive_last_data>:
+*(string+number_of_bytes)=0;
+}
+
+unsigned char twi_master_receive_last_data()
+{
+TWCR =(1<<TWINT)|(1<<TWEN);
+     318:	84 e8       	ldi	r24, 0x84	; 132
+     31a:	80 93 bc 00 	sts	0x00BC, r24
+while (!(TWCR & (1<<TWINT)))
+     31e:	ec eb       	ldi	r30, 0xBC	; 188
+     320:	f0 e0       	ldi	r31, 0x00	; 0
+     322:	80 81       	ld	r24, Z
+     324:	88 23       	and	r24, r24
+     326:	ec f7       	brge	.-6      	; 0x322 <twi_master_receive_last_data+0xa>
+	;	   	   
+return(TWDR);
+     328:	80 91 bb 00 	lds	r24, 0x00BB
+while((TWSR & 0xf8) != 0x58)
+	; 
+}
+     32c:	08 95       	ret
+
+0000032e <twi_send_stop>:
+
+void twi_send_stop()
+{
+TWCR =  (1<<TWINT)|(1<<TWEN)|(1<<TWSTO);
+     32e:	84 e9       	ldi	r24, 0x94	; 148
+     330:	80 93 bc 00 	sts	0x00BC, r24
+while ((TWCR & (1<<TWSTO)))
+     334:	ec eb       	ldi	r30, 0xBC	; 188
+     336:	f0 e0       	ldi	r31, 0x00	; 0
+     338:	80 81       	ld	r24, Z
+     33a:	84 fd       	sbrc	r24, 4
+     33c:	fd cf       	rjmp	.-6      	; 0x338 <twi_send_stop+0xa>
+	;  	 
+} 					                        
+     33e:	08 95       	ret
+
+00000340 <ds1307_read_second>:
+}
+
+unsigned char ds1307_read_second()
+{
+unsigned char twi_status;
+twi_send_start();
+     340:	b7 df       	rcall	.-146    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     342:	80 ed       	ldi	r24, 0xD0	; 208
+     344:	cd df       	rcall	.-102    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x00);
+     346:	80 e0       	ldi	r24, 0x00	; 0
+     348:	d9 df       	rcall	.-78     	; 0x2fc <twi_master_send_data>
+twi_send_repeated_start();
+     34a:	be df       	rcall	.-132    	; 0x2c8 <twi_send_repeated_start>
+twi_status=twi_send_address_rw(0xd1);
+     34c:	81 ed       	ldi	r24, 0xD1	; 209
+     34e:	c8 df       	rcall	.-112    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_receive_last_data();
+     350:	e3 df       	rcall	.-58     	; 0x318 <twi_master_receive_last_data>
+return twi_status;
+twi_send_stop();
+}
+     352:	08 95       	ret
+
+00000354 <ds1307_read_minute>:
+
+unsigned char ds1307_read_minute()
+{
+unsigned char twi_status;
+twi_send_start();
+     354:	ad df       	rcall	.-166    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     356:	80 ed       	ldi	r24, 0xD0	; 208
+     358:	c3 df       	rcall	.-122    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x01);
+     35a:	81 e0       	ldi	r24, 0x01	; 1
+     35c:	cf df       	rcall	.-98     	; 0x2fc <twi_master_send_data>
+twi_send_repeated_start();
+     35e:	b4 df       	rcall	.-152    	; 0x2c8 <twi_send_repeated_start>
+twi_status=twi_send_address_rw(0xd1);
+     360:	81 ed       	ldi	r24, 0xD1	; 209
+     362:	be df       	rcall	.-132    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_receive_last_data();
+     364:	d9 df       	rcall	.-78     	; 0x318 <twi_master_receive_last_data>
+return twi_status;
+twi_send_stop();
+}
+     366:	08 95       	ret
+
+00000368 <ds1307_read_hour>:
+
+unsigned char ds1307_read_hour()
+{
+unsigned char twi_status;
+twi_send_start();
+     368:	a3 df       	rcall	.-186    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     36a:	80 ed       	ldi	r24, 0xD0	; 208
+     36c:	b9 df       	rcall	.-142    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x02);
+     36e:	82 e0       	ldi	r24, 0x02	; 2
+     370:	c5 df       	rcall	.-118    	; 0x2fc <twi_master_send_data>
+twi_send_repeated_start();
+     372:	aa df       	rcall	.-172    	; 0x2c8 <twi_send_repeated_start>
+twi_status=twi_send_address_rw(0xd1);
+     374:	81 ed       	ldi	r24, 0xD1	; 209
+     376:	b4 df       	rcall	.-152    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_receive_last_data();
+     378:	cf df       	rcall	.-98     	; 0x318 <twi_master_receive_last_data>
+return twi_status;
+twi_send_stop();
+}
+     37a:	08 95       	ret
+
+0000037c <ds1307_read_day>:
+
+unsigned char ds1307_read_day()
+{
+unsigned char twi_status;
+twi_send_start();
+     37c:	99 df       	rcall	.-206    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     37e:	80 ed       	ldi	r24, 0xD0	; 208
+     380:	af df       	rcall	.-162    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x03);
+     382:	83 e0       	ldi	r24, 0x03	; 3
+     384:	bb df       	rcall	.-138    	; 0x2fc <twi_master_send_data>
+twi_send_repeated_start();
+     386:	a0 df       	rcall	.-192    	; 0x2c8 <twi_send_repeated_start>
+twi_status=twi_send_address_rw(0xd1);
+     388:	81 ed       	ldi	r24, 0xD1	; 209
+     38a:	aa df       	rcall	.-172    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_receive_last_data();
+     38c:	c5 df       	rcall	.-118    	; 0x318 <twi_master_receive_last_data>
+return twi_status;
+twi_send_stop();
+}
+     38e:	08 95       	ret
+
+00000390 <ds1307_read_date>:
+
+unsigned char ds1307_read_date()
+{
+unsigned char twi_status;
+twi_send_start();
+     390:	8f df       	rcall	.-226    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     392:	80 ed       	ldi	r24, 0xD0	; 208
+     394:	a5 df       	rcall	.-182    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x04);
+     396:	84 e0       	ldi	r24, 0x04	; 4
+     398:	b1 df       	rcall	.-158    	; 0x2fc <twi_master_send_data>
+twi_send_repeated_start();
+     39a:	96 df       	rcall	.-212    	; 0x2c8 <twi_send_repeated_start>
+twi_status=twi_send_address_rw(0xd1);
+     39c:	81 ed       	ldi	r24, 0xD1	; 209
+     39e:	a0 df       	rcall	.-192    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_receive_last_data();
+     3a0:	bb df       	rcall	.-138    	; 0x318 <twi_master_receive_last_data>
+return twi_status;
+twi_send_stop();
+}
+     3a2:	08 95       	ret
+
+000003a4 <ds1307_read_month>:
+
+unsigned char ds1307_read_month()
+{
+unsigned char twi_status;
+twi_send_start();
+     3a4:	85 df       	rcall	.-246    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     3a6:	80 ed       	ldi	r24, 0xD0	; 208
+     3a8:	9b df       	rcall	.-202    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x05);
+     3aa:	85 e0       	ldi	r24, 0x05	; 5
+     3ac:	a7 df       	rcall	.-178    	; 0x2fc <twi_master_send_data>
+twi_send_repeated_start();
+     3ae:	8c df       	rcall	.-232    	; 0x2c8 <twi_send_repeated_start>
+twi_status=twi_send_address_rw(0xd1);
+     3b0:	81 ed       	ldi	r24, 0xD1	; 209
+     3b2:	96 df       	rcall	.-212    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_receive_last_data();
+     3b4:	b1 df       	rcall	.-158    	; 0x318 <twi_master_receive_last_data>
+return twi_status;
+twi_send_stop();
+}
+     3b6:	08 95       	ret
+
+000003b8 <ds1307_read_year>:
+
+unsigned char ds1307_read_year()
+{
+unsigned char twi_status;
+twi_send_start();
+     3b8:	7b df       	rcall	.-266    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     3ba:	80 ed       	ldi	r24, 0xD0	; 208
+     3bc:	91 df       	rcall	.-222    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x06);
+     3be:	86 e0       	ldi	r24, 0x06	; 6
+     3c0:	9d df       	rcall	.-198    	; 0x2fc <twi_master_send_data>
+twi_send_repeated_start();
+     3c2:	82 df       	rcall	.-252    	; 0x2c8 <twi_send_repeated_start>
+twi_status=twi_send_address_rw(0xd1);
+     3c4:	81 ed       	ldi	r24, 0xD1	; 209
+     3c6:	8c df       	rcall	.-232    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_receive_last_data();
+     3c8:	a7 df       	rcall	.-178    	; 0x318 <twi_master_receive_last_data>
+return twi_status;
+twi_send_stop();
+}
+     3ca:	08 95       	ret
+
+000003cc <convert_decimal_to_bcd>:
+
+unsigned char convert_decimal_to_bcd(unsigned char decimal_number)
+{
+decimal_number=((decimal_number/10)*16)+(decimal_number%10);
+     3cc:	9d ec       	ldi	r25, 0xCD	; 205
+     3ce:	89 9f       	mul	r24, r25
+     3d0:	91 2d       	mov	r25, r1
+     3d2:	11 24       	eor	r1, r1
+     3d4:	96 95       	lsr	r25
+     3d6:	96 95       	lsr	r25
+     3d8:	96 95       	lsr	r25
+     3da:	29 2f       	mov	r18, r25
+     3dc:	22 0f       	add	r18, r18
+     3de:	32 2f       	mov	r19, r18
+     3e0:	33 0f       	add	r19, r19
+     3e2:	33 0f       	add	r19, r19
+     3e4:	23 0f       	add	r18, r19
+     3e6:	82 1b       	sub	r24, r18
+return decimal_number;
+}
+     3e8:	20 e1       	ldi	r18, 0x10	; 16
+     3ea:	92 9f       	mul	r25, r18
+     3ec:	80 0d       	add	r24, r0
+     3ee:	11 24       	eor	r1, r1
+     3f0:	08 95       	ret
+
+000003f2 <ds1307_second_write>:
+
+
+
+/*Function definations*/
+void ds1307_second_write(unsigned char second)
+{
+     3f2:	cf 93       	push	r28
+     3f4:	c8 2f       	mov	r28, r24
+unsigned char twi_status;
+twi_send_start();
+     3f6:	5c df       	rcall	.-328    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     3f8:	80 ed       	ldi	r24, 0xD0	; 208
+     3fa:	72 df       	rcall	.-284    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x00);
+     3fc:	80 e0       	ldi	r24, 0x00	; 0
+     3fe:	7e df       	rcall	.-260    	; 0x2fc <twi_master_send_data>
+second=convert_decimal_to_bcd(second);
+     400:	8c 2f       	mov	r24, r28
+     402:	e4 df       	rcall	.-56     	; 0x3cc <convert_decimal_to_bcd>
+twi_status=twi_master_send_data(second);
+     404:	7b df       	rcall	.-266    	; 0x2fc <twi_master_send_data>
+twi_send_stop();
+     406:	93 df       	rcall	.-218    	; 0x32e <twi_send_stop>
+}
+     408:	cf 91       	pop	r28
+     40a:	08 95       	ret
+
+0000040c <ds1307_minute_write>:
+
+void ds1307_minute_write(unsigned char minute)
+{
+     40c:	cf 93       	push	r28
+     40e:	c8 2f       	mov	r28, r24
+unsigned char twi_status;
+twi_send_start();
+     410:	4f df       	rcall	.-354    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     412:	80 ed       	ldi	r24, 0xD0	; 208
+     414:	65 df       	rcall	.-310    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x01);
+     416:	81 e0       	ldi	r24, 0x01	; 1
+     418:	71 df       	rcall	.-286    	; 0x2fc <twi_master_send_data>
+minute=convert_decimal_to_bcd(minute);
+     41a:	8c 2f       	mov	r24, r28
+     41c:	d7 df       	rcall	.-82     	; 0x3cc <convert_decimal_to_bcd>
+twi_status=twi_master_send_data(minute);
+     41e:	6e df       	rcall	.-292    	; 0x2fc <twi_master_send_data>
+twi_send_stop();
+     420:	86 df       	rcall	.-244    	; 0x32e <twi_send_stop>
+}
+     422:	cf 91       	pop	r28
+     424:	08 95       	ret
+
+00000426 <ds1307_hour_write>:
+
+void ds1307_hour_write(unsigned char hour,unsigned char hour_format, unsigned char am_pm)
+{
+     426:	1f 93       	push	r17
+     428:	cf 93       	push	r28
+     42a:	df 93       	push	r29
+     42c:	d8 2f       	mov	r29, r24
+     42e:	c6 2f       	mov	r28, r22
+     430:	14 2f       	mov	r17, r20
+unsigned char twi_status;
+twi_send_start();
+     432:	3e df       	rcall	.-388    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     434:	80 ed       	ldi	r24, 0xD0	; 208
+     436:	54 df       	rcall	.-344    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x02);
+     438:	82 e0       	ldi	r24, 0x02	; 2
+     43a:	60 df       	rcall	.-320    	; 0x2fc <twi_master_send_data>
+if(hour_format==1)
+     43c:	c1 30       	cpi	r28, 0x01	; 1
+     43e:	51 f4       	brne	.+20     	; 0x454 <ds1307_hour_write+0x2e>
+{
+	hour=convert_decimal_to_bcd(hour);
+     440:	8d 2f       	mov	r24, r29
+     442:	c4 df       	rcall	.-120    	; 0x3cc <convert_decimal_to_bcd>
+	hour=hour | (1<<6) | (am_pm<<5);
+     444:	90 e2       	ldi	r25, 0x20	; 32
+     446:	19 9f       	mul	r17, r25
+     448:	a0 01       	movw	r20, r0
+     44a:	11 24       	eor	r1, r1
+     44c:	40 64       	ori	r20, 0x40	; 64
+	twi_status=twi_master_send_data(hour);
+     44e:	84 2b       	or	r24, r20
+     450:	55 df       	rcall	.-342    	; 0x2fc <twi_master_send_data>
+     452:	03 c0       	rjmp	.+6      	; 0x45a <ds1307_hour_write+0x34>
+}
+else
+{
+	hour=convert_decimal_to_bcd(hour);
+     454:	8d 2f       	mov	r24, r29
+     456:	ba df       	rcall	.-140    	; 0x3cc <convert_decimal_to_bcd>
+	twi_status=twi_master_send_data(hour);
+     458:	51 df       	rcall	.-350    	; 0x2fc <twi_master_send_data>
+}
+twi_send_stop();
+     45a:	69 df       	rcall	.-302    	; 0x32e <twi_send_stop>
+}
+     45c:	df 91       	pop	r29
+     45e:	cf 91       	pop	r28
+     460:	1f 91       	pop	r17
+     462:	08 95       	ret
+
+00000464 <ds1307_day_write>:
+
+void ds1307_day_write(unsigned char day)
+{
+     464:	cf 93       	push	r28
+     466:	c8 2f       	mov	r28, r24
+unsigned char twi_status;
+twi_send_start();
+     468:	23 df       	rcall	.-442    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     46a:	80 ed       	ldi	r24, 0xD0	; 208
+     46c:	39 df       	rcall	.-398    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x03);
+     46e:	83 e0       	ldi	r24, 0x03	; 3
+     470:	45 df       	rcall	.-374    	; 0x2fc <twi_master_send_data>
+day=convert_decimal_to_bcd(day);
+     472:	8c 2f       	mov	r24, r28
+     474:	ab df       	rcall	.-170    	; 0x3cc <convert_decimal_to_bcd>
+twi_status=twi_master_send_data(day);
+     476:	42 df       	rcall	.-380    	; 0x2fc <twi_master_send_data>
+twi_send_stop();
+     478:	5a df       	rcall	.-332    	; 0x32e <twi_send_stop>
+}
+     47a:	cf 91       	pop	r28
+     47c:	08 95       	ret
+
+0000047e <ds1307_date_write>:
+
+void ds1307_date_write(unsigned char date)
+{
+     47e:	cf 93       	push	r28
+     480:	c8 2f       	mov	r28, r24
+unsigned char twi_status;
+twi_send_start();
+     482:	16 df       	rcall	.-468    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     484:	80 ed       	ldi	r24, 0xD0	; 208
+     486:	2c df       	rcall	.-424    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x04);
+     488:	84 e0       	ldi	r24, 0x04	; 4
+     48a:	38 df       	rcall	.-400    	; 0x2fc <twi_master_send_data>
+date=convert_decimal_to_bcd(date);
+     48c:	8c 2f       	mov	r24, r28
+     48e:	9e df       	rcall	.-196    	; 0x3cc <convert_decimal_to_bcd>
+twi_status=twi_master_send_data(date);
+     490:	35 df       	rcall	.-406    	; 0x2fc <twi_master_send_data>
+twi_send_stop();
+     492:	4d df       	rcall	.-358    	; 0x32e <twi_send_stop>
+}
+     494:	cf 91       	pop	r28
+     496:	08 95       	ret
+
+00000498 <ds1307_month_write>:
+
+void ds1307_month_write(unsigned char month)
+{
+     498:	cf 93       	push	r28
+     49a:	c8 2f       	mov	r28, r24
+unsigned char twi_status;
+twi_send_start();
+     49c:	09 df       	rcall	.-494    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     49e:	80 ed       	ldi	r24, 0xD0	; 208
+     4a0:	1f df       	rcall	.-450    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x05);
+     4a2:	85 e0       	ldi	r24, 0x05	; 5
+     4a4:	2b df       	rcall	.-426    	; 0x2fc <twi_master_send_data>
+month=convert_decimal_to_bcd(month);
+     4a6:	8c 2f       	mov	r24, r28
+     4a8:	91 df       	rcall	.-222    	; 0x3cc <convert_decimal_to_bcd>
+twi_status=twi_master_send_data(month);
+     4aa:	28 df       	rcall	.-432    	; 0x2fc <twi_master_send_data>
+twi_send_stop();
+     4ac:	40 df       	rcall	.-384    	; 0x32e <twi_send_stop>
+}
+     4ae:	cf 91       	pop	r28
+     4b0:	08 95       	ret
+
+000004b2 <ds1307_year_write>:
+
+void ds1307_year_write(unsigned char year)
+{
+     4b2:	cf 93       	push	r28
+     4b4:	c8 2f       	mov	r28, r24
+unsigned char twi_status;
+twi_send_start();
+     4b6:	fc de       	rcall	.-520    	; 0x2b0 <twi_send_start>
+twi_status=twi_send_address_rw(0xd0);
+     4b8:	80 ed       	ldi	r24, 0xD0	; 208
+     4ba:	12 df       	rcall	.-476    	; 0x2e0 <twi_send_address_rw>
+twi_status=twi_master_send_data(0x06);
+     4bc:	86 e0       	ldi	r24, 0x06	; 6
+     4be:	1e df       	rcall	.-452    	; 0x2fc <twi_master_send_data>
+year=convert_decimal_to_bcd(year);
+     4c0:	8c 2f       	mov	r24, r28
+     4c2:	84 df       	rcall	.-248    	; 0x3cc <convert_decimal_to_bcd>
+twi_status=twi_master_send_data(year);
+     4c4:	1b df       	rcall	.-458    	; 0x2fc <twi_master_send_data>
+twi_send_stop();
+     4c6:	33 df       	rcall	.-410    	; 0x32e <twi_send_stop>
+}
+     4c8:	cf 91       	pop	r28
+     4ca:	08 95       	ret
+
+000004cc <convert_bcd_to_decimal>:
+return decimal_number;
+}
+
+unsigned char convert_bcd_to_decimal(unsigned char bcd_number)
+{
+bcd_number=((bcd_number>>4)*10)+(bcd_number & 0x0f);
+     4cc:	98 2f       	mov	r25, r24
+     4ce:	92 95       	swap	r25
+     4d0:	9f 70       	andi	r25, 0x0F	; 15
+     4d2:	99 0f       	add	r25, r25
+     4d4:	29 2f       	mov	r18, r25
+     4d6:	22 0f       	add	r18, r18
+     4d8:	22 0f       	add	r18, r18
+     4da:	92 0f       	add	r25, r18
+     4dc:	8f 70       	andi	r24, 0x0F	; 15
+return bcd_number;
+}  
+     4de:	89 0f       	add	r24, r25
+     4e0:	08 95       	ret
+
+000004e2 <inic_timer>:
+
+
+
+void inic_timer(void)
+{
+	DDRB = 0b11111111;								// Port B como saida
+     4e2:	8f ef       	ldi	r24, 0xFF	; 255
+     4e4:	84 b9       	out	0x04, r24	; 4
+	DDRC = 0b00001111;								//bits de 0 a 3 como saida para leds e bits 4 e 5 como entrada para RTC 
+     4e6:	8f e0       	ldi	r24, 0x0F	; 15
+     4e8:	87 b9       	out	0x07, r24	; 7
+	PORTC = 0;										//portc iniciado como 0
+     4ea:	18 b8       	out	0x08, r1	; 8
+	PORTB = 1;										//Portb iniciado a 1
+     4ec:	81 e0       	ldi	r24, 0x01	; 1
+     4ee:	85 b9       	out	0x05, r24	; 5
+	TCCR0A |= (1 << WGM01);     					// Normal port operation, modo CTC
+     4f0:	84 b5       	in	r24, 0x24	; 36
+     4f2:	82 60       	ori	r24, 0x02	; 2
+     4f4:	84 bd       	out	0x24, r24	; 36
+	TCCR0B |= (1 << CS01)|(1 << CS00);				// Modo CTC, prescaler 64
+     4f6:	85 b5       	in	r24, 0x25	; 37
+     4f8:	83 60       	ori	r24, 0x03	; 3
+     4fa:	85 bd       	out	0x25, r24	; 37
+	TIMSK0 |= (1 << OCIE0A);						// Activa o disparo da interrupcao
+     4fc:	ee e6       	ldi	r30, 0x6E	; 110
+     4fe:	f0 e0       	ldi	r31, 0x00	; 0
+     500:	80 81       	ld	r24, Z
+     502:	82 60       	ori	r24, 0x02	; 2
+     504:	80 83       	st	Z, r24
+	OCR0A = 155;									// fclock = 1MHz, prescaler 64, atraso 10ms
+     506:	8b e9       	ldi	r24, 0x9B	; 155
+     508:	87 bd       	out	0x27, r24	; 39
+	sei();											// Activa as interrupcoes globais
+     50a:	78 94       	sei
+     50c:	08 95       	ret
+
+0000050e <__vector_14>:
+}
+
+ISR (TIMER0_COMPA_vect)
+{													// FunçÁao que o CPU executa sempre que uma interrupcao ocorre
+     50e:	1f 92       	push	r1
+     510:	0f 92       	push	r0
+     512:	0f b6       	in	r0, 0x3f	; 63
+     514:	0f 92       	push	r0
+     516:	11 24       	eor	r1, r1
+     518:	8f 93       	push	r24
+	
+	count--;										// Decrementa o contador
+     51a:	80 91 42 01 	lds	r24, 0x0142
+     51e:	81 50       	subi	r24, 0x01	; 1
+     520:	80 93 42 01 	sts	0x0142, r24
+	if(count == 0)									// CondiçÁao que verifica o estado do contador, caso seja 0, atraso de 500ms (50 * 10ms)
+     524:	80 91 42 01 	lds	r24, 0x0142
+     528:	81 11       	cpse	r24, r1
+     52a:	06 c0       	rjmp	.+12     	; 0x538 <__vector_14+0x2a>
+	{
+		
+		flag_int = 1;								 // Coloca a flag_int = 1 representando o atraso de 500ms
+     52c:	81 e0       	ldi	r24, 0x01	; 1
+     52e:	80 93 ec 02 	sts	0x02EC, r24
+		count = 50;									// Reinicia o contador
+     532:	82 e3       	ldi	r24, 0x32	; 50
+     534:	80 93 42 01 	sts	0x0142, r24
+	}
+}
+     538:	8f 91       	pop	r24
+     53a:	0f 90       	pop	r0
+     53c:	0f be       	out	0x3f, r0	; 63
+     53e:	0f 90       	pop	r0
+     540:	1f 90       	pop	r1
+     542:	18 95       	reti
+
+00000544 <inicio_teclado>:
+
+void inicio_teclado(void)							//FunÁao de inicializaÁao do teclado
+{
+	DDRD = 0b11110000;								//Define as colunas (bits 4 a 7) como saidas e linhas (bits 0 a 3) como entradas
+     544:	80 ef       	ldi	r24, 0xF0	; 240
+     546:	8a b9       	out	0x0a, r24	; 10
+	PORTD = 0b00001111;								//Ao inicializa a 1 as linhas ativa os respetivos pull-up
+     548:	8f e0       	ldi	r24, 0x0F	; 15
+     54a:	8b b9       	out	0x0b, r24	; 11
+     54c:	08 95       	ret
+
+0000054e <rega_manual>:
+
+}
+
+void rega_manual(void)							 // bit 0 - portao, bit - 1 luz, bit - 2 persianas, bit - 3 alarme
+{
+	if(num_click_rega == 1)						 //testa o click, caso seja o primeiro liga o led da rega e imprime a mensagem a indicar a funÁ„o em funcionamento
+     54e:	80 91 41 01 	lds	r24, 0x0141
+     552:	81 30       	cpi	r24, 0x01	; 1
+     554:	69 f4       	brne	.+26     	; 0x570 <rega_manual+0x22>
+	{
+		LCDClear();
+     556:	60 e0       	ldi	r22, 0x00	; 0
+     558:	b3 dd       	rcall	.-1178   	; 0xc0 <LCDByte>
+		LCDWriteStringXY(9,1,"Rega_M");
+     55a:	61 e0       	ldi	r22, 0x01	; 1
+     55c:	89 e0       	ldi	r24, 0x09	; 9
+     55e:	57 de       	rcall	.-850    	; 0x20e <LCDGotoXY>
+     560:	89 e6       	ldi	r24, 0x69	; 105
+     562:	92 e0       	ldi	r25, 0x02	; 2
+     564:	cb dd       	rcall	.-1130   	; 0xfc <LCDWriteString>
+		PORTC |= (1 << PORTC3);
+     566:	43 9a       	sbi	0x08, 3	; 8
+		flag_rega = 1;							//atribui o valor 1 ‡ flag da rega, significando que est· a atuar esta funÁ„o
+     568:	81 e0       	ldi	r24, 0x01	; 1
+     56a:	80 93 eb 02 	sts	0x02EB, r24
+     56e:	08 95       	ret
+	}
+	else if(num_click_rega == 2)				// volta a testar o click, caso este seja o segundo click desliga o led da rega e imprime uma mensagem de saÌda
+     570:	80 91 41 01 	lds	r24, 0x0141
+     574:	82 30       	cpi	r24, 0x02	; 2
+     576:	21 f5       	brne	.+72     	; 0x5c0 <rega_manual+0x72>
+	{
+		LCDWriteStringXY(9,1,"Sair  ");
+     578:	61 e0       	ldi	r22, 0x01	; 1
+     57a:	89 e0       	ldi	r24, 0x09	; 9
+     57c:	48 de       	rcall	.-880    	; 0x20e <LCDGotoXY>
+     57e:	83 e4       	ldi	r24, 0x43	; 67
+     580:	91 e0       	ldi	r25, 0x01	; 1
+     582:	bc dd       	rcall	.-1160   	; 0xfc <LCDWriteString>
+		PORTC &= ~(1<<PORTC3);
+     584:	43 98       	cbi	0x08, 3	; 8
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     586:	2f e9       	ldi	r18, 0x9F	; 159
+     588:	86 e8       	ldi	r24, 0x86	; 134
+     58a:	91 e0       	ldi	r25, 0x01	; 1
+     58c:	21 50       	subi	r18, 0x01	; 1
+     58e:	80 40       	sbci	r24, 0x00	; 0
+     590:	90 40       	sbci	r25, 0x00	; 0
+     592:	e1 f7       	brne	.-8      	; 0x58c <rega_manual+0x3e>
+     594:	00 c0       	rjmp	.+0      	; 0x596 <rega_manual+0x48>
+     596:	00 00       	nop
+     598:	2f e9       	ldi	r18, 0x9F	; 159
+     59a:	86 e8       	ldi	r24, 0x86	; 134
+     59c:	91 e0       	ldi	r25, 0x01	; 1
+     59e:	21 50       	subi	r18, 0x01	; 1
+     5a0:	80 40       	sbci	r24, 0x00	; 0
+     5a2:	90 40       	sbci	r25, 0x00	; 0
+     5a4:	e1 f7       	brne	.-8      	; 0x59e <rega_manual+0x50>
+     5a6:	00 c0       	rjmp	.+0      	; 0x5a8 <rega_manual+0x5a>
+     5a8:	00 00       	nop
+		_delay_ms(500);
+		_delay_ms(500);
+		LCDWriteStringXY(9,1,"    ");
+     5aa:	61 e0       	ldi	r22, 0x01	; 1
+     5ac:	89 e0       	ldi	r24, 0x09	; 9
+     5ae:	2f de       	rcall	.-930    	; 0x20e <LCDGotoXY>
+     5b0:	87 e0       	ldi	r24, 0x07	; 7
+     5b2:	92 e0       	ldi	r25, 0x02	; 2
+     5b4:	a3 dd       	rcall	.-1210   	; 0xfc <LCDWriteString>
+		LCDClear();
+     5b6:	60 e0       	ldi	r22, 0x00	; 0
+     5b8:	81 e0       	ldi	r24, 0x01	; 1
+     5ba:	82 dd       	rcall	.-1276   	; 0xc0 <LCDByte>
+		flag_rega = 0;						//atribui o valor 0 ‡ flag da rega para simbolizar que a rega manual j· n„o est· a actuar
+     5bc:	10 92 eb 02 	sts	0x02EB, r1
+     5c0:	08 95       	ret
+
+000005c2 <seguranca_manual>:
+	}
+}
+
+void seguranca_manual(void)								// o comportamento desta funÁ„o È idÍntico a funÁ„o rega manual, com a diferenÁa de que este modo de funcionamento utiliza 3 leds
+{														// bit 0 - portao, bit 1 - persianas, bit 2 - alarme, bit 3 - rega
+	if(num_click_seguranca == 1)						
+     5c2:	80 91 40 01 	lds	r24, 0x0140
+     5c6:	81 30       	cpi	r24, 0x01	; 1
+     5c8:	69 f4       	brne	.+26     	; 0x5e4 <seguranca_manual+0x22>
+	{
+		LCDWriteStringXY(9,1,"SeguranÁa_M ");
+     5ca:	61 e0       	ldi	r22, 0x01	; 1
+     5cc:	89 e0       	ldi	r24, 0x09	; 9
+     5ce:	1f de       	rcall	.-962    	; 0x20e <LCDGotoXY>
+     5d0:	8a e4       	ldi	r24, 0x4A	; 74
+     5d2:	91 e0       	ldi	r25, 0x01	; 1
+     5d4:	93 dd       	rcall	.-1242   	; 0xfc <LCDWriteString>
+		PORTC |= (1<<PORTC0)|(1<<PORTC1)|(1<<PORTC2);
+     5d6:	88 b1       	in	r24, 0x08	; 8
+     5d8:	87 60       	ori	r24, 0x07	; 7
+     5da:	88 b9       	out	0x08, r24	; 8
+		flag_seguranca = 1;
+     5dc:	81 e0       	ldi	r24, 0x01	; 1
+     5de:	80 93 ea 02 	sts	0x02EA, r24
+     5e2:	08 95       	ret
+		
+	}
+	else if(num_click_seguranca == 2)
+     5e4:	80 91 40 01 	lds	r24, 0x0140
+     5e8:	82 30       	cpi	r24, 0x02	; 2
+     5ea:	19 f5       	brne	.+70     	; 0x632 <seguranca_manual+0x70>
+	{
+
+		LCDWriteStringXY(9,1,"Sair      ");
+     5ec:	61 e0       	ldi	r22, 0x01	; 1
+     5ee:	89 e0       	ldi	r24, 0x09	; 9
+     5f0:	0e de       	rcall	.-996    	; 0x20e <LCDGotoXY>
+     5f2:	87 e5       	ldi	r24, 0x57	; 87
+     5f4:	91 e0       	ldi	r25, 0x01	; 1
+     5f6:	82 dd       	rcall	.-1276   	; 0xfc <LCDWriteString>
+		PORTC &= ~(1<<PORTC0)& ~(1<<PORTC1)& ~(1<<PORTC2);
+     5f8:	88 b1       	in	r24, 0x08	; 8
+     5fa:	88 7f       	andi	r24, 0xF8	; 248
+     5fc:	88 b9       	out	0x08, r24	; 8
+     5fe:	2f e9       	ldi	r18, 0x9F	; 159
+     600:	86 e8       	ldi	r24, 0x86	; 134
+     602:	91 e0       	ldi	r25, 0x01	; 1
+     604:	21 50       	subi	r18, 0x01	; 1
+     606:	80 40       	sbci	r24, 0x00	; 0
+     608:	90 40       	sbci	r25, 0x00	; 0
+     60a:	e1 f7       	brne	.-8      	; 0x604 <seguranca_manual+0x42>
+     60c:	00 c0       	rjmp	.+0      	; 0x60e <seguranca_manual+0x4c>
+     60e:	00 00       	nop
+     610:	2f e9       	ldi	r18, 0x9F	; 159
+     612:	86 e8       	ldi	r24, 0x86	; 134
+     614:	91 e0       	ldi	r25, 0x01	; 1
+     616:	21 50       	subi	r18, 0x01	; 1
+     618:	80 40       	sbci	r24, 0x00	; 0
+     61a:	90 40       	sbci	r25, 0x00	; 0
+     61c:	e1 f7       	brne	.-8      	; 0x616 <seguranca_manual+0x54>
+     61e:	00 c0       	rjmp	.+0      	; 0x620 <seguranca_manual+0x5e>
+     620:	00 00       	nop
+		_delay_ms(500);
+		_delay_ms(500);
+		LCDWriteStringXY(9,1,"    ");
+     622:	61 e0       	ldi	r22, 0x01	; 1
+     624:	89 e0       	ldi	r24, 0x09	; 9
+     626:	f3 dd       	rcall	.-1050   	; 0x20e <LCDGotoXY>
+     628:	87 e0       	ldi	r24, 0x07	; 7
+     62a:	92 e0       	ldi	r25, 0x02	; 2
+     62c:	67 dd       	rcall	.-1330   	; 0xfc <LCDWriteString>
+		flag_seguranca = 0;
+     62e:	10 92 ea 02 	sts	0x02EA, r1
+     632:	08 95       	ret
+
+00000634 <seguranca_automatica>:
+}
+
+void seguranca_automatica(void)					//funÁ„o seguranÁa automatica, a seguranÁa È ligada e desligada (representada por 3 leds) conforme o utilizador define a hora de activa e desactivar a seguranÁa
+{
+
+	if((hora*100 + minuto) >= (hora_inicio_seguro*100 + minuto_inicio_seguro) && (hora*100 + minuto) < (hora_fim_seguro*100 + minuto_fim_seguro)) //Caso a hora e os minutos em que se encontra o relÛgio estejam entre a hora de inicio e de fim da seguranÁa definidos na funÁ„o "acerta_automatica", ent„o o modo de seguranÁa vai ser activado e o led vai acender. Caso contr·rio a seguranÁa n„o actua ou È desligada caso estivesse ligada.
+     634:	20 91 e6 02 	lds	r18, 0x02E6
+     638:	44 e6       	ldi	r20, 0x64	; 100
+     63a:	80 91 e7 02 	lds	r24, 0x02E7
+     63e:	90 e0       	ldi	r25, 0x00	; 0
+     640:	42 9f       	mul	r20, r18
+     642:	80 0d       	add	r24, r0
+     644:	91 1d       	adc	r25, r1
+     646:	11 24       	eor	r1, r1
+     648:	50 91 07 03 	lds	r21, 0x0307
+     64c:	20 91 03 03 	lds	r18, 0x0303
+     650:	30 e0       	ldi	r19, 0x00	; 0
+     652:	45 9f       	mul	r20, r21
+     654:	20 0d       	add	r18, r0
+     656:	31 1d       	adc	r19, r1
+     658:	11 24       	eor	r1, r1
+     65a:	82 17       	cp	r24, r18
+     65c:	93 07       	cpc	r25, r19
+     65e:	bc f0       	brlt	.+46     	; 0x68e <seguranca_automatica+0x5a>
+     660:	40 91 09 03 	lds	r20, 0x0309
+     664:	20 91 0d 03 	lds	r18, 0x030D
+     668:	30 e0       	ldi	r19, 0x00	; 0
+     66a:	54 e6       	ldi	r21, 0x64	; 100
+     66c:	45 9f       	mul	r20, r21
+     66e:	20 0d       	add	r18, r0
+     670:	31 1d       	adc	r19, r1
+     672:	11 24       	eor	r1, r1
+     674:	82 17       	cp	r24, r18
+     676:	93 07       	cpc	r25, r19
+     678:	54 f4       	brge	.+20     	; 0x68e <seguranca_automatica+0x5a>
+	{
+		PORTC |= (1<<PORTC0)|(1<<PORTC1)|(1<<PORTC2);
+     67a:	88 b1       	in	r24, 0x08	; 8
+     67c:	87 60       	ori	r24, 0x07	; 7
+     67e:	88 b9       	out	0x08, r24	; 8
+		LCDWriteStringXY(9,1,"Segurança_A");
+     680:	61 e0       	ldi	r22, 0x01	; 1
+     682:	89 e0       	ldi	r24, 0x09	; 9
+     684:	c4 dd       	rcall	.-1144   	; 0x20e <LCDGotoXY>
+     686:	82 e6       	ldi	r24, 0x62	; 98
+     688:	91 e0       	ldi	r25, 0x01	; 1
+     68a:	38 dd       	rcall	.-1424   	; 0xfc <LCDWriteString>
+     68c:	08 95       	ret
+	}
+	else
+	{
+		
+		LCDWriteStringXY(9,1,"       ");
+     68e:	61 e0       	ldi	r22, 0x01	; 1
+     690:	89 e0       	ldi	r24, 0x09	; 9
+     692:	bd dd       	rcall	.-1158   	; 0x20e <LCDGotoXY>
+     694:	84 e0       	ldi	r24, 0x04	; 4
+     696:	92 e0       	ldi	r25, 0x02	; 2
+     698:	31 dd       	rcall	.-1438   	; 0xfc <LCDWriteString>
+		PORTC &= ~(1<<PORTC0)& ~(1<<PORTC1)& ~(1<<PORTC2);
+     69a:	88 b1       	in	r24, 0x08	; 8
+     69c:	88 7f       	andi	r24, 0xF8	; 248
+     69e:	88 b9       	out	0x08, r24	; 8
+     6a0:	08 95       	ret
+
+000006a2 <rega_automatica>:
+}
+void rega_automatica(void)									// esta funÁ„o È identica ‡ seguranÁa_automatica, com a diferenÁa de que o modo de funcionamento da  rega apenas utiliza um led para a representar, apenas funciona a segunda, quarta e sexta feira 
+{
+	
+	
+	if((hora*100 + minuto) >= (hora_inicio_rega*100 + minuto_inicio_rega) && (hora*100 + minuto) < (hora_fim_rega*100 + minuto_fim_rega) && (dia == 1 || dia == 3 || dia == 5) && flag_rega == 0 && flag_seguranca == 0) 
+     6a2:	20 91 e6 02 	lds	r18, 0x02E6
+     6a6:	44 e6       	ldi	r20, 0x64	; 100
+     6a8:	80 91 e7 02 	lds	r24, 0x02E7
+     6ac:	90 e0       	ldi	r25, 0x00	; 0
+     6ae:	42 9f       	mul	r20, r18
+     6b0:	80 0d       	add	r24, r0
+     6b2:	91 1d       	adc	r25, r1
+     6b4:	11 24       	eor	r1, r1
+     6b6:	50 91 f4 02 	lds	r21, 0x02F4
+     6ba:	20 91 f2 02 	lds	r18, 0x02F2
+     6be:	30 e0       	ldi	r19, 0x00	; 0
+     6c0:	45 9f       	mul	r20, r21
+     6c2:	20 0d       	add	r18, r0
+     6c4:	31 1d       	adc	r19, r1
+     6c6:	11 24       	eor	r1, r1
+     6c8:	82 17       	cp	r24, r18
+     6ca:	93 07       	cpc	r25, r19
+     6cc:	74 f1       	brlt	.+92     	; 0x72a <rega_automatica+0x88>
+     6ce:	40 91 05 03 	lds	r20, 0x0305
+     6d2:	20 91 f6 02 	lds	r18, 0x02F6
+     6d6:	30 e0       	ldi	r19, 0x00	; 0
+     6d8:	54 e6       	ldi	r21, 0x64	; 100
+     6da:	45 9f       	mul	r20, r21
+     6dc:	20 0d       	add	r18, r0
+     6de:	31 1d       	adc	r19, r1
+     6e0:	11 24       	eor	r1, r1
+     6e2:	82 17       	cp	r24, r18
+     6e4:	93 07       	cpc	r25, r19
+     6e6:	0c f5       	brge	.+66     	; 0x72a <rega_automatica+0x88>
+     6e8:	80 91 e5 02 	lds	r24, 0x02E5
+     6ec:	98 2f       	mov	r25, r24
+     6ee:	9d 7f       	andi	r25, 0xFD	; 253
+     6f0:	91 30       	cpi	r25, 0x01	; 1
+     6f2:	11 f0       	breq	.+4      	; 0x6f8 <rega_automatica+0x56>
+     6f4:	85 30       	cpi	r24, 0x05	; 5
+     6f6:	c9 f4       	brne	.+50     	; 0x72a <rega_automatica+0x88>
+     6f8:	80 91 eb 02 	lds	r24, 0x02EB
+     6fc:	81 11       	cpse	r24, r1
+     6fe:	15 c0       	rjmp	.+42     	; 0x72a <rega_automatica+0x88>
+     700:	80 91 ea 02 	lds	r24, 0x02EA
+     704:	81 11       	cpse	r24, r1
+     706:	11 c0       	rjmp	.+34     	; 0x72a <rega_automatica+0x88>
+	{
+		PORTC |= (1<<PORTC3);        
+     708:	43 9a       	sbi	0x08, 3	; 8
+		LCDWriteStringXY(9,1,"Rega_A");
+     70a:	61 e0       	ldi	r22, 0x01	; 1
+     70c:	89 e0       	ldi	r24, 0x09	; 9
+     70e:	7f dd       	rcall	.-1282   	; 0x20e <LCDGotoXY>
+     710:	8e e6       	ldi	r24, 0x6E	; 110
+     712:	91 e0       	ldi	r25, 0x01	; 1
+     714:	f3 dc       	rcall	.-1562   	; 0xfc <LCDWriteString>
+     716:	8f e9       	ldi	r24, 0x9F	; 159
+     718:	96 e8       	ldi	r25, 0x86	; 134
+     71a:	21 e0       	ldi	r18, 0x01	; 1
+     71c:	81 50       	subi	r24, 0x01	; 1
+     71e:	90 40       	sbci	r25, 0x00	; 0
+     720:	20 40       	sbci	r18, 0x00	; 0
+     722:	e1 f7       	brne	.-8      	; 0x71c <rega_automatica+0x7a>
+     724:	00 c0       	rjmp	.+0      	; 0x726 <rega_automatica+0x84>
+     726:	00 00       	nop
+     728:	08 95       	ret
+		
+	}
+	else
+	{
+		
+		LCDWriteStringXY(9,1,"       ");
+     72a:	61 e0       	ldi	r22, 0x01	; 1
+     72c:	89 e0       	ldi	r24, 0x09	; 9
+     72e:	6f dd       	rcall	.-1314   	; 0x20e <LCDGotoXY>
+     730:	84 e0       	ldi	r24, 0x04	; 4
+     732:	92 e0       	ldi	r25, 0x02	; 2
+     734:	e3 dc       	rcall	.-1594   	; 0xfc <LCDWriteString>
+		PORTC &= ~(1<<PORTC3);
+     736:	43 98       	cbi	0x08, 3	; 8
+     738:	08 95       	ret
+
+0000073a <teclado>:
+	
+}
+
+
+int teclado(void)							//FunÁao teclado
+{
+     73a:	cf 93       	push	r28
+     73c:	df 93       	push	r29
+	int tecla_numero = 0;                   //Inicializa variavel a 0
+
+	//Primeira coluna
+
+	PORTD = 0b11101111;						//Selecciona a coluna
+     73e:	8f ee       	ldi	r24, 0xEF	; 239
+     740:	8b b9       	out	0x0b, r24	; 11
+     742:	83 ed       	ldi	r24, 0xD3	; 211
+     744:	90 e3       	ldi	r25, 0x30	; 48
+     746:	01 97       	sbiw	r24, 0x01	; 1
+     748:	f1 f7       	brne	.-4      	; 0x746 <teclado+0xc>
+     74a:	00 c0       	rjmp	.+0      	; 0x74c <teclado+0x12>
+     74c:	00 00       	nop
+	_delay_ms(50);
+	if (!(PIND & 0b00000001))				//Vai testar as quatro linha possiveis, quando encontra a linha e coluna precionada guarda o valor da tecla numa variavel
+     74e:	89 b1       	in	r24, 0x09	; 9
+	{
+		//LCDWriteStringXY(1,1,"1");		// Este processo È feito para todas as colunas
+		tecla_numero = 1;
+		
+	}
+	if (!(PIND & 0b00000010))
+     750:	49 9b       	sbis	0x09, 1	; 9
+     752:	06 c0       	rjmp	.+12     	; 0x760 <teclado+0x26>
+
+	//Primeira coluna
+
+	PORTD = 0b11101111;						//Selecciona a coluna
+	_delay_ms(50);
+	if (!(PIND & 0b00000001))				//Vai testar as quatro linha possiveis, quando encontra a linha e coluna precionada guarda o valor da tecla numa variavel
+     754:	d1 e0       	ldi	r29, 0x01	; 1
+     756:	8d 27       	eor	r24, r29
+}
+
+
+int teclado(void)							//FunÁao teclado
+{
+	int tecla_numero = 0;                   //Inicializa variavel a 0
+     758:	d8 2f       	mov	r29, r24
+     75a:	d1 70       	andi	r29, 0x01	; 1
+     75c:	c0 e0       	ldi	r28, 0x00	; 0
+     75e:	02 c0       	rjmp	.+4      	; 0x764 <teclado+0x2a>
+		
+	}
+	if (!(PIND & 0b00000010))
+	{
+		//LCDWriteStringXY(1,1,"4");
+		tecla_numero = 4;
+     760:	d4 e0       	ldi	r29, 0x04	; 4
+     762:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00000100))
+     764:	4a 99       	sbic	0x09, 2	; 9
+     766:	02 c0       	rjmp	.+4      	; 0x76c <teclado+0x32>
+	{
+		//LCDWriteStringXY(1,1,"7");
+		tecla_numero = 7;
+     768:	d7 e0       	ldi	r29, 0x07	; 7
+     76a:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00001000))
+     76c:	4b 99       	sbic	0x09, 3	; 9
+     76e:	02 c0       	rjmp	.+4      	; 0x774 <teclado+0x3a>
+	{
+		//LCDWriteStringXY(1,1,"*");
+		tecla_numero = 10;
+     770:	da e0       	ldi	r29, 0x0A	; 10
+     772:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	
+	//Segunda coluna
+
+	PORTD = 0b11011111;
+     774:	8f ed       	ldi	r24, 0xDF	; 223
+     776:	8b b9       	out	0x0b, r24	; 11
+     778:	83 ed       	ldi	r24, 0xD3	; 211
+     77a:	90 e3       	ldi	r25, 0x30	; 48
+     77c:	01 97       	sbiw	r24, 0x01	; 1
+     77e:	f1 f7       	brne	.-4      	; 0x77c <teclado+0x42>
+     780:	00 c0       	rjmp	.+0      	; 0x782 <teclado+0x48>
+     782:	00 00       	nop
+	_delay_ms(50);
+	if (!(PIND & 0b00000001))
+     784:	48 99       	sbic	0x09, 0	; 9
+     786:	02 c0       	rjmp	.+4      	; 0x78c <teclado+0x52>
+	{
+		//LCDWriteStringXY(1,1,"2");
+		tecla_numero = 2;
+     788:	d2 e0       	ldi	r29, 0x02	; 2
+     78a:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00000010))
+     78c:	49 99       	sbic	0x09, 1	; 9
+     78e:	02 c0       	rjmp	.+4      	; 0x794 <teclado+0x5a>
+	{
+		//LCDWriteStringXY(1,1,"5");
+		tecla_numero = 5;
+     790:	d5 e0       	ldi	r29, 0x05	; 5
+     792:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00000100))
+     794:	4a 99       	sbic	0x09, 2	; 9
+     796:	02 c0       	rjmp	.+4      	; 0x79c <teclado+0x62>
+	{
+		//LCDWriteStringXY(1,1,"8");
+		tecla_numero = 8;
+     798:	d8 e0       	ldi	r29, 0x08	; 8
+     79a:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00001000))
+     79c:	4b 99       	sbic	0x09, 3	; 9
+     79e:	02 c0       	rjmp	.+4      	; 0x7a4 <teclado+0x6a>
+	{
+		//LCDWriteStringXY(1,1,"0");
+		tecla_numero = 12;
+     7a0:	dc e0       	ldi	r29, 0x0C	; 12
+     7a2:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+
+	//Terceira coluna
+
+	PORTD = 0b10111111;
+     7a4:	8f eb       	ldi	r24, 0xBF	; 191
+     7a6:	8b b9       	out	0x0b, r24	; 11
+     7a8:	83 ed       	ldi	r24, 0xD3	; 211
+     7aa:	90 e3       	ldi	r25, 0x30	; 48
+     7ac:	01 97       	sbiw	r24, 0x01	; 1
+     7ae:	f1 f7       	brne	.-4      	; 0x7ac <teclado+0x72>
+     7b0:	00 c0       	rjmp	.+0      	; 0x7b2 <teclado+0x78>
+     7b2:	00 00       	nop
+	_delay_ms(50);
+	if (!(PIND & 0b00000001))
+     7b4:	48 99       	sbic	0x09, 0	; 9
+     7b6:	02 c0       	rjmp	.+4      	; 0x7bc <teclado+0x82>
+	{
+		//LCDWriteStringXY(1,1,"3");
+		tecla_numero = 3;
+     7b8:	d3 e0       	ldi	r29, 0x03	; 3
+     7ba:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00000010))
+     7bc:	49 99       	sbic	0x09, 1	; 9
+     7be:	02 c0       	rjmp	.+4      	; 0x7c4 <teclado+0x8a>
+	{
+		//LCDWriteStringXY(1,1,"6");
+		tecla_numero = 6;
+     7c0:	d6 e0       	ldi	r29, 0x06	; 6
+     7c2:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00000100))
+     7c4:	4a 99       	sbic	0x09, 2	; 9
+     7c6:	02 c0       	rjmp	.+4      	; 0x7cc <teclado+0x92>
+	{
+		//LCDWriteStringXY(1,1,"9");
+		tecla_numero = 9;
+     7c8:	d9 e0       	ldi	r29, 0x09	; 9
+     7ca:	c0 e0       	ldi	r28, 0x00	; 0
+	}
+	if (!(PIND & 0b00001000))
+     7cc:	4b 9b       	sbis	0x09, 3	; 9
+	{
+		//LCDWriteStringXY(1,1,"#");						// Se tecla # for pressionada chama funÁao acerta autom·tico
+		acerta_automatico();
+     7ce:	94 d2       	rcall	.+1320   	; 0xcf8 <acerta_automatico>
+	}
+
+	//Quarta coluna
+
+	PORTD = 0b01111111;
+     7d0:	8f e7       	ldi	r24, 0x7F	; 127
+     7d2:	8b b9       	out	0x0b, r24	; 11
+     7d4:	83 ed       	ldi	r24, 0xD3	; 211
+     7d6:	90 e3       	ldi	r25, 0x30	; 48
+     7d8:	01 97       	sbiw	r24, 0x01	; 1
+     7da:	f1 f7       	brne	.-4      	; 0x7d8 <teclado+0x9e>
+     7dc:	00 c0       	rjmp	.+0      	; 0x7de <teclado+0xa4>
+     7de:	00 00       	nop
+	_delay_ms(50);
+	if (!(PIND & 0b00000001))								//Se a tecla A for pressionada liga ou desliga mediante o estado do click a rega manual
+     7e0:	48 99       	sbic	0x09, 0	; 9
+     7e2:	0c c0       	rjmp	.+24     	; 0x7fc <teclado+0xc2>
+	{
+		rega_manual();
+     7e4:	b4 de       	rcall	.-664    	; 0x54e <rega_manual>
+		if(num_click_rega == 1)
+     7e6:	80 91 41 01 	lds	r24, 0x0141
+     7ea:	81 30       	cpi	r24, 0x01	; 1
+     7ec:	21 f4       	brne	.+8      	; 0x7f6 <teclado+0xbc>
+		{
+			num_click_rega = 2;
+     7ee:	82 e0       	ldi	r24, 0x02	; 2
+     7f0:	80 93 41 01 	sts	0x0141, r24
+     7f4:	03 c0       	rjmp	.+6      	; 0x7fc <teclado+0xc2>
+		}
+		else
+		{
+			num_click_rega = 1;
+     7f6:	81 e0       	ldi	r24, 0x01	; 1
+     7f8:	80 93 41 01 	sts	0x0141, r24
+		}
+		//LCDWriteStringXY(1,1,"A");
+	}
+	if (!(PIND & 0b00000010))
+     7fc:	49 99       	sbic	0x09, 1	; 9
+     7fe:	0c c0       	rjmp	.+24     	; 0x818 <teclado+0xde>
+	{
+		seguranca_manual();									//Se a tecla B for pressionada liga ou desliga mediante o estado do click a seguranÁa manual
+     800:	e0 de       	rcall	.-576    	; 0x5c2 <seguranca_manual>
+		if(num_click_seguranca == 1)
+     802:	80 91 40 01 	lds	r24, 0x0140
+     806:	81 30       	cpi	r24, 0x01	; 1
+     808:	21 f4       	brne	.+8      	; 0x812 <teclado+0xd8>
+		{
+			num_click_seguranca = 2;
+     80a:	82 e0       	ldi	r24, 0x02	; 2
+     80c:	80 93 40 01 	sts	0x0140, r24
+     810:	03 c0       	rjmp	.+6      	; 0x818 <teclado+0xde>
+		}
+		else
+		{
+			num_click_seguranca = 1;
+     812:	81 e0       	ldi	r24, 0x01	; 1
+     814:	80 93 40 01 	sts	0x0140, r24
+		}
+		//LCDWriteStringXY(1,1,"B");
+	}
+	if (!(PIND & 0b00000100))
+     818:	4a 9b       	sbis	0x09, 2	; 9
+	{
+		acerta_dia();													// Se tecla C for pressionada chama funÁao acerta dia
+     81a:	d5 d1       	rcall	.+938    	; 0xbc6 <acerta_dia>
+	}
+	if (!(PIND & 0b00001000))
+     81c:	4b 9b       	sbis	0x09, 3	; 9
+	{
+		acerta_hora();													// Se tecla D for pressionada chama funÁao acerta hora
+     81e:	05 d0       	rcall	.+10     	; 0x82a <acerta_hora>
+	}
+	return (tecla_numero);
+}
+     820:	8d 2f       	mov	r24, r29
+     822:	9c 2f       	mov	r25, r28
+     824:	df 91       	pop	r29
+     826:	cf 91       	pop	r28
+     828:	08 95       	ret
+
+0000082a <acerta_hora>:
+	DDRD = 0b11110000;								//Define as colunas (bits 4 a 7) como saidas e linhas (bits 0 a 3) como entradas
+	PORTD = 0b00001111;								//Ao inicializa a 1 as linhas ativa os respetivos pull-up
+}
+
+void acerta_hora(void)								//FunÁao acertar hora
+{
+     82a:	1f 93       	push	r17
+     82c:	cf 93       	push	r28
+     82e:	df 93       	push	r29
+	int teste = 0, tecla_numero = 0;				//inicializaÁao a 0 das varaiveis
+	LCDWriteStringXY(0,0,"Acerte a hora:  ");		//Imprime no LCD
+     830:	60 e0       	ldi	r22, 0x00	; 0
+     832:	80 e0       	ldi	r24, 0x00	; 0
+     834:	ec dc       	rcall	.-1576   	; 0x20e <LCDGotoXY>
+     836:	85 e7       	ldi	r24, 0x75	; 117
+     838:	91 e0       	ldi	r25, 0x01	; 1
+     83a:	60 dc       	rcall	.-1856   	; 0xfc <LCDWriteString>
+	LCDWriteStringXY(9,1,"        ");
+     83c:	61 e0       	ldi	r22, 0x01	; 1
+     83e:	89 e0       	ldi	r24, 0x09	; 9
+     840:	e6 dc       	rcall	.-1588   	; 0x20e <LCDGotoXY>
+     842:	83 e0       	ldi	r24, 0x03	; 3
+     844:	92 e0       	ldi	r25, 0x02	; 2
+     846:	5a dc       	rcall	.-1868   	; 0xfc <LCDWriteString>
+
+	teste = teclado();								//Retorna valor lido no teclado para variavel teste
+     848:	78 df       	rcall	.-272    	; 0x73a <teclado>
+	
+	
+	while(!teste)									//Enquanto teste diferente de 0 le valor do teclado
+     84a:	89 2b       	or	r24, r25
+     84c:	09 f0       	breq	.+2      	; 0x850 <acerta_hora+0x26>
+     84e:	b7 c1       	rjmp	.+878    	; 0xbbe <acerta_hora+0x394>
+			digito_minuto = 8;
+			digito_segundo = 8;
+		}
+		if(tecla_numero == 9)
+		{
+			horas = 9;
+     850:	19 e0       	ldi	r17, 0x09	; 9
+			digito_minuto = 4;
+			digito_segundo = 4;
+		}
+		if(tecla_numero == 5)
+		{
+			horas = 5;
+     852:	d5 e0       	ldi	r29, 0x05	; 5
+			digito_segundo = 1;
+		}
+		
+		if(tecla_numero == 2)
+		{
+			horas = 2;
+     854:	c2 e0       	ldi	r28, 0x02	; 2
+	teste = teclado();								//Retorna valor lido no teclado para variavel teste
+	
+	
+	while(!teste)									//Enquanto teste diferente de 0 le valor do teclado
+	{
+		tecla_numero = teclado();					//retorna valor lido no teclado para variavel tecla-numero
+     856:	71 df       	rcall	.-286    	; 0x73a <teclado>
+
+		if(tecla_numero == 10)						//Se tecla_numero = 10 (#) incrementa variavel relogio_click  que funciona como cursor
+     858:	8a 30       	cpi	r24, 0x0A	; 10
+     85a:	91 05       	cpc	r25, r1
+     85c:	31 f4       	brne	.+12     	; 0x86a <acerta_hora+0x40>
+		{
+			relogio_click++;
+     85e:	20 91 e9 02 	lds	r18, 0x02E9
+     862:	2f 5f       	subi	r18, 0xFF	; 255
+     864:	20 93 e9 02 	sts	0x02E9, r18
+     868:	21 c0       	rjmp	.+66     	; 0x8ac <acerta_hora+0x82>
+		}
+		
+		if(tecla_numero == 12)						//Atribui para as respetivas variaveis o valor lido 
+     86a:	8c 30       	cpi	r24, 0x0C	; 12
+     86c:	91 05       	cpc	r25, r1
+     86e:	69 f4       	brne	.+26     	; 0x88a <acerta_hora+0x60>
+		{
+			horas = 0;
+     870:	10 92 ee 02 	sts	0x02EE, r1
+			minutos = 0;
+     874:	10 92 0e 03 	sts	0x030E, r1
+			segundos = 0;
+     878:	10 92 fc 02 	sts	0x02FC, r1
+			digito_hora = 0;
+     87c:	10 92 f5 02 	sts	0x02F5, r1
+			digito_minuto = 0;
+     880:	10 92 0f 03 	sts	0x030F, r1
+			digito_segundo = 0;
+     884:	10 92 0b 03 	sts	0x030B, r1
+     888:	21 c0       	rjmp	.+66     	; 0x8cc <acerta_hora+0xa2>
+			
+		}
+		if(tecla_numero == 1)
+     88a:	81 30       	cpi	r24, 0x01	; 1
+     88c:	91 05       	cpc	r25, r1
+     88e:	71 f4       	brne	.+28     	; 0x8ac <acerta_hora+0x82>
+		{
+			horas = 1;
+     890:	21 e0       	ldi	r18, 0x01	; 1
+     892:	20 93 ee 02 	sts	0x02EE, r18
+			minutos = 1;
+     896:	20 93 0e 03 	sts	0x030E, r18
+			segundos = 1;
+     89a:	20 93 fc 02 	sts	0x02FC, r18
+			digito_hora = 1;
+     89e:	20 93 f5 02 	sts	0x02F5, r18
+			digito_minuto = 1;
+     8a2:	20 93 0f 03 	sts	0x030F, r18
+			digito_segundo = 1;
+     8a6:	20 93 0b 03 	sts	0x030B, r18
+     8aa:	21 c0       	rjmp	.+66     	; 0x8ee <acerta_hora+0xc4>
+		}
+		
+		if(tecla_numero == 2)
+     8ac:	82 30       	cpi	r24, 0x02	; 2
+     8ae:	91 05       	cpc	r25, r1
+     8b0:	69 f4       	brne	.+26     	; 0x8cc <acerta_hora+0xa2>
+		{
+			horas = 2;
+     8b2:	c0 93 ee 02 	sts	0x02EE, r28
+			minutos = 2;
+     8b6:	c0 93 0e 03 	sts	0x030E, r28
+			segundos = 2;
+     8ba:	c0 93 fc 02 	sts	0x02FC, r28
+			digito_hora = 2;
+     8be:	c0 93 f5 02 	sts	0x02F5, r28
+			digito_minuto = 2;
+     8c2:	c0 93 0f 03 	sts	0x030F, r28
+			digito_segundo = 2;
+     8c6:	c0 93 0b 03 	sts	0x030B, r28
+     8ca:	22 c0       	rjmp	.+68     	; 0x910 <acerta_hora+0xe6>
+
+		}
+		if(tecla_numero == 3)
+     8cc:	83 30       	cpi	r24, 0x03	; 3
+     8ce:	91 05       	cpc	r25, r1
+     8d0:	71 f4       	brne	.+28     	; 0x8ee <acerta_hora+0xc4>
+		{
+			horas = 3;
+     8d2:	23 e0       	ldi	r18, 0x03	; 3
+     8d4:	20 93 ee 02 	sts	0x02EE, r18
+			minutos = 3;
+     8d8:	20 93 0e 03 	sts	0x030E, r18
+			segundos = 3;
+     8dc:	20 93 fc 02 	sts	0x02FC, r18
+			digito_hora = 3;
+     8e0:	20 93 f5 02 	sts	0x02F5, r18
+			digito_minuto = 3;
+     8e4:	20 93 0f 03 	sts	0x030F, r18
+			digito_segundo = 3;
+     8e8:	20 93 0b 03 	sts	0x030B, r18
+     8ec:	21 c0       	rjmp	.+66     	; 0x930 <acerta_hora+0x106>
+		}
+		if(tecla_numero == 4)
+     8ee:	84 30       	cpi	r24, 0x04	; 4
+     8f0:	91 05       	cpc	r25, r1
+     8f2:	71 f4       	brne	.+28     	; 0x910 <acerta_hora+0xe6>
+		{
+			horas = 4;
+     8f4:	24 e0       	ldi	r18, 0x04	; 4
+     8f6:	20 93 ee 02 	sts	0x02EE, r18
+			minutos = 4;
+     8fa:	20 93 0e 03 	sts	0x030E, r18
+			segundos = 4;
+     8fe:	20 93 fc 02 	sts	0x02FC, r18
+			digito_hora = 4;
+     902:	20 93 f5 02 	sts	0x02F5, r18
+			digito_minuto = 4;
+     906:	20 93 0f 03 	sts	0x030F, r18
+			digito_segundo = 4;
+     90a:	20 93 0b 03 	sts	0x030B, r18
+     90e:	21 c0       	rjmp	.+66     	; 0x952 <acerta_hora+0x128>
+		}
+		if(tecla_numero == 5)
+     910:	85 30       	cpi	r24, 0x05	; 5
+     912:	91 05       	cpc	r25, r1
+     914:	69 f4       	brne	.+26     	; 0x930 <acerta_hora+0x106>
+		{
+			horas = 5;
+     916:	d0 93 ee 02 	sts	0x02EE, r29
+			minutos = 5;
+     91a:	d0 93 0e 03 	sts	0x030E, r29
+			segundos = 5;
+     91e:	d0 93 fc 02 	sts	0x02FC, r29
+			digito_hora = 5;
+     922:	d0 93 f5 02 	sts	0x02F5, r29
+			digito_minuto = 5;
+     926:	d0 93 0f 03 	sts	0x030F, r29
+			digito_segundo = 5;
+     92a:	d0 93 0b 03 	sts	0x030B, r29
+     92e:	22 c0       	rjmp	.+68     	; 0x974 <acerta_hora+0x14a>
+		}
+		if(tecla_numero == 6)
+     930:	86 30       	cpi	r24, 0x06	; 6
+     932:	91 05       	cpc	r25, r1
+     934:	71 f4       	brne	.+28     	; 0x952 <acerta_hora+0x128>
+		{
+			horas = 6;
+     936:	26 e0       	ldi	r18, 0x06	; 6
+     938:	20 93 ee 02 	sts	0x02EE, r18
+			minutos = 6;
+     93c:	20 93 0e 03 	sts	0x030E, r18
+			segundos = 6;
+     940:	20 93 fc 02 	sts	0x02FC, r18
+			digito_hora = 6;
+     944:	20 93 f5 02 	sts	0x02F5, r18
+			digito_minuto = 6;
+     948:	20 93 0f 03 	sts	0x030F, r18
+			digito_segundo = 6;
+     94c:	20 93 0b 03 	sts	0x030B, r18
+     950:	22 c0       	rjmp	.+68     	; 0x996 <acerta_hora+0x16c>
+		}
+		if(tecla_numero == 7)
+     952:	87 30       	cpi	r24, 0x07	; 7
+     954:	91 05       	cpc	r25, r1
+     956:	71 f4       	brne	.+28     	; 0x974 <acerta_hora+0x14a>
+		{
+			horas = 7;
+     958:	27 e0       	ldi	r18, 0x07	; 7
+     95a:	20 93 ee 02 	sts	0x02EE, r18
+			minutos = 7;
+     95e:	20 93 0e 03 	sts	0x030E, r18
+			segundos = 7;
+     962:	20 93 fc 02 	sts	0x02FC, r18
+			digito_hora = 7;
+     966:	20 93 f5 02 	sts	0x02F5, r18
+			digito_minuto = 7;
+     96a:	20 93 0f 03 	sts	0x030F, r18
+			digito_segundo = 7;
+     96e:	20 93 0b 03 	sts	0x030B, r18
+     972:	21 c0       	rjmp	.+66     	; 0x9b6 <acerta_hora+0x18c>
+		}
+		if(tecla_numero == 8)
+     974:	88 30       	cpi	r24, 0x08	; 8
+     976:	91 05       	cpc	r25, r1
+     978:	71 f4       	brne	.+28     	; 0x996 <acerta_hora+0x16c>
+		{
+			horas = 8;
+     97a:	88 e0       	ldi	r24, 0x08	; 8
+     97c:	80 93 ee 02 	sts	0x02EE, r24
+			minutos = 8;
+     980:	80 93 0e 03 	sts	0x030E, r24
+			segundos = 8;
+     984:	80 93 fc 02 	sts	0x02FC, r24
+			digito_hora = 8;
+     988:	80 93 f5 02 	sts	0x02F5, r24
+			digito_minuto = 8;
+     98c:	80 93 0f 03 	sts	0x030F, r24
+			digito_segundo = 8;
+     990:	80 93 0b 03 	sts	0x030B, r24
+     994:	16 c0       	rjmp	.+44     	; 0x9c2 <acerta_hora+0x198>
+		}
+		if(tecla_numero == 9)
+     996:	89 30       	cpi	r24, 0x09	; 9
+     998:	91 05       	cpc	r25, r1
+     99a:	69 f4       	brne	.+26     	; 0x9b6 <acerta_hora+0x18c>
+		{
+			horas = 9;
+     99c:	10 93 ee 02 	sts	0x02EE, r17
+			minutos = 9;
+     9a0:	10 93 0e 03 	sts	0x030E, r17
+			segundos = 9;
+     9a4:	10 93 fc 02 	sts	0x02FC, r17
+			digito_hora = 9;
+     9a8:	10 93 f5 02 	sts	0x02F5, r17
+			digito_minuto = 9;
+     9ac:	10 93 0f 03 	sts	0x030F, r17
+			digito_segundo = 9;
+     9b0:	10 93 0b 03 	sts	0x030B, r17
+     9b4:	06 c0       	rjmp	.+12     	; 0x9c2 <acerta_hora+0x198>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 0)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 1™ posiÁ„o
+     9b6:	00 97       	sbiw	r24, 0x00	; 0
+     9b8:	09 f4       	brne	.+2      	; 0x9bc <acerta_hora+0x192>
+     9ba:	fb c0       	rjmp	.+502    	; 0xbb2 <acerta_hora+0x388>
+     9bc:	0a 97       	sbiw	r24, 0x0a	; 10
+     9be:	09 f4       	brne	.+2      	; 0x9c2 <acerta_hora+0x198>
+     9c0:	4a cf       	rjmp	.-364    	; 0x856 <acerta_hora+0x2c>
+     9c2:	80 91 e9 02 	lds	r24, 0x02E9
+     9c6:	81 11       	cpse	r24, r1
+     9c8:	db c0       	rjmp	.+438    	; 0xb80 <acerta_hora+0x356>
+		{
+			hora = convert_bcd_to_decimal(horas & 0x3f);						//È atribuido para a variavel o valor j· convertido de binario para decimal do lido pelo teclado			
+     9ca:	80 91 ee 02 	lds	r24, 0x02EE
+     9ce:	8f 73       	andi	r24, 0x3F	; 63
+     9d0:	7d dd       	rcall	.-1286   	; 0x4cc <convert_bcd_to_decimal>
+     9d2:	80 93 e6 02 	sts	0x02E6, r24
+			LCDWriteIntXY(0,1,hora,1);											//Imprime no LCD a variavel
+     9d6:	61 e0       	ldi	r22, 0x01	; 1
+     9d8:	80 e0       	ldi	r24, 0x00	; 0
+     9da:	19 dc       	rcall	.-1998   	; 0x20e <LCDGotoXY>
+     9dc:	80 91 e6 02 	lds	r24, 0x02E6
+     9e0:	61 e0       	ldi	r22, 0x01	; 1
+     9e2:	70 e0       	ldi	r23, 0x00	; 0
+     9e4:	90 e0       	ldi	r25, 0x00	; 0
+     9e6:	b5 db       	rcall	.-2198   	; 0x152 <LCDWriteInt>
+			hora = convert_decimal_to_bcd(hora);
+     9e8:	80 91 e6 02 	lds	r24, 0x02E6
+     9ec:	ef dc       	rcall	.-1570   	; 0x3cc <convert_decimal_to_bcd>
+     9ee:	80 93 e6 02 	sts	0x02E6, r24
+     9f2:	c6 c0       	rjmp	.+396    	; 0xb80 <acerta_hora+0x356>
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 1)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 2™ posiÁ„o
+		{
+			digito_hora = convert_bcd_to_decimal(digito_hora & 0x3f);			//È atribuido para a variavel o valor j· convertido de binario para decimal do lido pelo teclado
+     9f4:	80 91 f5 02 	lds	r24, 0x02F5
+     9f8:	8f 73       	andi	r24, 0x3F	; 63
+     9fa:	68 dd       	rcall	.-1328   	; 0x4cc <convert_bcd_to_decimal>
+     9fc:	80 93 f5 02 	sts	0x02F5, r24
+			LCDWriteIntXY(1,1,digito_hora,1);									//Imprime no LCD a variavel
+     a00:	61 e0       	ldi	r22, 0x01	; 1
+     a02:	81 e0       	ldi	r24, 0x01	; 1
+     a04:	04 dc       	rcall	.-2040   	; 0x20e <LCDGotoXY>
+     a06:	80 91 f5 02 	lds	r24, 0x02F5
+     a0a:	61 e0       	ldi	r22, 0x01	; 1
+     a0c:	70 e0       	ldi	r23, 0x00	; 0
+     a0e:	90 e0       	ldi	r25, 0x00	; 0
+     a10:	a0 db       	rcall	.-2240   	; 0x152 <LCDWriteInt>
+			digito_hora = convert_decimal_to_bcd(digito_hora);					
+     a12:	80 91 f5 02 	lds	r24, 0x02F5
+     a16:	da dc       	rcall	.-1612   	; 0x3cc <convert_decimal_to_bcd>
+     a18:	80 93 f5 02 	sts	0x02F5, r24
+			variavel_hora = hora*10 + digito_hora;								//Multiplica por 10 o primeiro valor da hora e soma ao segundo
+     a1c:	90 91 e6 02 	lds	r25, 0x02E6
+     a20:	99 0f       	add	r25, r25
+     a22:	29 2f       	mov	r18, r25
+     a24:	22 0f       	add	r18, r18
+     a26:	22 0f       	add	r18, r18
+     a28:	92 0f       	add	r25, r18
+     a2a:	89 0f       	add	r24, r25
+     a2c:	80 93 00 03 	sts	0x0300, r24
+			ds1307_hour_write(variavel_hora,0,0);								//Escreve no RTC o valor da hora
+     a30:	40 e0       	ldi	r20, 0x00	; 0
+     a32:	60 e0       	ldi	r22, 0x00	; 0
+     a34:	f8 dc       	rcall	.-1552   	; 0x426 <ds1307_hour_write>
+     a36:	a9 c0       	rjmp	.+338    	; 0xb8a <acerta_hora+0x360>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 2)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 3™ posiÁ„o
+		{
+			minuto = convert_bcd_to_decimal(minutos);
+     a38:	80 91 0e 03 	lds	r24, 0x030E
+     a3c:	47 dd       	rcall	.-1394   	; 0x4cc <convert_bcd_to_decimal>
+     a3e:	80 93 e7 02 	sts	0x02E7, r24
+			LCDWriteIntXY(3,1,minuto,1);
+     a42:	61 e0       	ldi	r22, 0x01	; 1
+     a44:	83 e0       	ldi	r24, 0x03	; 3
+     a46:	e3 db       	rcall	.-2106   	; 0x20e <LCDGotoXY>
+     a48:	80 91 e7 02 	lds	r24, 0x02E7
+     a4c:	61 e0       	ldi	r22, 0x01	; 1
+     a4e:	70 e0       	ldi	r23, 0x00	; 0
+     a50:	90 e0       	ldi	r25, 0x00	; 0
+     a52:	7f db       	rcall	.-2306   	; 0x152 <LCDWriteInt>
+			minuto = convert_decimal_to_bcd(minuto);
+     a54:	80 91 e7 02 	lds	r24, 0x02E7
+     a58:	b9 dc       	rcall	.-1678   	; 0x3cc <convert_decimal_to_bcd>
+     a5a:	80 93 e7 02 	sts	0x02E7, r24
+     a5e:	9a c0       	rjmp	.+308    	; 0xb94 <acerta_hora+0x36a>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 3)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 4™ posiÁ„o
+		{
+
+			digito_minuto = convert_bcd_to_decimal(digito_minuto);				//È atribuido para a variavel o valor j· convertido de binario para decimal do lido pelo teclado
+     a60:	80 91 0f 03 	lds	r24, 0x030F
+     a64:	33 dd       	rcall	.-1434   	; 0x4cc <convert_bcd_to_decimal>
+     a66:	80 93 0f 03 	sts	0x030F, r24
+			LCDWriteIntXY(4,1,digito_minuto,1);									//Imprime no LCD a variavel
+     a6a:	61 e0       	ldi	r22, 0x01	; 1
+     a6c:	84 e0       	ldi	r24, 0x04	; 4
+     a6e:	cf db       	rcall	.-2146   	; 0x20e <LCDGotoXY>
+     a70:	80 91 0f 03 	lds	r24, 0x030F
+     a74:	61 e0       	ldi	r22, 0x01	; 1
+     a76:	70 e0       	ldi	r23, 0x00	; 0
+     a78:	90 e0       	ldi	r25, 0x00	; 0
+     a7a:	6b db       	rcall	.-2346   	; 0x152 <LCDWriteInt>
+			digito_minuto = convert_decimal_to_bcd(digito_minuto);						
+     a7c:	80 91 0f 03 	lds	r24, 0x030F
+     a80:	a5 dc       	rcall	.-1718   	; 0x3cc <convert_decimal_to_bcd>
+     a82:	80 93 0f 03 	sts	0x030F, r24
+			variavel_minuto = minuto*10 + digito_minuto;						//Multiplica por 10 o primeiro valor do minuto e soma ao segundo
+     a86:	90 91 e7 02 	lds	r25, 0x02E7
+     a8a:	99 0f       	add	r25, r25
+     a8c:	29 2f       	mov	r18, r25
+     a8e:	22 0f       	add	r18, r18
+     a90:	22 0f       	add	r18, r18
+     a92:	92 0f       	add	r25, r18
+     a94:	89 0f       	add	r24, r25
+     a96:	80 93 fb 02 	sts	0x02FB, r24
+			ds1307_minute_write(variavel_minuto);								//Escreve no RTC o valor da minuto
+     a9a:	b8 dc       	rcall	.-1680   	; 0x40c <ds1307_minute_write>
+     a9c:	80 c0       	rjmp	.+256    	; 0xb9e <acerta_hora+0x374>
+			
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 4)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 5™ posiÁ„o
+		{
+			segundo = convert_bcd_to_decimal(segundos);							//È atribuido para a variavel o valor j· convertido de binario para decimal do lido pelo teclado
+     a9e:	80 91 fc 02 	lds	r24, 0x02FC
+     aa2:	14 dd       	rcall	.-1496   	; 0x4cc <convert_bcd_to_decimal>
+     aa4:	80 93 e8 02 	sts	0x02E8, r24
+			LCDWriteIntXY(6,1,segundo,1);										//Imprime no LCD a variavel
+     aa8:	61 e0       	ldi	r22, 0x01	; 1
+     aaa:	86 e0       	ldi	r24, 0x06	; 6
+     aac:	b0 db       	rcall	.-2208   	; 0x20e <LCDGotoXY>
+     aae:	80 91 e8 02 	lds	r24, 0x02E8
+     ab2:	61 e0       	ldi	r22, 0x01	; 1
+     ab4:	70 e0       	ldi	r23, 0x00	; 0
+     ab6:	90 e0       	ldi	r25, 0x00	; 0
+     ab8:	4c db       	rcall	.-2408   	; 0x152 <LCDWriteInt>
+			segundo = convert_decimal_to_bcd(segundo);
+     aba:	80 91 e8 02 	lds	r24, 0x02E8
+     abe:	86 dc       	rcall	.-1780   	; 0x3cc <convert_decimal_to_bcd>
+     ac0:	80 93 e8 02 	sts	0x02E8, r24
+     ac4:	71 c0       	rjmp	.+226    	; 0xba8 <acerta_hora+0x37e>
+
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 5)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 6™ posiÁ„o
+		{
+			digito_segundo = convert_bcd_to_decimal(digito_segundo);			//È atribuido para a variavel o valor j· convertido de binario para decimal do lido pelo teclado
+     ac6:	80 91 0b 03 	lds	r24, 0x030B
+     aca:	00 dd       	rcall	.-1536   	; 0x4cc <convert_bcd_to_decimal>
+     acc:	80 93 0b 03 	sts	0x030B, r24
+			LCDWriteIntXY(7,1,digito_segundo,1);								//Imprime no LCD a variavel
+     ad0:	61 e0       	ldi	r22, 0x01	; 1
+     ad2:	87 e0       	ldi	r24, 0x07	; 7
+     ad4:	9c db       	rcall	.-2248   	; 0x20e <LCDGotoXY>
+     ad6:	80 91 0b 03 	lds	r24, 0x030B
+     ada:	61 e0       	ldi	r22, 0x01	; 1
+     adc:	70 e0       	ldi	r23, 0x00	; 0
+     ade:	90 e0       	ldi	r25, 0x00	; 0
+     ae0:	38 db       	rcall	.-2448   	; 0x152 <LCDWriteInt>
+			LCDWriteStringXY(8,1," ");
+     ae2:	61 e0       	ldi	r22, 0x01	; 1
+     ae4:	88 e0       	ldi	r24, 0x08	; 8
+     ae6:	93 db       	rcall	.-2266   	; 0x20e <LCDGotoXY>
+     ae8:	8a e0       	ldi	r24, 0x0A	; 10
+     aea:	92 e0       	ldi	r25, 0x02	; 2
+     aec:	07 db       	rcall	.-2546   	; 0xfc <LCDWriteString>
+			digito_segundo = convert_decimal_to_bcd(digito_segundo);
+     aee:	80 91 0b 03 	lds	r24, 0x030B
+     af2:	6c dc       	rcall	.-1832   	; 0x3cc <convert_decimal_to_bcd>
+     af4:	80 93 0b 03 	sts	0x030B, r24
+			variavel_segundo = segundo*10 + digito_segundo;						//Multiplica por 10 o primeiro valor do segundos e soma ao segundo
+     af8:	90 91 e8 02 	lds	r25, 0x02E8
+     afc:	99 0f       	add	r25, r25
+     afe:	29 2f       	mov	r18, r25
+     b00:	22 0f       	add	r18, r18
+     b02:	22 0f       	add	r18, r18
+     b04:	92 0f       	add	r25, r18
+     b06:	89 0f       	add	r24, r25
+     b08:	80 93 f3 02 	sts	0x02F3, r24
+			ds1307_second_write(variavel_segundo);								//Escreve no RTC o valor da segundo
+     b0c:	72 dc       	rcall	.-1820   	; 0x3f2 <ds1307_second_write>
+     b0e:	51 c0       	rjmp	.+162    	; 0xbb2 <acerta_hora+0x388>
+			
+		}
+		
+		if(tecla_numero!=10 && relogio_click == 6)								//Testa se foi precionada uma tecla e se cursor esta na 7™ posiÁ„o
+		{
+			if(variavel_hora>23 || variavel_minuto>59 || variavel_segundo>59)	//Testa se os valores inseridos estao dentro dos limites 
+     b10:	80 91 00 03 	lds	r24, 0x0300
+     b14:	88 31       	cpi	r24, 0x18	; 24
+     b16:	40 f4       	brcc	.+16     	; 0xb28 <acerta_hora+0x2fe>
+     b18:	80 91 fb 02 	lds	r24, 0x02FB
+     b1c:	8c 33       	cpi	r24, 0x3C	; 60
+     b1e:	20 f4       	brcc	.+8      	; 0xb28 <acerta_hora+0x2fe>
+     b20:	80 91 f3 02 	lds	r24, 0x02F3
+     b24:	8c 33       	cpi	r24, 0x3C	; 60
+     b26:	48 f1       	brcs	.+82     	; 0xb7a <acerta_hora+0x350>
+			{
+				variavel_hora = 0;												//Casos valores estejam fora dos limites inicializa o relogio tudo a 0 e pede para inserir novos valores
+     b28:	10 92 00 03 	sts	0x0300, r1
+				variavel_minuto = 0;
+     b2c:	10 92 fb 02 	sts	0x02FB, r1
+				variavel_segundo = 0;
+     b30:	10 92 f3 02 	sts	0x02F3, r1
+				LCDClear();
+     b34:	60 e0       	ldi	r22, 0x00	; 0
+     b36:	81 e0       	ldi	r24, 0x01	; 1
+     b38:	c3 da       	rcall	.-2682   	; 0xc0 <LCDByte>
+				LCDWriteStringXY(0,0,"Insira");
+     b3a:	60 e0       	ldi	r22, 0x00	; 0
+     b3c:	80 e0       	ldi	r24, 0x00	; 0
+     b3e:	67 db       	rcall	.-2354   	; 0x20e <LCDGotoXY>
+     b40:	86 e8       	ldi	r24, 0x86	; 134
+     b42:	91 e0       	ldi	r25, 0x01	; 1
+     b44:	db da       	rcall	.-2634   	; 0xfc <LCDWriteString>
+				LCDWriteStringXY(0,1,"Novamente");
+     b46:	61 e0       	ldi	r22, 0x01	; 1
+     b48:	80 e0       	ldi	r24, 0x00	; 0
+     b4a:	61 db       	rcall	.-2366   	; 0x20e <LCDGotoXY>
+     b4c:	8d e8       	ldi	r24, 0x8D	; 141
+     b4e:	91 e0       	ldi	r25, 0x01	; 1
+     b50:	d5 da       	rcall	.-2646   	; 0xfc <LCDWriteString>
+     b52:	2f e3       	ldi	r18, 0x3F	; 63
+     b54:	8d e0       	ldi	r24, 0x0D	; 13
+     b56:	93 e0       	ldi	r25, 0x03	; 3
+     b58:	21 50       	subi	r18, 0x01	; 1
+     b5a:	80 40       	sbci	r24, 0x00	; 0
+     b5c:	90 40       	sbci	r25, 0x00	; 0
+     b5e:	e1 f7       	brne	.-8      	; 0xb58 <acerta_hora+0x32e>
+     b60:	00 c0       	rjmp	.+0      	; 0xb62 <acerta_hora+0x338>
+     b62:	00 00       	nop
+				_delay_ms(1000);
+				ds1307_hour_write(variavel_hora,0,0);
+     b64:	40 e0       	ldi	r20, 0x00	; 0
+     b66:	60 e0       	ldi	r22, 0x00	; 0
+     b68:	80 91 00 03 	lds	r24, 0x0300
+     b6c:	5c dc       	rcall	.-1864   	; 0x426 <ds1307_hour_write>
+				ds1307_minute_write(variavel_minuto);
+     b6e:	80 91 fb 02 	lds	r24, 0x02FB
+     b72:	4c dc       	rcall	.-1896   	; 0x40c <ds1307_minute_write>
+				ds1307_second_write(variavel_segundo);
+     b74:	80 91 f3 02 	lds	r24, 0x02F3
+     b78:	3c dc       	rcall	.-1928   	; 0x3f2 <ds1307_second_write>
+				
+			}
+
+			relogio_click = 0;													//coloca cursor na posiÁao 0
+     b7a:	10 92 e9 02 	sts	0x02E9, r1
+
+			return;																//Sai dafunÁao
+     b7e:	1f c0       	rjmp	.+62     	; 0xbbe <acerta_hora+0x394>
+		{
+			hora = convert_bcd_to_decimal(horas & 0x3f);						//È atribuido para a variavel o valor j· convertido de binario para decimal do lido pelo teclado			
+			LCDWriteIntXY(0,1,hora,1);											//Imprime no LCD a variavel
+			hora = convert_decimal_to_bcd(hora);
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 1)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 2™ posiÁ„o
+     b80:	80 91 e9 02 	lds	r24, 0x02E9
+     b84:	81 30       	cpi	r24, 0x01	; 1
+     b86:	09 f4       	brne	.+2      	; 0xb8a <acerta_hora+0x360>
+     b88:	35 cf       	rjmp	.-406    	; 0x9f4 <acerta_hora+0x1ca>
+			digito_hora = convert_decimal_to_bcd(digito_hora);					
+			variavel_hora = hora*10 + digito_hora;								//Multiplica por 10 o primeiro valor da hora e soma ao segundo
+			ds1307_hour_write(variavel_hora,0,0);								//Escreve no RTC o valor da hora
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 2)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 3™ posiÁ„o
+     b8a:	80 91 e9 02 	lds	r24, 0x02E9
+     b8e:	82 30       	cpi	r24, 0x02	; 2
+     b90:	09 f4       	brne	.+2      	; 0xb94 <acerta_hora+0x36a>
+     b92:	52 cf       	rjmp	.-348    	; 0xa38 <acerta_hora+0x20e>
+			minuto = convert_bcd_to_decimal(minutos);
+			LCDWriteIntXY(3,1,minuto,1);
+			minuto = convert_decimal_to_bcd(minuto);
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 3)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 4™ posiÁ„o
+     b94:	80 91 e9 02 	lds	r24, 0x02E9
+     b98:	83 30       	cpi	r24, 0x03	; 3
+     b9a:	09 f4       	brne	.+2      	; 0xb9e <acerta_hora+0x374>
+     b9c:	61 cf       	rjmp	.-318    	; 0xa60 <acerta_hora+0x236>
+			variavel_minuto = minuto*10 + digito_minuto;						//Multiplica por 10 o primeiro valor do minuto e soma ao segundo
+			ds1307_minute_write(variavel_minuto);								//Escreve no RTC o valor da minuto
+			
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 4)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 5™ posiÁ„o
+     b9e:	80 91 e9 02 	lds	r24, 0x02E9
+     ba2:	84 30       	cpi	r24, 0x04	; 4
+     ba4:	09 f4       	brne	.+2      	; 0xba8 <acerta_hora+0x37e>
+     ba6:	7b cf       	rjmp	.-266    	; 0xa9e <acerta_hora+0x274>
+			LCDWriteIntXY(6,1,segundo,1);										//Imprime no LCD a variavel
+			segundo = convert_decimal_to_bcd(segundo);
+
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 5)			//Testa se foi precionada uma tecla, essa tecla È diferente do # e se cursor esta na 6™ posiÁ„o
+     ba8:	80 91 e9 02 	lds	r24, 0x02E9
+     bac:	85 30       	cpi	r24, 0x05	; 5
+     bae:	09 f4       	brne	.+2      	; 0xbb2 <acerta_hora+0x388>
+     bb0:	8a cf       	rjmp	.-236    	; 0xac6 <acerta_hora+0x29c>
+			variavel_segundo = segundo*10 + digito_segundo;						//Multiplica por 10 o primeiro valor do segundos e soma ao segundo
+			ds1307_second_write(variavel_segundo);								//Escreve no RTC o valor da segundo
+			
+		}
+		
+		if(tecla_numero!=10 && relogio_click == 6)								//Testa se foi precionada uma tecla e se cursor esta na 7™ posiÁ„o
+     bb2:	80 91 e9 02 	lds	r24, 0x02E9
+     bb6:	86 30       	cpi	r24, 0x06	; 6
+     bb8:	09 f0       	breq	.+2      	; 0xbbc <acerta_hora+0x392>
+     bba:	4d ce       	rjmp	.-870    	; 0x856 <acerta_hora+0x2c>
+     bbc:	a9 cf       	rjmp	.-174    	; 0xb10 <acerta_hora+0x2e6>
+			return;																//Sai dafunÁao
+
+		}
+		
+	}
+}
+     bbe:	df 91       	pop	r29
+     bc0:	cf 91       	pop	r28
+     bc2:	1f 91       	pop	r17
+     bc4:	08 95       	ret
+
+00000bc6 <acerta_dia>:
+
+void acerta_dia(void)															//FunÁao acerta dia
+{
+     bc6:	df 92       	push	r13
+     bc8:	ef 92       	push	r14
+     bca:	ff 92       	push	r15
+     bcc:	0f 93       	push	r16
+     bce:	1f 93       	push	r17
+     bd0:	cf 93       	push	r28
+     bd2:	df 93       	push	r29
+	int teste = 0;
+	LCDClear();
+     bd4:	60 e0       	ldi	r22, 0x00	; 0
+     bd6:	81 e0       	ldi	r24, 0x01	; 1
+     bd8:	73 da       	rcall	.-2842   	; 0xc0 <LCDByte>
+	LCDWriteStringXY(0,0,"Acerte o dia:  ");									//Imprime mensagem no LCD
+     bda:	60 e0       	ldi	r22, 0x00	; 0
+     bdc:	80 e0       	ldi	r24, 0x00	; 0
+     bde:	17 db       	rcall	.-2514   	; 0x20e <LCDGotoXY>
+     be0:	87 e9       	ldi	r24, 0x97	; 151
+     be2:	91 e0       	ldi	r25, 0x01	; 1
+     be4:	8b da       	rcall	.-2794   	; 0xfc <LCDWriteString>
+
+	teste = teclado();															//Atribui na variavel teste o valor lido no teclado
+     be6:	a9 dd       	rcall	.-1198   	; 0x73a <teclado>
+	int tecla_numero = 0;
+
+	while(!teste)																//Enquanto teste diferente de 0 le valor do teclado
+     be8:	89 2b       	or	r24, r25
+     bea:	09 f0       	breq	.+2      	; 0xbee <acerta_dia+0x28>
+     bec:	7d c0       	rjmp	.+250    	; 0xce8 <acerta_dia+0x122>
+		{
+			dias = 6;
+		}
+		if(tecla_numero == 7)
+		{
+			dias = 7;
+     bee:	0f 2e       	mov	r0, r31
+     bf0:	f7 e0       	ldi	r31, 0x07	; 7
+     bf2:	df 2e       	mov	r13, r31
+     bf4:	f0 2d       	mov	r31, r0
+		{
+			dias = 5;
+		}
+		if(tecla_numero == 6)
+		{
+			dias = 6;
+     bf6:	0f 2e       	mov	r0, r31
+     bf8:	f6 e0       	ldi	r31, 0x06	; 6
+     bfa:	ef 2e       	mov	r14, r31
+     bfc:	f0 2d       	mov	r31, r0
+		{
+			dias = 4;
+		}
+		if(tecla_numero == 5)
+		{
+			dias = 5;
+     bfe:	0f 2e       	mov	r0, r31
+     c00:	f5 e0       	ldi	r31, 0x05	; 5
+     c02:	ff 2e       	mov	r15, r31
+     c04:	f0 2d       	mov	r31, r0
+		{
+			dias = 3;
+		}
+		if(tecla_numero == 4)
+		{
+			dias = 4;
+     c06:	04 e0       	ldi	r16, 0x04	; 4
+		{
+			dias = 2;
+		}
+		if(tecla_numero == 3)
+		{
+			dias = 3;
+     c08:	13 e0       	ldi	r17, 0x03	; 3
+			dias = 1;
+		}
+		
+		if(tecla_numero == 2)
+		{
+			dias = 2;
+     c0a:	d2 e0       	ldi	r29, 0x02	; 2
+		{
+			return;
+		}
+		if(tecla_numero == 1)
+		{
+			dias = 1;
+     c0c:	c1 e0       	ldi	r28, 0x01	; 1
+	teste = teclado();															//Atribui na variavel teste o valor lido no teclado
+	int tecla_numero = 0;
+
+	while(!teste)																//Enquanto teste diferente de 0 le valor do teclado
+	{
+		tecla_numero = teclado();												//Atribui na variavel teste o valor lido no teclado							
+     c0e:	95 dd       	rcall	.-1238   	; 0x73a <teclado>
+
+		if(tecla_numero == 10)													//Atribui ao tecla_numero o valor lido do teclado
+     c10:	8a 30       	cpi	r24, 0x0A	; 10
+     c12:	91 05       	cpc	r25, r1
+     c14:	09 f4       	brne	.+2      	; 0xc18 <acerta_dia+0x52>
+     c16:	68 c0       	rjmp	.+208    	; 0xce8 <acerta_dia+0x122>
+		{
+			return;
+		}
+		if(tecla_numero == 1)
+     c18:	81 30       	cpi	r24, 0x01	; 1
+     c1a:	91 05       	cpc	r25, r1
+     c1c:	19 f4       	brne	.+6      	; 0xc24 <acerta_dia+0x5e>
+		{
+			dias = 1;
+     c1e:	c0 93 04 03 	sts	0x0304, r28
+     c22:	0c c0       	rjmp	.+24     	; 0xc3c <acerta_dia+0x76>
+		}
+		
+		if(tecla_numero == 2)
+     c24:	82 30       	cpi	r24, 0x02	; 2
+     c26:	91 05       	cpc	r25, r1
+     c28:	19 f4       	brne	.+6      	; 0xc30 <acerta_dia+0x6a>
+		{
+			dias = 2;
+     c2a:	d0 93 04 03 	sts	0x0304, r29
+     c2e:	0c c0       	rjmp	.+24     	; 0xc48 <acerta_dia+0x82>
+		}
+		if(tecla_numero == 3)
+     c30:	83 30       	cpi	r24, 0x03	; 3
+     c32:	91 05       	cpc	r25, r1
+     c34:	19 f4       	brne	.+6      	; 0xc3c <acerta_dia+0x76>
+		{
+			dias = 3;
+     c36:	10 93 04 03 	sts	0x0304, r17
+     c3a:	0c c0       	rjmp	.+24     	; 0xc54 <acerta_dia+0x8e>
+		}
+		if(tecla_numero == 4)
+     c3c:	84 30       	cpi	r24, 0x04	; 4
+     c3e:	91 05       	cpc	r25, r1
+     c40:	19 f4       	brne	.+6      	; 0xc48 <acerta_dia+0x82>
+		{
+			dias = 4;
+     c42:	00 93 04 03 	sts	0x0304, r16
+     c46:	0c c0       	rjmp	.+24     	; 0xc60 <acerta_dia+0x9a>
+		}
+		if(tecla_numero == 5)
+     c48:	85 30       	cpi	r24, 0x05	; 5
+     c4a:	91 05       	cpc	r25, r1
+     c4c:	19 f4       	brne	.+6      	; 0xc54 <acerta_dia+0x8e>
+		{
+			dias = 5;
+     c4e:	f0 92 04 03 	sts	0x0304, r15
+     c52:	0a c0       	rjmp	.+20     	; 0xc68 <acerta_dia+0xa2>
+		}
+		if(tecla_numero == 6)
+     c54:	86 30       	cpi	r24, 0x06	; 6
+     c56:	91 05       	cpc	r25, r1
+     c58:	19 f4       	brne	.+6      	; 0xc60 <acerta_dia+0x9a>
+		{
+			dias = 6;
+     c5a:	e0 92 04 03 	sts	0x0304, r14
+     c5e:	04 c0       	rjmp	.+8      	; 0xc68 <acerta_dia+0xa2>
+		}
+		if(tecla_numero == 7)
+     c60:	07 97       	sbiw	r24, 0x07	; 7
+     c62:	11 f4       	brne	.+4      	; 0xc68 <acerta_dia+0xa2>
+		{
+			dias = 7;
+     c64:	d0 92 04 03 	sts	0x0304, r13
+		}
+		
+		ds1307_day_write(dias);													//Escreve no RTC o dia
+     c68:	80 91 04 03 	lds	r24, 0x0304
+     c6c:	fb db       	rcall	.-2058   	; 0x464 <ds1307_day_write>
+		dia = ds1307_read_day();												//Le o dia do RTC
+     c6e:	86 db       	rcall	.-2292   	; 0x37c <ds1307_read_day>
+     c70:	80 93 e5 02 	sts	0x02E5, r24
+		
+		switch(dia)																//Testa variavel dia, caso seja 1 imprime segunda e assim sucessivamente ate domingo
+     c74:	90 e0       	ldi	r25, 0x00	; 0
+     c76:	fc 01       	movw	r30, r24
+     c78:	31 97       	sbiw	r30, 0x01	; 1
+     c7a:	e7 30       	cpi	r30, 0x07	; 7
+     c7c:	f1 05       	cpc	r31, r1
+     c7e:	38 f6       	brcc	.-114    	; 0xc0e <acerta_dia+0x48>
+     c80:	e6 5e       	subi	r30, 0xE6	; 230
+     c82:	ff 4f       	sbci	r31, 0xFF	; 255
+     c84:	09 94       	ijmp
+		{
+			case 1:
+			
+			LCDWriteStringXY(0,1,"Segunda  ");
+     c86:	6c 2f       	mov	r22, r28
+     c88:	80 e0       	ldi	r24, 0x00	; 0
+     c8a:	c1 da       	rcall	.-2686   	; 0x20e <LCDGotoXY>
+     c8c:	87 ea       	ldi	r24, 0xA7	; 167
+     c8e:	91 e0       	ldi	r25, 0x01	; 1
+     c90:	35 da       	rcall	.-2966   	; 0xfc <LCDWriteString>
+			break;
+     c92:	bd cf       	rjmp	.-134    	; 0xc0e <acerta_dia+0x48>
+			
+			case 2:
+			
+			LCDWriteStringXY(0,1,"Terca   ");
+     c94:	6c 2f       	mov	r22, r28
+     c96:	80 e0       	ldi	r24, 0x00	; 0
+     c98:	ba da       	rcall	.-2700   	; 0x20e <LCDGotoXY>
+     c9a:	81 eb       	ldi	r24, 0xB1	; 177
+     c9c:	91 e0       	ldi	r25, 0x01	; 1
+     c9e:	2e da       	rcall	.-2980   	; 0xfc <LCDWriteString>
+			break;
+     ca0:	b6 cf       	rjmp	.-148    	; 0xc0e <acerta_dia+0x48>
+			
+			case 3:
+			
+			LCDWriteStringXY(0,1,"Quarta   ");
+     ca2:	6c 2f       	mov	r22, r28
+     ca4:	80 e0       	ldi	r24, 0x00	; 0
+     ca6:	b3 da       	rcall	.-2714   	; 0x20e <LCDGotoXY>
+     ca8:	8a eb       	ldi	r24, 0xBA	; 186
+     caa:	91 e0       	ldi	r25, 0x01	; 1
+     cac:	27 da       	rcall	.-2994   	; 0xfc <LCDWriteString>
+			break;
+     cae:	af cf       	rjmp	.-162    	; 0xc0e <acerta_dia+0x48>
+			
+			case 4:
+			
+			LCDWriteStringXY(0,1,"Quinta   ");
+     cb0:	6c 2f       	mov	r22, r28
+     cb2:	80 e0       	ldi	r24, 0x00	; 0
+     cb4:	ac da       	rcall	.-2728   	; 0x20e <LCDGotoXY>
+     cb6:	84 ec       	ldi	r24, 0xC4	; 196
+     cb8:	91 e0       	ldi	r25, 0x01	; 1
+     cba:	20 da       	rcall	.-3008   	; 0xfc <LCDWriteString>
+			break;
+     cbc:	a8 cf       	rjmp	.-176    	; 0xc0e <acerta_dia+0x48>
+			
+			case 5:
+			
+			LCDWriteStringXY(0,1,"Sexta   ");
+     cbe:	6c 2f       	mov	r22, r28
+     cc0:	80 e0       	ldi	r24, 0x00	; 0
+     cc2:	a5 da       	rcall	.-2742   	; 0x20e <LCDGotoXY>
+     cc4:	8e ec       	ldi	r24, 0xCE	; 206
+     cc6:	91 e0       	ldi	r25, 0x01	; 1
+     cc8:	19 da       	rcall	.-3022   	; 0xfc <LCDWriteString>
+			break;
+     cca:	a1 cf       	rjmp	.-190    	; 0xc0e <acerta_dia+0x48>
+			
+			case 6:
+			
+			LCDWriteStringXY(0,1,"Sabado ");
+     ccc:	6c 2f       	mov	r22, r28
+     cce:	80 e0       	ldi	r24, 0x00	; 0
+     cd0:	9e da       	rcall	.-2756   	; 0x20e <LCDGotoXY>
+     cd2:	87 ed       	ldi	r24, 0xD7	; 215
+     cd4:	91 e0       	ldi	r25, 0x01	; 1
+     cd6:	12 da       	rcall	.-3036   	; 0xfc <LCDWriteString>
+			break;
+     cd8:	9a cf       	rjmp	.-204    	; 0xc0e <acerta_dia+0x48>
+			
+			case 7:
+			
+			LCDWriteStringXY(0,1,"Domingo ");
+     cda:	6c 2f       	mov	r22, r28
+     cdc:	80 e0       	ldi	r24, 0x00	; 0
+     cde:	97 da       	rcall	.-2770   	; 0x20e <LCDGotoXY>
+     ce0:	8f ed       	ldi	r24, 0xDF	; 223
+     ce2:	91 e0       	ldi	r25, 0x01	; 1
+     ce4:	0b da       	rcall	.-3050   	; 0xfc <LCDWriteString>
+			break;
+     ce6:	93 cf       	rjmp	.-218    	; 0xc0e <acerta_dia+0x48>
+			
+		}
+		
+	}
+
+}
+     ce8:	df 91       	pop	r29
+     cea:	cf 91       	pop	r28
+     cec:	1f 91       	pop	r17
+     cee:	0f 91       	pop	r16
+     cf0:	ff 90       	pop	r15
+     cf2:	ef 90       	pop	r14
+     cf4:	df 90       	pop	r13
+     cf6:	08 95       	ret
+
+00000cf8 <acerta_automatico>:
+	}
+	
+}
+
+void acerta_automatico(void)									//FunÁao de definir inicio e fim das funÁoes autom·ticas
+{
+     cf8:	df 92       	push	r13
+     cfa:	ef 92       	push	r14
+     cfc:	ff 92       	push	r15
+     cfe:	0f 93       	push	r16
+     d00:	1f 93       	push	r17
+     d02:	cf 93       	push	r28
+     d04:	df 93       	push	r29
+	int teste = 0, tecla_numero = 0;							//Esta funÁ„o È identica a funÁao acerta hora, com a particularidade de que os valores lidos do teclado nao sao escritos no RTC, mas sao guardados em variaveis que vao ser usadas para comparar com os valores de hora atual nas funÁoes seguranÁa e rega autom·tica
+	LCDWriteStringXY(0,0,"Inicio da rega:  ");
+     d06:	60 e0       	ldi	r22, 0x00	; 0
+     d08:	80 e0       	ldi	r24, 0x00	; 0
+     d0a:	81 da       	rcall	.-2814   	; 0x20e <LCDGotoXY>
+     d0c:	88 ee       	ldi	r24, 0xE8	; 232
+     d0e:	91 e0       	ldi	r25, 0x01	; 1
+     d10:	f5 d9       	rcall	.-3094   	; 0xfc <LCDWriteString>
+	LCDWriteStringXY(0,1,"00:00            ");
+     d12:	61 e0       	ldi	r22, 0x01	; 1
+     d14:	80 e0       	ldi	r24, 0x00	; 0
+     d16:	7b da       	rcall	.-2826   	; 0x20e <LCDGotoXY>
+     d18:	8a ef       	ldi	r24, 0xFA	; 250
+     d1a:	91 e0       	ldi	r25, 0x01	; 1
+     d1c:	ef d9       	rcall	.-3106   	; 0xfc <LCDWriteString>
+
+	teste = teclado();
+     d1e:	0d dd       	rcall	.-1510   	; 0x73a <teclado>
+	
+	
+	while(!teste)
+     d20:	89 2b       	or	r24, r25
+     d22:	09 f0       	breq	.+2      	; 0xd26 <acerta_automatico+0x2e>
+     d24:	8d c2       	rjmp	.+1306   	; 0x1240 <acerta_automatico+0x548>
+			digito_hora = 8;
+			digito_minuto = 8;
+		}
+		if(tecla_numero == 9)
+		{
+			horas = 9;
+     d26:	0f 2e       	mov	r0, r31
+     d28:	f9 e0       	ldi	r31, 0x09	; 9
+     d2a:	df 2e       	mov	r13, r31
+     d2c:	f0 2d       	mov	r31, r0
+			digito_hora = 7;
+			digito_minuto = 7;
+		}
+		if(tecla_numero == 8)
+		{
+			horas = 8;
+     d2e:	68 94       	set
+     d30:	ee 24       	eor	r14, r14
+     d32:	e3 f8       	bld	r14, 3
+			digito_hora = 6;
+			digito_minuto = 6;
+		}
+		if(tecla_numero == 7)
+		{
+			horas = 7;
+     d34:	0f 2e       	mov	r0, r31
+     d36:	f7 e0       	ldi	r31, 0x07	; 7
+     d38:	ff 2e       	mov	r15, r31
+     d3a:	f0 2d       	mov	r31, r0
+			digito_hora = 5;
+			digito_minuto = 5;
+		}
+		if(tecla_numero == 6)
+		{
+			horas = 6;
+     d3c:	06 e0       	ldi	r16, 0x06	; 6
+			digito_minuto = 1;
+		}
+		
+		if(tecla_numero == 2)
+		{
+			horas = 2;
+     d3e:	12 e0       	ldi	r17, 0x02	; 2
+	teste = teclado();
+	
+	
+	while(!teste)
+	{
+		tecla_numero = teclado();
+     d40:	fc dc       	rcall	.-1544   	; 0x73a <teclado>
+     d42:	ec 01       	movw	r28, r24
+
+		if(tecla_numero == 10)
+     d44:	8a 30       	cpi	r24, 0x0A	; 10
+     d46:	91 05       	cpc	r25, r1
+     d48:	31 f4       	brne	.+12     	; 0xd56 <acerta_automatico+0x5e>
+		{
+			relogio_click++;
+     d4a:	80 91 e9 02 	lds	r24, 0x02E9
+     d4e:	8f 5f       	subi	r24, 0xFF	; 255
+     d50:	80 93 e9 02 	sts	0x02E9, r24
+     d54:	19 c0       	rjmp	.+50     	; 0xd88 <acerta_automatico+0x90>
+		}
+		
+		if(tecla_numero == 12)
+     d56:	8c 30       	cpi	r24, 0x0C	; 12
+     d58:	91 05       	cpc	r25, r1
+     d5a:	49 f4       	brne	.+18     	; 0xd6e <acerta_automatico+0x76>
+		{
+			horas = 0;
+     d5c:	10 92 ee 02 	sts	0x02EE, r1
+			minutos = 0;
+     d60:	10 92 0e 03 	sts	0x030E, r1
+			digito_hora = 0;
+     d64:	10 92 f5 02 	sts	0x02F5, r1
+			digito_minuto = 0;
+     d68:	10 92 0f 03 	sts	0x030F, r1
+     d6c:	19 c0       	rjmp	.+50     	; 0xda0 <acerta_automatico+0xa8>
+			
+		}
+		if(tecla_numero == 1)
+     d6e:	81 30       	cpi	r24, 0x01	; 1
+     d70:	91 05       	cpc	r25, r1
+     d72:	51 f4       	brne	.+20     	; 0xd88 <acerta_automatico+0x90>
+		{
+			horas = 1;
+     d74:	81 e0       	ldi	r24, 0x01	; 1
+     d76:	80 93 ee 02 	sts	0x02EE, r24
+			minutos = 1;
+     d7a:	80 93 0e 03 	sts	0x030E, r24
+			digito_hora = 1;
+     d7e:	80 93 f5 02 	sts	0x02F5, r24
+			digito_minuto = 1;
+     d82:	80 93 0f 03 	sts	0x030F, r24
+     d86:	19 c0       	rjmp	.+50     	; 0xdba <acerta_automatico+0xc2>
+		}
+		
+		if(tecla_numero == 2)
+     d88:	c2 30       	cpi	r28, 0x02	; 2
+     d8a:	d1 05       	cpc	r29, r1
+     d8c:	49 f4       	brne	.+18     	; 0xda0 <acerta_automatico+0xa8>
+		{
+			horas = 2;
+     d8e:	10 93 ee 02 	sts	0x02EE, r17
+			minutos = 2;
+     d92:	10 93 0e 03 	sts	0x030E, r17
+			digito_hora = 2;
+     d96:	10 93 f5 02 	sts	0x02F5, r17
+			digito_minuto = 2;
+     d9a:	10 93 0f 03 	sts	0x030F, r17
+     d9e:	1a c0       	rjmp	.+52     	; 0xdd4 <acerta_automatico+0xdc>
+
+		}
+		if(tecla_numero == 3)
+     da0:	c3 30       	cpi	r28, 0x03	; 3
+     da2:	d1 05       	cpc	r29, r1
+     da4:	51 f4       	brne	.+20     	; 0xdba <acerta_automatico+0xc2>
+		{
+			horas = 3;
+     da6:	83 e0       	ldi	r24, 0x03	; 3
+     da8:	80 93 ee 02 	sts	0x02EE, r24
+			minutos = 3;
+     dac:	80 93 0e 03 	sts	0x030E, r24
+			digito_hora = 3;
+     db0:	80 93 f5 02 	sts	0x02F5, r24
+			digito_minuto = 3;
+     db4:	80 93 0f 03 	sts	0x030F, r24
+     db8:	1a c0       	rjmp	.+52     	; 0xdee <acerta_automatico+0xf6>
+		}
+		if(tecla_numero == 4)
+     dba:	c4 30       	cpi	r28, 0x04	; 4
+     dbc:	d1 05       	cpc	r29, r1
+     dbe:	51 f4       	brne	.+20     	; 0xdd4 <acerta_automatico+0xdc>
+		{
+			horas = 4;
+     dc0:	84 e0       	ldi	r24, 0x04	; 4
+     dc2:	80 93 ee 02 	sts	0x02EE, r24
+			minutos = 4;
+     dc6:	80 93 0e 03 	sts	0x030E, r24
+			digito_hora = 4;
+     dca:	80 93 f5 02 	sts	0x02F5, r24
+			digito_minuto = 4;
+     dce:	80 93 0f 03 	sts	0x030F, r24
+     dd2:	19 c0       	rjmp	.+50     	; 0xe06 <acerta_automatico+0x10e>
+		}
+		if(tecla_numero == 5)
+     dd4:	c5 30       	cpi	r28, 0x05	; 5
+     dd6:	d1 05       	cpc	r29, r1
+     dd8:	51 f4       	brne	.+20     	; 0xdee <acerta_automatico+0xf6>
+		{
+			horas = 5;
+     dda:	85 e0       	ldi	r24, 0x05	; 5
+     ddc:	80 93 ee 02 	sts	0x02EE, r24
+			minutos = 5;
+     de0:	80 93 0e 03 	sts	0x030E, r24
+			digito_hora = 5;
+     de4:	80 93 f5 02 	sts	0x02F5, r24
+			digito_minuto = 5;
+     de8:	80 93 0f 03 	sts	0x030F, r24
+     dec:	18 c0       	rjmp	.+48     	; 0xe1e <acerta_automatico+0x126>
+		}
+		if(tecla_numero == 6)
+     dee:	c6 30       	cpi	r28, 0x06	; 6
+     df0:	d1 05       	cpc	r29, r1
+     df2:	49 f4       	brne	.+18     	; 0xe06 <acerta_automatico+0x10e>
+		{
+			horas = 6;
+     df4:	00 93 ee 02 	sts	0x02EE, r16
+			minutos = 6;
+     df8:	00 93 0e 03 	sts	0x030E, r16
+			digito_hora = 6;
+     dfc:	00 93 f5 02 	sts	0x02F5, r16
+			digito_minuto = 6;
+     e00:	00 93 0f 03 	sts	0x030F, r16
+     e04:	18 c0       	rjmp	.+48     	; 0xe36 <acerta_automatico+0x13e>
+		}
+		if(tecla_numero == 7)
+     e06:	c7 30       	cpi	r28, 0x07	; 7
+     e08:	d1 05       	cpc	r29, r1
+     e0a:	49 f4       	brne	.+18     	; 0xe1e <acerta_automatico+0x126>
+		{
+			horas = 7;
+     e0c:	f0 92 ee 02 	sts	0x02EE, r15
+			minutos = 7;
+     e10:	f0 92 0e 03 	sts	0x030E, r15
+			digito_hora = 7;
+     e14:	f0 92 f5 02 	sts	0x02F5, r15
+			digito_minuto = 7;
+     e18:	f0 92 0f 03 	sts	0x030F, r15
+     e1c:	18 c0       	rjmp	.+48     	; 0xe4e <acerta_automatico+0x156>
+		}
+		if(tecla_numero == 8)
+     e1e:	c8 30       	cpi	r28, 0x08	; 8
+     e20:	d1 05       	cpc	r29, r1
+     e22:	49 f4       	brne	.+18     	; 0xe36 <acerta_automatico+0x13e>
+		{
+			horas = 8;
+     e24:	e0 92 ee 02 	sts	0x02EE, r14
+			minutos = 8;
+     e28:	e0 92 0e 03 	sts	0x030E, r14
+			digito_hora = 8;
+     e2c:	e0 92 f5 02 	sts	0x02F5, r14
+			digito_minuto = 8;
+     e30:	e0 92 0f 03 	sts	0x030F, r14
+     e34:	13 c0       	rjmp	.+38     	; 0xe5c <acerta_automatico+0x164>
+		}
+		if(tecla_numero == 9)
+     e36:	c9 30       	cpi	r28, 0x09	; 9
+     e38:	d1 05       	cpc	r29, r1
+     e3a:	49 f4       	brne	.+18     	; 0xe4e <acerta_automatico+0x156>
+		{
+			horas = 9;
+     e3c:	d0 92 ee 02 	sts	0x02EE, r13
+			minutos = 9;
+     e40:	d0 92 0e 03 	sts	0x030E, r13
+			digito_hora = 9;
+     e44:	d0 92 f5 02 	sts	0x02F5, r13
+			digito_minuto = 9;
+     e48:	d0 92 0f 03 	sts	0x030F, r13
+     e4c:	07 c0       	rjmp	.+14     	; 0xe5c <acerta_automatico+0x164>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 &&relogio_click == 0)		//O principio de funcionamento e igual a acerta hora como ja tinha sido referido, mas de realÁar que tem de ser preenchidas mais posiÁoes do cursor (17) para inicio e fim das duas funÁoes
+     e4e:	20 97       	sbiw	r28, 0x00	; 0
+     e50:	09 f4       	brne	.+2      	; 0xe54 <acerta_automatico+0x15c>
+     e52:	49 c0       	rjmp	.+146    	; 0xee6 <acerta_automatico+0x1ee>
+     e54:	ca 30       	cpi	r28, 0x0A	; 10
+     e56:	d1 05       	cpc	r29, r1
+     e58:	09 f4       	brne	.+2      	; 0xe5c <acerta_automatico+0x164>
+     e5a:	45 c0       	rjmp	.+138    	; 0xee6 <acerta_automatico+0x1ee>
+     e5c:	80 91 e9 02 	lds	r24, 0x02E9
+     e60:	81 11       	cpse	r24, r1
+     e62:	bd c1       	rjmp	.+890    	; 0x11de <acerta_automatico+0x4e6>
+		{
+			rega1_hora_inicio = convert_bcd_to_decimal(horas);
+     e64:	80 91 ee 02 	lds	r24, 0x02EE
+     e68:	31 db       	rcall	.-2462   	; 0x4cc <convert_bcd_to_decimal>
+     e6a:	80 93 fe 02 	sts	0x02FE, r24
+			LCDWriteIntXY(0,1,rega1_hora_inicio,1);
+     e6e:	61 e0       	ldi	r22, 0x01	; 1
+     e70:	80 e0       	ldi	r24, 0x00	; 0
+     e72:	cd d9       	rcall	.-3174   	; 0x20e <LCDGotoXY>
+     e74:	80 91 fe 02 	lds	r24, 0x02FE
+     e78:	61 e0       	ldi	r22, 0x01	; 1
+     e7a:	70 e0       	ldi	r23, 0x00	; 0
+     e7c:	90 e0       	ldi	r25, 0x00	; 0
+     e7e:	69 d9       	rcall	.-3374   	; 0x152 <LCDWriteInt>
+     e80:	ae c1       	rjmp	.+860    	; 0x11de <acerta_automatico+0x4e6>
+			
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 1)
+		{
+			rega2_hora_inicio = convert_bcd_to_decimal(digito_hora);
+     e82:	80 91 f5 02 	lds	r24, 0x02F5
+     e86:	22 db       	rcall	.-2492   	; 0x4cc <convert_bcd_to_decimal>
+     e88:	80 93 ef 02 	sts	0x02EF, r24
+			LCDWriteIntXY(1,1,rega2_hora_inicio,1);
+     e8c:	61 e0       	ldi	r22, 0x01	; 1
+     e8e:	81 e0       	ldi	r24, 0x01	; 1
+     e90:	be d9       	rcall	.-3204   	; 0x20e <LCDGotoXY>
+     e92:	80 91 ef 02 	lds	r24, 0x02EF
+     e96:	61 e0       	ldi	r22, 0x01	; 1
+     e98:	70 e0       	ldi	r23, 0x00	; 0
+     e9a:	90 e0       	ldi	r25, 0x00	; 0
+     e9c:	5a d9       	rcall	.-3404   	; 0x152 <LCDWriteInt>
+     e9e:	a4 c1       	rjmp	.+840    	; 0x11e8 <acerta_automatico+0x4f0>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 2)
+		{
+			rega1_minuto_inicio = convert_bcd_to_decimal(minutos);
+     ea0:	80 91 0e 03 	lds	r24, 0x030E
+     ea4:	13 db       	rcall	.-2522   	; 0x4cc <convert_bcd_to_decimal>
+     ea6:	80 93 02 03 	sts	0x0302, r24
+			LCDWriteIntXY(3,1,rega1_minuto_inicio,1);
+     eaa:	61 e0       	ldi	r22, 0x01	; 1
+     eac:	83 e0       	ldi	r24, 0x03	; 3
+     eae:	af d9       	rcall	.-3234   	; 0x20e <LCDGotoXY>
+     eb0:	80 91 02 03 	lds	r24, 0x0302
+     eb4:	61 e0       	ldi	r22, 0x01	; 1
+     eb6:	70 e0       	ldi	r23, 0x00	; 0
+     eb8:	90 e0       	ldi	r25, 0x00	; 0
+     eba:	4b d9       	rcall	.-3434   	; 0x152 <LCDWriteInt>
+     ebc:	9a c1       	rjmp	.+820    	; 0x11f2 <acerta_automatico+0x4fa>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 3)
+		{
+
+			rega2_minuto_inicio = convert_bcd_to_decimal(digito_minuto);
+     ebe:	80 91 0f 03 	lds	r24, 0x030F
+     ec2:	04 db       	rcall	.-2552   	; 0x4cc <convert_bcd_to_decimal>
+     ec4:	80 93 ed 02 	sts	0x02ED, r24
+			LCDWriteIntXY(4,1,rega2_minuto_inicio,1);
+     ec8:	61 e0       	ldi	r22, 0x01	; 1
+     eca:	84 e0       	ldi	r24, 0x04	; 4
+     ecc:	a0 d9       	rcall	.-3264   	; 0x20e <LCDGotoXY>
+     ece:	80 91 ed 02 	lds	r24, 0x02ED
+     ed2:	61 e0       	ldi	r22, 0x01	; 1
+     ed4:	70 e0       	ldi	r23, 0x00	; 0
+     ed6:	90 e0       	ldi	r25, 0x00	; 0
+     ed8:	3c d9       	rcall	.-3464   	; 0x152 <LCDWriteInt>
+			LCDWriteStringXY(5,1,"    ");
+     eda:	61 e0       	ldi	r22, 0x01	; 1
+     edc:	85 e0       	ldi	r24, 0x05	; 5
+     ede:	97 d9       	rcall	.-3282   	; 0x20e <LCDGotoXY>
+     ee0:	87 e0       	ldi	r24, 0x07	; 7
+     ee2:	92 e0       	ldi	r25, 0x02	; 2
+     ee4:	0b d9       	rcall	.-3562   	; 0xfc <LCDWriteString>
+			
+		}
+		
+		if(relogio_click == 4)
+     ee6:	80 91 e9 02 	lds	r24, 0x02E9
+     eea:	84 30       	cpi	r24, 0x04	; 4
+     eec:	d1 f4       	brne	.+52     	; 0xf22 <acerta_automatico+0x22a>
+		{
+			LCDWriteStringXY(0,0,"Fim da rega:    ");
+     eee:	60 e0       	ldi	r22, 0x00	; 0
+     ef0:	80 e0       	ldi	r24, 0x00	; 0
+     ef2:	8d d9       	rcall	.-3302   	; 0x20e <LCDGotoXY>
+     ef4:	8c e0       	ldi	r24, 0x0C	; 12
+     ef6:	92 e0       	ldi	r25, 0x02	; 2
+     ef8:	01 d9       	rcall	.-3582   	; 0xfc <LCDWriteString>
+			LCDWriteStringXY(0,1,"00:00           ");
+     efa:	61 e0       	ldi	r22, 0x01	; 1
+     efc:	80 e0       	ldi	r24, 0x00	; 0
+     efe:	87 d9       	rcall	.-3314   	; 0x20e <LCDGotoXY>
+     f00:	8d e1       	ldi	r24, 0x1D	; 29
+     f02:	92 e0       	ldi	r25, 0x02	; 2
+     f04:	fb d8       	rcall	.-3594   	; 0xfc <LCDWriteString>
+			
+			rega1_hora_fim = convert_bcd_to_decimal(digito_minuto);
+     f06:	80 91 0f 03 	lds	r24, 0x030F
+     f0a:	e0 da       	rcall	.-2624   	; 0x4cc <convert_bcd_to_decimal>
+     f0c:	80 93 f0 02 	sts	0x02F0, r24
+			LCDWriteIntXY(0,1,rega1_hora_fim,1);
+     f10:	61 e0       	ldi	r22, 0x01	; 1
+     f12:	80 e0       	ldi	r24, 0x00	; 0
+     f14:	7c d9       	rcall	.-3336   	; 0x20e <LCDGotoXY>
+     f16:	80 91 f0 02 	lds	r24, 0x02F0
+     f1a:	61 e0       	ldi	r22, 0x01	; 1
+     f1c:	70 e0       	ldi	r23, 0x00	; 0
+     f1e:	90 e0       	ldi	r25, 0x00	; 0
+     f20:	18 d9       	rcall	.-3536   	; 0x152 <LCDWriteInt>
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 5)
+     f22:	20 97       	sbiw	r28, 0x00	; 0
+     f24:	d1 f1       	breq	.+116    	; 0xf9a <acerta_automatico+0x2a2>
+     f26:	ca 30       	cpi	r28, 0x0A	; 10
+     f28:	d1 05       	cpc	r29, r1
+     f2a:	b9 f1       	breq	.+110    	; 0xf9a <acerta_automatico+0x2a2>
+     f2c:	80 91 e9 02 	lds	r24, 0x02E9
+     f30:	85 30       	cpi	r24, 0x05	; 5
+     f32:	09 f0       	breq	.+2      	; 0xf36 <acerta_automatico+0x23e>
+     f34:	64 c1       	rjmp	.+712    	; 0x11fe <acerta_automatico+0x506>
+		{
+			
+			rega2_hora_fim = convert_bcd_to_decimal(digito_minuto);
+     f36:	80 91 0f 03 	lds	r24, 0x030F
+     f3a:	c8 da       	rcall	.-2672   	; 0x4cc <convert_bcd_to_decimal>
+     f3c:	80 93 f8 02 	sts	0x02F8, r24
+			LCDWriteIntXY(1,1,rega2_hora_fim,1);
+     f40:	61 e0       	ldi	r22, 0x01	; 1
+     f42:	81 e0       	ldi	r24, 0x01	; 1
+     f44:	64 d9       	rcall	.-3384   	; 0x20e <LCDGotoXY>
+     f46:	80 91 f8 02 	lds	r24, 0x02F8
+     f4a:	61 e0       	ldi	r22, 0x01	; 1
+     f4c:	70 e0       	ldi	r23, 0x00	; 0
+     f4e:	90 e0       	ldi	r25, 0x00	; 0
+     f50:	00 d9       	rcall	.-3584   	; 0x152 <LCDWriteInt>
+     f52:	55 c1       	rjmp	.+682    	; 0x11fe <acerta_automatico+0x506>
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 6)
+		{
+			
+			rega1_minuto_fim = convert_bcd_to_decimal(digito_minuto);
+     f54:	80 91 0f 03 	lds	r24, 0x030F
+     f58:	b9 da       	rcall	.-2702   	; 0x4cc <convert_bcd_to_decimal>
+     f5a:	80 93 f1 02 	sts	0x02F1, r24
+			LCDWriteIntXY(3,1,rega1_minuto_fim,1);
+     f5e:	61 e0       	ldi	r22, 0x01	; 1
+     f60:	83 e0       	ldi	r24, 0x03	; 3
+     f62:	55 d9       	rcall	.-3414   	; 0x20e <LCDGotoXY>
+     f64:	80 91 f1 02 	lds	r24, 0x02F1
+     f68:	61 e0       	ldi	r22, 0x01	; 1
+     f6a:	70 e0       	ldi	r23, 0x00	; 0
+     f6c:	90 e0       	ldi	r25, 0x00	; 0
+     f6e:	f1 d8       	rcall	.-3614   	; 0x152 <LCDWriteInt>
+     f70:	4b c1       	rjmp	.+662    	; 0x1208 <acerta_automatico+0x510>
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 7)
+		{
+			
+			rega2_minuto_fim = convert_bcd_to_decimal(digito_minuto);
+     f72:	80 91 0f 03 	lds	r24, 0x030F
+     f76:	aa da       	rcall	.-2732   	; 0x4cc <convert_bcd_to_decimal>
+     f78:	80 93 01 03 	sts	0x0301, r24
+			LCDWriteIntXY(4,1,rega2_minuto_fim,1);
+     f7c:	61 e0       	ldi	r22, 0x01	; 1
+     f7e:	84 e0       	ldi	r24, 0x04	; 4
+     f80:	46 d9       	rcall	.-3444   	; 0x20e <LCDGotoXY>
+     f82:	80 91 01 03 	lds	r24, 0x0301
+     f86:	61 e0       	ldi	r22, 0x01	; 1
+     f88:	70 e0       	ldi	r23, 0x00	; 0
+     f8a:	90 e0       	ldi	r25, 0x00	; 0
+     f8c:	e2 d8       	rcall	.-3644   	; 0x152 <LCDWriteInt>
+			LCDWriteStringXY(5,1,"    ");
+     f8e:	61 e0       	ldi	r22, 0x01	; 1
+     f90:	85 e0       	ldi	r24, 0x05	; 5
+     f92:	3d d9       	rcall	.-3462   	; 0x20e <LCDGotoXY>
+     f94:	87 e0       	ldi	r24, 0x07	; 7
+     f96:	92 e0       	ldi	r25, 0x02	; 2
+     f98:	b1 d8       	rcall	.-3742   	; 0xfc <LCDWriteString>
+			
+		}
+		
+		if(relogio_click == 8)
+     f9a:	80 91 e9 02 	lds	r24, 0x02E9
+     f9e:	88 30       	cpi	r24, 0x08	; 8
+     fa0:	81 f5       	brne	.+96     	; 0x1002 <acerta_automatico+0x30a>
+		{
+			
+			
+			hora_inicio_rega = rega1_hora_inicio*10 + rega2_hora_inicio;
+     fa2:	80 91 fe 02 	lds	r24, 0x02FE
+     fa6:	88 0f       	add	r24, r24
+     fa8:	98 2f       	mov	r25, r24
+     faa:	99 0f       	add	r25, r25
+     fac:	99 0f       	add	r25, r25
+     fae:	89 0f       	add	r24, r25
+     fb0:	90 91 ef 02 	lds	r25, 0x02EF
+     fb4:	89 0f       	add	r24, r25
+     fb6:	80 93 f4 02 	sts	0x02F4, r24
+			hora_fim_rega = rega1_hora_fim*10 + rega2_hora_fim;
+     fba:	80 91 f0 02 	lds	r24, 0x02F0
+     fbe:	88 0f       	add	r24, r24
+     fc0:	98 2f       	mov	r25, r24
+     fc2:	99 0f       	add	r25, r25
+     fc4:	99 0f       	add	r25, r25
+     fc6:	89 0f       	add	r24, r25
+     fc8:	90 91 f8 02 	lds	r25, 0x02F8
+     fcc:	89 0f       	add	r24, r25
+     fce:	80 93 05 03 	sts	0x0305, r24
+
+			minuto_inicio_rega = rega1_minuto_inicio*10 + rega2_minuto_inicio;
+     fd2:	80 91 02 03 	lds	r24, 0x0302
+     fd6:	88 0f       	add	r24, r24
+     fd8:	98 2f       	mov	r25, r24
+     fda:	99 0f       	add	r25, r25
+     fdc:	99 0f       	add	r25, r25
+     fde:	89 0f       	add	r24, r25
+     fe0:	90 91 ed 02 	lds	r25, 0x02ED
+     fe4:	89 0f       	add	r24, r25
+     fe6:	80 93 f2 02 	sts	0x02F2, r24
+			minuto_fim_rega = rega1_minuto_fim*10 + rega2_minuto_fim;
+     fea:	80 91 f1 02 	lds	r24, 0x02F1
+     fee:	88 0f       	add	r24, r24
+     ff0:	98 2f       	mov	r25, r24
+     ff2:	99 0f       	add	r25, r25
+     ff4:	99 0f       	add	r25, r25
+     ff6:	89 0f       	add	r24, r25
+     ff8:	90 91 01 03 	lds	r25, 0x0301
+     ffc:	89 0f       	add	r24, r25
+     ffe:	80 93 f6 02 	sts	0x02F6, r24
+			
+		}
+		
+		if(relogio_click == 9)
+    1002:	80 91 e9 02 	lds	r24, 0x02E9
+    1006:	89 30       	cpi	r24, 0x09	; 9
+    1008:	e9 f4       	brne	.+58     	; 0x1044 <acerta_automatico+0x34c>
+		{
+			LCDClear();
+    100a:	60 e0       	ldi	r22, 0x00	; 0
+    100c:	81 e0       	ldi	r24, 0x01	; 1
+    100e:	58 d8       	rcall	.-3920   	; 0xc0 <LCDByte>
+			LCDWriteStringXY(0,0,"Inicio segurançca");
+    1010:	60 e0       	ldi	r22, 0x00	; 0
+    1012:	80 e0       	ldi	r24, 0x00	; 0
+    1014:	fc d8       	rcall	.-3592   	; 0x20e <LCDGotoXY>
+    1016:	8e e2       	ldi	r24, 0x2E	; 46
+    1018:	92 e0       	ldi	r25, 0x02	; 2
+    101a:	70 d8       	rcall	.-3872   	; 0xfc <LCDWriteString>
+			LCDWriteStringXY(0,1,"00:00           ");
+    101c:	61 e0       	ldi	r22, 0x01	; 1
+    101e:	80 e0       	ldi	r24, 0x00	; 0
+    1020:	f6 d8       	rcall	.-3604   	; 0x20e <LCDGotoXY>
+    1022:	8d e1       	ldi	r24, 0x1D	; 29
+    1024:	92 e0       	ldi	r25, 0x02	; 2
+    1026:	6a d8       	rcall	.-3884   	; 0xfc <LCDWriteString>
+
+			seguro1_hora_inicio = convert_bcd_to_decimal(horas);
+    1028:	80 91 ee 02 	lds	r24, 0x02EE
+    102c:	4f da       	rcall	.-2914   	; 0x4cc <convert_bcd_to_decimal>
+    102e:	80 93 fd 02 	sts	0x02FD, r24
+			LCDWriteIntXY(0,1,seguro1_hora_inicio,1);
+    1032:	61 e0       	ldi	r22, 0x01	; 1
+    1034:	80 e0       	ldi	r24, 0x00	; 0
+    1036:	eb d8       	rcall	.-3626   	; 0x20e <LCDGotoXY>
+    1038:	80 91 fd 02 	lds	r24, 0x02FD
+    103c:	61 e0       	ldi	r22, 0x01	; 1
+    103e:	70 e0       	ldi	r23, 0x00	; 0
+    1040:	90 e0       	ldi	r25, 0x00	; 0
+    1042:	87 d8       	rcall	.-3826   	; 0x152 <LCDWriteInt>
+			
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 10)
+    1044:	20 97       	sbiw	r28, 0x00	; 0
+    1046:	d1 f1       	breq	.+116    	; 0x10bc <acerta_automatico+0x3c4>
+    1048:	ca 30       	cpi	r28, 0x0A	; 10
+    104a:	d1 05       	cpc	r29, r1
+    104c:	b9 f1       	breq	.+110    	; 0x10bc <acerta_automatico+0x3c4>
+    104e:	80 91 e9 02 	lds	r24, 0x02E9
+    1052:	8a 30       	cpi	r24, 0x0A	; 10
+    1054:	09 f0       	breq	.+2      	; 0x1058 <acerta_automatico+0x360>
+    1056:	de c0       	rjmp	.+444    	; 0x1214 <acerta_automatico+0x51c>
+		{
+			seguro2_hora_inicio = convert_bcd_to_decimal(digito_hora);
+    1058:	80 91 f5 02 	lds	r24, 0x02F5
+    105c:	37 da       	rcall	.-2962   	; 0x4cc <convert_bcd_to_decimal>
+    105e:	80 93 06 03 	sts	0x0306, r24
+			LCDWriteIntXY(1,1,seguro2_hora_inicio,1);
+    1062:	61 e0       	ldi	r22, 0x01	; 1
+    1064:	81 e0       	ldi	r24, 0x01	; 1
+    1066:	d3 d8       	rcall	.-3674   	; 0x20e <LCDGotoXY>
+    1068:	80 91 06 03 	lds	r24, 0x0306
+    106c:	61 e0       	ldi	r22, 0x01	; 1
+    106e:	70 e0       	ldi	r23, 0x00	; 0
+    1070:	90 e0       	ldi	r25, 0x00	; 0
+    1072:	6f d8       	rcall	.-3874   	; 0x152 <LCDWriteInt>
+    1074:	cf c0       	rjmp	.+414    	; 0x1214 <acerta_automatico+0x51c>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 11)
+		{
+			seguro1_minuto_inicio = convert_bcd_to_decimal(minutos);
+    1076:	80 91 0e 03 	lds	r24, 0x030E
+    107a:	28 da       	rcall	.-2992   	; 0x4cc <convert_bcd_to_decimal>
+    107c:	80 93 ff 02 	sts	0x02FF, r24
+			LCDWriteIntXY(3,1,seguro1_minuto_inicio,1);
+    1080:	61 e0       	ldi	r22, 0x01	; 1
+    1082:	83 e0       	ldi	r24, 0x03	; 3
+    1084:	c4 d8       	rcall	.-3704   	; 0x20e <LCDGotoXY>
+    1086:	80 91 ff 02 	lds	r24, 0x02FF
+    108a:	61 e0       	ldi	r22, 0x01	; 1
+    108c:	70 e0       	ldi	r23, 0x00	; 0
+    108e:	90 e0       	ldi	r25, 0x00	; 0
+    1090:	60 d8       	rcall	.-3904   	; 0x152 <LCDWriteInt>
+    1092:	c5 c0       	rjmp	.+394    	; 0x121e <acerta_automatico+0x526>
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 12)
+		{
+
+			seguro2_minuto_inicio = convert_bcd_to_decimal(digito_minuto);
+    1094:	80 91 0f 03 	lds	r24, 0x030F
+    1098:	19 da       	rcall	.-3022   	; 0x4cc <convert_bcd_to_decimal>
+    109a:	80 93 fa 02 	sts	0x02FA, r24
+			LCDWriteIntXY(4,1,seguro2_minuto_inicio,1);
+    109e:	61 e0       	ldi	r22, 0x01	; 1
+    10a0:	84 e0       	ldi	r24, 0x04	; 4
+    10a2:	b5 d8       	rcall	.-3734   	; 0x20e <LCDGotoXY>
+    10a4:	80 91 fa 02 	lds	r24, 0x02FA
+    10a8:	61 e0       	ldi	r22, 0x01	; 1
+    10aa:	70 e0       	ldi	r23, 0x00	; 0
+    10ac:	90 e0       	ldi	r25, 0x00	; 0
+    10ae:	51 d8       	rcall	.-3934   	; 0x152 <LCDWriteInt>
+			LCDWriteStringXY(5,1,"    ");
+    10b0:	61 e0       	ldi	r22, 0x01	; 1
+    10b2:	85 e0       	ldi	r24, 0x05	; 5
+    10b4:	ac d8       	rcall	.-3752   	; 0x20e <LCDGotoXY>
+    10b6:	87 e0       	ldi	r24, 0x07	; 7
+    10b8:	92 e0       	ldi	r25, 0x02	; 2
+    10ba:	20 d8       	rcall	.-4032   	; 0xfc <LCDWriteString>
+			
+		}
+
+		if(relogio_click == 13)
+    10bc:	80 91 e9 02 	lds	r24, 0x02E9
+    10c0:	8d 30       	cpi	r24, 0x0D	; 13
+    10c2:	d1 f4       	brne	.+52     	; 0x10f8 <acerta_automatico+0x400>
+		{
+			LCDWriteStringXY(0,0,"Fim segurança:  ");
+    10c4:	60 e0       	ldi	r22, 0x00	; 0
+    10c6:	80 e0       	ldi	r24, 0x00	; 0
+    10c8:	a2 d8       	rcall	.-3772   	; 0x20e <LCDGotoXY>
+    10ca:	80 e4       	ldi	r24, 0x40	; 64
+    10cc:	92 e0       	ldi	r25, 0x02	; 2
+    10ce:	16 d8       	rcall	.-4052   	; 0xfc <LCDWriteString>
+			LCDWriteStringXY(0,1,"00:00           ");
+    10d0:	61 e0       	ldi	r22, 0x01	; 1
+    10d2:	80 e0       	ldi	r24, 0x00	; 0
+    10d4:	9c d8       	rcall	.-3784   	; 0x20e <LCDGotoXY>
+    10d6:	8d e1       	ldi	r24, 0x1D	; 29
+    10d8:	92 e0       	ldi	r25, 0x02	; 2
+    10da:	10 d8       	rcall	.-4064   	; 0xfc <LCDWriteString>
+			
+			seguro1_hora_fim = convert_bcd_to_decimal(digito_minuto);
+    10dc:	80 91 0f 03 	lds	r24, 0x030F
+    10e0:	f5 d9       	rcall	.-3094   	; 0x4cc <convert_bcd_to_decimal>
+    10e2:	80 93 0c 03 	sts	0x030C, r24
+			LCDWriteIntXY(0,1,seguro1_hora_fim,1);
+    10e6:	61 e0       	ldi	r22, 0x01	; 1
+    10e8:	80 e0       	ldi	r24, 0x00	; 0
+    10ea:	91 d8       	rcall	.-3806   	; 0x20e <LCDGotoXY>
+    10ec:	80 91 0c 03 	lds	r24, 0x030C
+    10f0:	61 e0       	ldi	r22, 0x01	; 1
+    10f2:	70 e0       	ldi	r23, 0x00	; 0
+    10f4:	90 e0       	ldi	r25, 0x00	; 0
+    10f6:	2d d8       	rcall	.-4006   	; 0x152 <LCDWriteInt>
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 14)
+    10f8:	20 97       	sbiw	r28, 0x00	; 0
+    10fa:	c9 f1       	breq	.+114    	; 0x116e <acerta_automatico+0x476>
+    10fc:	2a 97       	sbiw	r28, 0x0a	; 10
+    10fe:	b9 f1       	breq	.+110    	; 0x116e <acerta_automatico+0x476>
+    1100:	80 91 e9 02 	lds	r24, 0x02E9
+    1104:	8e 30       	cpi	r24, 0x0E	; 14
+    1106:	09 f0       	breq	.+2      	; 0x110a <acerta_automatico+0x412>
+    1108:	90 c0       	rjmp	.+288    	; 0x122a <acerta_automatico+0x532>
+		{
+			
+			seguro2_hora_fim = convert_bcd_to_decimal(digito_minuto);
+    110a:	80 91 0f 03 	lds	r24, 0x030F
+    110e:	de d9       	rcall	.-3140   	; 0x4cc <convert_bcd_to_decimal>
+    1110:	80 93 08 03 	sts	0x0308, r24
+			LCDWriteIntXY(1,1,seguro2_hora_fim,1);
+    1114:	61 e0       	ldi	r22, 0x01	; 1
+    1116:	81 e0       	ldi	r24, 0x01	; 1
+    1118:	7a d8       	rcall	.-3852   	; 0x20e <LCDGotoXY>
+    111a:	80 91 08 03 	lds	r24, 0x0308
+    111e:	61 e0       	ldi	r22, 0x01	; 1
+    1120:	70 e0       	ldi	r23, 0x00	; 0
+    1122:	90 e0       	ldi	r25, 0x00	; 0
+    1124:	16 d8       	rcall	.-4052   	; 0x152 <LCDWriteInt>
+    1126:	81 c0       	rjmp	.+258    	; 0x122a <acerta_automatico+0x532>
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 15)
+		{
+			
+			seguro1_minuto_fim = convert_bcd_to_decimal(digito_minuto);
+    1128:	80 91 0f 03 	lds	r24, 0x030F
+    112c:	cf d9       	rcall	.-3170   	; 0x4cc <convert_bcd_to_decimal>
+    112e:	80 93 f9 02 	sts	0x02F9, r24
+			LCDWriteIntXY(3,1,seguro1_minuto_fim,1);
+    1132:	61 e0       	ldi	r22, 0x01	; 1
+    1134:	83 e0       	ldi	r24, 0x03	; 3
+    1136:	6b d8       	rcall	.-3882   	; 0x20e <LCDGotoXY>
+    1138:	80 91 f9 02 	lds	r24, 0x02F9
+    113c:	61 e0       	ldi	r22, 0x01	; 1
+    113e:	70 e0       	ldi	r23, 0x00	; 0
+    1140:	90 e0       	ldi	r25, 0x00	; 0
+    1142:	07 d8       	rcall	.-4082   	; 0x152 <LCDWriteInt>
+    1144:	77 c0       	rjmp	.+238    	; 0x1234 <acerta_automatico+0x53c>
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 16)
+		{
+			
+			seguro2_minuto_fim = convert_bcd_to_decimal(digito_minuto);
+    1146:	80 91 0f 03 	lds	r24, 0x030F
+    114a:	c0 d9       	rcall	.-3200   	; 0x4cc <convert_bcd_to_decimal>
+    114c:	80 93 f7 02 	sts	0x02F7, r24
+			LCDWriteIntXY(4,1,seguro2_minuto_fim,1);
+    1150:	61 e0       	ldi	r22, 0x01	; 1
+    1152:	84 e0       	ldi	r24, 0x04	; 4
+    1154:	5c d8       	rcall	.-3912   	; 0x20e <LCDGotoXY>
+    1156:	80 91 f7 02 	lds	r24, 0x02F7
+    115a:	61 e0       	ldi	r22, 0x01	; 1
+    115c:	70 e0       	ldi	r23, 0x00	; 0
+    115e:	90 e0       	ldi	r25, 0x00	; 0
+    1160:	f8 d7       	rcall	.+4080   	; 0x2152 <__data_load_end+0xa2c>
+			LCDWriteStringXY(5,1,"    ");
+    1162:	61 e0       	ldi	r22, 0x01	; 1
+    1164:	85 e0       	ldi	r24, 0x05	; 5
+    1166:	53 d8       	rcall	.-3930   	; 0x20e <LCDGotoXY>
+    1168:	87 e0       	ldi	r24, 0x07	; 7
+    116a:	92 e0       	ldi	r25, 0x02	; 2
+    116c:	c7 d7       	rcall	.+3982   	; 0x20fc <__data_load_end+0x9d6>
+			
+		}
+		
+		if(relogio_click == 17)
+    116e:	80 91 e9 02 	lds	r24, 0x02E9
+    1172:	81 31       	cpi	r24, 0x11	; 17
+    1174:	09 f0       	breq	.+2      	; 0x1178 <acerta_automatico+0x480>
+    1176:	e4 cd       	rjmp	.-1080   	; 0xd40 <acerta_automatico+0x48>
+		{
+			
+			hora_inicio_seguro = seguro1_hora_inicio*10 + seguro2_hora_inicio;
+    1178:	80 91 fd 02 	lds	r24, 0x02FD
+    117c:	88 0f       	add	r24, r24
+    117e:	98 2f       	mov	r25, r24
+    1180:	99 0f       	add	r25, r25
+    1182:	99 0f       	add	r25, r25
+    1184:	89 0f       	add	r24, r25
+    1186:	90 91 06 03 	lds	r25, 0x0306
+    118a:	89 0f       	add	r24, r25
+    118c:	80 93 07 03 	sts	0x0307, r24
+			hora_fim_seguro = seguro1_hora_fim*10 + seguro2_hora_fim;
+    1190:	80 91 0c 03 	lds	r24, 0x030C
+    1194:	88 0f       	add	r24, r24
+    1196:	98 2f       	mov	r25, r24
+    1198:	99 0f       	add	r25, r25
+    119a:	99 0f       	add	r25, r25
+    119c:	89 0f       	add	r24, r25
+    119e:	90 91 08 03 	lds	r25, 0x0308
+    11a2:	89 0f       	add	r24, r25
+    11a4:	80 93 09 03 	sts	0x0309, r24
+
+			minuto_inicio_seguro = seguro1_minuto_inicio*10 + seguro2_minuto_inicio;
+    11a8:	80 91 ff 02 	lds	r24, 0x02FF
+    11ac:	88 0f       	add	r24, r24
+    11ae:	98 2f       	mov	r25, r24
+    11b0:	99 0f       	add	r25, r25
+    11b2:	99 0f       	add	r25, r25
+    11b4:	89 0f       	add	r24, r25
+    11b6:	90 91 fa 02 	lds	r25, 0x02FA
+    11ba:	89 0f       	add	r24, r25
+    11bc:	80 93 03 03 	sts	0x0303, r24
+			minuto_fim_seguro = seguro1_minuto_fim*10 + seguro2_minuto_fim;
+    11c0:	80 91 f9 02 	lds	r24, 0x02F9
+    11c4:	88 0f       	add	r24, r24
+    11c6:	98 2f       	mov	r25, r24
+    11c8:	99 0f       	add	r25, r25
+    11ca:	99 0f       	add	r25, r25
+    11cc:	89 0f       	add	r24, r25
+    11ce:	90 91 f7 02 	lds	r25, 0x02F7
+    11d2:	89 0f       	add	r24, r25
+    11d4:	80 93 0d 03 	sts	0x030D, r24
+			
+			
+			relogio_click = 0;
+    11d8:	10 92 e9 02 	sts	0x02E9, r1
+			
+			return;
+    11dc:	31 c0       	rjmp	.+98     	; 0x1240 <acerta_automatico+0x548>
+			rega1_hora_inicio = convert_bcd_to_decimal(horas);
+			LCDWriteIntXY(0,1,rega1_hora_inicio,1);
+			
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 1)
+    11de:	80 91 e9 02 	lds	r24, 0x02E9
+    11e2:	81 30       	cpi	r24, 0x01	; 1
+    11e4:	09 f4       	brne	.+2      	; 0x11e8 <acerta_automatico+0x4f0>
+    11e6:	4d ce       	rjmp	.-870    	; 0xe82 <acerta_automatico+0x18a>
+		{
+			rega2_hora_inicio = convert_bcd_to_decimal(digito_hora);
+			LCDWriteIntXY(1,1,rega2_hora_inicio,1);
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 2)
+    11e8:	80 91 e9 02 	lds	r24, 0x02E9
+    11ec:	82 30       	cpi	r24, 0x02	; 2
+    11ee:	09 f4       	brne	.+2      	; 0x11f2 <acerta_automatico+0x4fa>
+    11f0:	57 ce       	rjmp	.-850    	; 0xea0 <acerta_automatico+0x1a8>
+		{
+			rega1_minuto_inicio = convert_bcd_to_decimal(minutos);
+			LCDWriteIntXY(3,1,rega1_minuto_inicio,1);
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 3)
+    11f2:	80 91 e9 02 	lds	r24, 0x02E9
+    11f6:	83 30       	cpi	r24, 0x03	; 3
+    11f8:	09 f0       	breq	.+2      	; 0x11fc <acerta_automatico+0x504>
+    11fa:	75 ce       	rjmp	.-790    	; 0xee6 <acerta_automatico+0x1ee>
+    11fc:	60 ce       	rjmp	.-832    	; 0xebe <acerta_automatico+0x1c6>
+			
+			rega2_hora_fim = convert_bcd_to_decimal(digito_minuto);
+			LCDWriteIntXY(1,1,rega2_hora_fim,1);
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 6)
+    11fe:	80 91 e9 02 	lds	r24, 0x02E9
+    1202:	86 30       	cpi	r24, 0x06	; 6
+    1204:	09 f4       	brne	.+2      	; 0x1208 <acerta_automatico+0x510>
+    1206:	a6 ce       	rjmp	.-692    	; 0xf54 <acerta_automatico+0x25c>
+			rega1_minuto_fim = convert_bcd_to_decimal(digito_minuto);
+			LCDWriteIntXY(3,1,rega1_minuto_fim,1);
+			
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 7)
+    1208:	80 91 e9 02 	lds	r24, 0x02E9
+    120c:	87 30       	cpi	r24, 0x07	; 7
+    120e:	09 f0       	breq	.+2      	; 0x1212 <acerta_automatico+0x51a>
+    1210:	c4 ce       	rjmp	.-632    	; 0xf9a <acerta_automatico+0x2a2>
+    1212:	af ce       	rjmp	.-674    	; 0xf72 <acerta_automatico+0x27a>
+		{
+			seguro2_hora_inicio = convert_bcd_to_decimal(digito_hora);
+			LCDWriteIntXY(1,1,seguro2_hora_inicio,1);
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 11)
+    1214:	80 91 e9 02 	lds	r24, 0x02E9
+    1218:	8b 30       	cpi	r24, 0x0B	; 11
+    121a:	09 f4       	brne	.+2      	; 0x121e <acerta_automatico+0x526>
+    121c:	2c cf       	rjmp	.-424    	; 0x1076 <acerta_automatico+0x37e>
+		{
+			seguro1_minuto_inicio = convert_bcd_to_decimal(minutos);
+			LCDWriteIntXY(3,1,seguro1_minuto_inicio,1);
+		}
+		
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 12)
+    121e:	80 91 e9 02 	lds	r24, 0x02E9
+    1222:	8c 30       	cpi	r24, 0x0C	; 12
+    1224:	09 f0       	breq	.+2      	; 0x1228 <acerta_automatico+0x530>
+    1226:	4a cf       	rjmp	.-364    	; 0x10bc <acerta_automatico+0x3c4>
+    1228:	35 cf       	rjmp	.-406    	; 0x1094 <acerta_automatico+0x39c>
+			
+			seguro2_hora_fim = convert_bcd_to_decimal(digito_minuto);
+			LCDWriteIntXY(1,1,seguro2_hora_fim,1);
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 15)
+    122a:	80 91 e9 02 	lds	r24, 0x02E9
+    122e:	8f 30       	cpi	r24, 0x0F	; 15
+    1230:	09 f4       	brne	.+2      	; 0x1234 <acerta_automatico+0x53c>
+    1232:	7a cf       	rjmp	.-268    	; 0x1128 <acerta_automatico+0x430>
+			seguro1_minuto_fim = convert_bcd_to_decimal(digito_minuto);
+			LCDWriteIntXY(3,1,seguro1_minuto_fim,1);
+			
+			
+		}
+		if(tecla_numero!=0 && tecla_numero!=10 && relogio_click == 16)
+    1234:	80 91 e9 02 	lds	r24, 0x02E9
+    1238:	80 31       	cpi	r24, 0x10	; 16
+    123a:	09 f0       	breq	.+2      	; 0x123e <acerta_automatico+0x546>
+    123c:	98 cf       	rjmp	.-208    	; 0x116e <acerta_automatico+0x476>
+    123e:	83 cf       	rjmp	.-250    	; 0x1146 <acerta_automatico+0x44e>
+		}
+			
+		
+	}
+	
+}
+    1240:	df 91       	pop	r29
+    1242:	cf 91       	pop	r28
+    1244:	1f 91       	pop	r17
+    1246:	0f 91       	pop	r16
+    1248:	ff 90       	pop	r15
+    124a:	ef 90       	pop	r14
+    124c:	df 90       	pop	r13
+    124e:	08 95       	ret
+
+00001250 <main>:
+	return (tecla_numero);
+}
+
+int main(void)															//FunÁao MAIN
+{
+	inicio_teclado();													//Chama funÁao de inicializaÁao do teclado
+    1250:	79 d9       	rcall	.-3342   	; 0x544 <inicio_teclado>
+	inic_timer();														//Chama funÁao de inicializaÁao do timer
+    1252:	47 d9       	rcall	.-3442   	; 0x4e2 <inic_timer>
+	twi_init();															//Inicializa comunicaÁao two wire interface (I2C)
+    1254:	27 d8       	rcall	.-4018   	; 0x2a4 <twi_init>
+
+	LCDInit(LS_NONE);													//Inicializa o LCD
+    1256:	80 e0       	ldi	r24, 0x00	; 0
+    1258:	eb d7       	rcall	.+4054   	; 0x2230 <__data_load_end+0xb0a>
+	LCDClear();															//Limpa o LCD
+    125a:	60 e0       	ldi	r22, 0x00	; 0
+    125c:	81 e0       	ldi	r24, 0x01	; 1
+    125e:	30 d7       	rcall	.+3680   	; 0x20c0 <__data_load_end+0x99a>
+
+	LCDWriteStringXY(3,0,"Programador");								//O LCD liga com a mensagem Programador Semanal
+    1260:	60 e0       	ldi	r22, 0x00	; 0
+    1262:	83 e0       	ldi	r24, 0x03	; 3
+    1264:	d4 d7       	rcall	.+4008   	; 0x220e <__data_load_end+0xae8>
+    1266:	81 e5       	ldi	r24, 0x51	; 81
+    1268:	92 e0       	ldi	r25, 0x02	; 2
+    126a:	48 d7       	rcall	.+3728   	; 0x20fc <__data_load_end+0x9d6>
+	LCDWriteStringXY(5,1,"Semanal");
+    126c:	61 e0       	ldi	r22, 0x01	; 1
+    126e:	85 e0       	ldi	r24, 0x05	; 5
+    1270:	ce d7       	rcall	.+3996   	; 0x220e <__data_load_end+0xae8>
+    1272:	8d e5       	ldi	r24, 0x5D	; 93
+    1274:	92 e0       	ldi	r25, 0x02	; 2
+    1276:	42 d7       	rcall	.+3716   	; 0x20fc <__data_load_end+0x9d6>
+    1278:	2f ed       	ldi	r18, 0xDF	; 223
+    127a:	83 e9       	ldi	r24, 0x93	; 147
+    127c:	94 e0       	ldi	r25, 0x04	; 4
+    127e:	21 50       	subi	r18, 0x01	; 1
+    1280:	80 40       	sbci	r24, 0x00	; 0
+    1282:	90 40       	sbci	r25, 0x00	; 0
+    1284:	e1 f7       	brne	.-8      	; 0x127e <main+0x2e>
+    1286:	00 c0       	rjmp	.+0      	; 0x1288 <main+0x38>
+    1288:	00 00       	nop
+	_delay_ms(1500);
+	LCDClear();
+    128a:	60 e0       	ldi	r22, 0x00	; 0
+    128c:	81 e0       	ldi	r24, 0x01	; 1
+    128e:	18 d7       	rcall	.+3632   	; 0x20c0 <__data_load_end+0x99a>
+
+	LCDWriteStringXY(0,0,"A - Rega_M");									//Menu de informaÁoes
+    1290:	60 e0       	ldi	r22, 0x00	; 0
+    1292:	80 e0       	ldi	r24, 0x00	; 0
+    1294:	bc d7       	rcall	.+3960   	; 0x220e <__data_load_end+0xae8>
+    1296:	85 e6       	ldi	r24, 0x65	; 101
+    1298:	92 e0       	ldi	r25, 0x02	; 2
+    129a:	30 d7       	rcall	.+3680   	; 0x20fc <__data_load_end+0x9d6>
+	LCDWriteStringXY(0,1,"B - Seguranca_M");
+    129c:	61 e0       	ldi	r22, 0x01	; 1
+    129e:	80 e0       	ldi	r24, 0x00	; 0
+    12a0:	b6 d7       	rcall	.+3948   	; 0x220e <__data_load_end+0xae8>
+    12a2:	80 e7       	ldi	r24, 0x70	; 112
+    12a4:	92 e0       	ldi	r25, 0x02	; 2
+    12a6:	2a d7       	rcall	.+3668   	; 0x20fc <__data_load_end+0x9d6>
+    12a8:	2f ed       	ldi	r18, 0xDF	; 223
+    12aa:	83 e9       	ldi	r24, 0x93	; 147
+    12ac:	94 e0       	ldi	r25, 0x04	; 4
+    12ae:	21 50       	subi	r18, 0x01	; 1
+    12b0:	80 40       	sbci	r24, 0x00	; 0
+    12b2:	90 40       	sbci	r25, 0x00	; 0
+    12b4:	e1 f7       	brne	.-8      	; 0x12ae <main+0x5e>
+    12b6:	00 c0       	rjmp	.+0      	; 0x12b8 <main+0x68>
+    12b8:	00 00       	nop
+	_delay_ms(1500);
+	LCDClear();
+    12ba:	60 e0       	ldi	r22, 0x00	; 0
+    12bc:	81 e0       	ldi	r24, 0x01	; 1
+    12be:	00 d7       	rcall	.+3584   	; 0x20c0 <__data_load_end+0x99a>
+
+	LCDWriteStringXY(0,0,"C - Acerta dia");
+    12c0:	60 e0       	ldi	r22, 0x00	; 0
+    12c2:	80 e0       	ldi	r24, 0x00	; 0
+    12c4:	a4 d7       	rcall	.+3912   	; 0x220e <__data_load_end+0xae8>
+    12c6:	80 e8       	ldi	r24, 0x80	; 128
+    12c8:	92 e0       	ldi	r25, 0x02	; 2
+    12ca:	18 d7       	rcall	.+3632   	; 0x20fc <__data_load_end+0x9d6>
+	LCDWriteStringXY(0,1,"D - Acerta hora");
+    12cc:	61 e0       	ldi	r22, 0x01	; 1
+    12ce:	80 e0       	ldi	r24, 0x00	; 0
+    12d0:	9e d7       	rcall	.+3900   	; 0x220e <__data_load_end+0xae8>
+    12d2:	8f e8       	ldi	r24, 0x8F	; 143
+    12d4:	92 e0       	ldi	r25, 0x02	; 2
+    12d6:	12 d7       	rcall	.+3620   	; 0x20fc <__data_load_end+0x9d6>
+    12d8:	2f ed       	ldi	r18, 0xDF	; 223
+    12da:	83 e9       	ldi	r24, 0x93	; 147
+    12dc:	94 e0       	ldi	r25, 0x04	; 4
+    12de:	21 50       	subi	r18, 0x01	; 1
+    12e0:	80 40       	sbci	r24, 0x00	; 0
+    12e2:	90 40       	sbci	r25, 0x00	; 0
+    12e4:	e1 f7       	brne	.-8      	; 0x12de <main+0x8e>
+    12e6:	00 c0       	rjmp	.+0      	; 0x12e8 <main+0x98>
+    12e8:	00 00       	nop
+	_delay_ms(1500);
+	LCDClear();
+    12ea:	60 e0       	ldi	r22, 0x00	; 0
+    12ec:	81 e0       	ldi	r24, 0x01	; 1
+    12ee:	e8 d6       	rcall	.+3536   	; 0x20c0 <__data_load_end+0x99a>
+
+	LCDWriteStringXY(0,0,"# - Acerta Auto");
+    12f0:	60 e0       	ldi	r22, 0x00	; 0
+    12f2:	80 e0       	ldi	r24, 0x00	; 0
+    12f4:	8c d7       	rcall	.+3864   	; 0x220e <__data_load_end+0xae8>
+    12f6:	8f e9       	ldi	r24, 0x9F	; 159
+    12f8:	92 e0       	ldi	r25, 0x02	; 2
+    12fa:	00 d7       	rcall	.+3584   	; 0x20fc <__data_load_end+0x9d6>
+    12fc:	2f ed       	ldi	r18, 0xDF	; 223
+    12fe:	83 e9       	ldi	r24, 0x93	; 147
+    1300:	94 e0       	ldi	r25, 0x04	; 4
+    1302:	21 50       	subi	r18, 0x01	; 1
+    1304:	80 40       	sbci	r24, 0x00	; 0
+    1306:	90 40       	sbci	r25, 0x00	; 0
+    1308:	e1 f7       	brne	.-8      	; 0x1302 <main+0xb2>
+    130a:	00 c0       	rjmp	.+0      	; 0x130c <main+0xbc>
+    130c:	00 00       	nop
+	_delay_ms(1500);
+	LCDClear();
+    130e:	60 e0       	ldi	r22, 0x00	; 0
+    1310:	81 e0       	ldi	r24, 0x01	; 1
+    1312:	d6 d6       	rcall	.+3500   	; 0x20c0 <__data_load_end+0x99a>
+	
+
+	ds1307_second_write(0);									// Escrever o valor dos segundos no DS1307
+    1314:	80 e0       	ldi	r24, 0x00	; 0
+    1316:	6d d8       	rcall	.-3878   	; 0x3f2 <ds1307_second_write>
+	ds1307_minute_write(0);									// Escrever o valor dos minutos no DS1307
+    1318:	80 e0       	ldi	r24, 0x00	; 0
+    131a:	78 d8       	rcall	.-3856   	; 0x40c <ds1307_minute_write>
+	ds1307_hour_write(0,0,0);								// Escrever o valor das horas no DS1307 no formato 24h
+    131c:	40 e0       	ldi	r20, 0x00	; 0
+    131e:	60 e0       	ldi	r22, 0x00	; 0
+    1320:	80 e0       	ldi	r24, 0x00	; 0
+    1322:	81 d8       	rcall	.-3838   	; 0x426 <ds1307_hour_write>
+	ds1307_day_write(1);									// Escrever o dia no DS1307
+    1324:	81 e0       	ldi	r24, 0x01	; 1
+    1326:	9e d8       	rcall	.-3780   	; 0x464 <ds1307_day_write>
+	ds1307_date_write(1);									// Escreve a data no DS1307
+    1328:	81 e0       	ldi	r24, 0x01	; 1
+    132a:	a9 d8       	rcall	.-3758   	; 0x47e <ds1307_date_write>
+	ds1307_month_write(1);									// Escreve o mes no DS1307
+    132c:	81 e0       	ldi	r24, 0x01	; 1
+    132e:	b4 d8       	rcall	.-3736   	; 0x498 <ds1307_month_write>
+	ds1307_year_write(15);									// Escreve o ano no DS1307
+    1330:	8f e0       	ldi	r24, 0x0F	; 15
+    1332:	bf d8       	rcall	.-3714   	; 0x4b2 <ds1307_year_write>
+		
+		if(flag_int == 1)
+		{														// Condição que testa o valor da flag_int
+																// Caso esta seja verdadeira ocorreu o atraso de 500ms
+			flag_int = 0;								        // Reset flag_int
+			PORTB ^= (1 << PORTB0);								// Liga ou desliga led consoante o seu estado anterior
+    1334:	c1 e0       	ldi	r28, 0x01	; 1
+
+
+	while(1)
+	{
+
+		teclado();
+    1336:	01 da       	rcall	.-3070   	; 0x73a <teclado>
+		
+		
+		if(flag_int == 1)
+    1338:	80 91 ec 02 	lds	r24, 0x02EC
+    133c:	81 30       	cpi	r24, 0x01	; 1
+    133e:	29 f4       	brne	.+10     	; 0x134a <main+0xfa>
+		{														// Condição que testa o valor da flag_int
+																// Caso esta seja verdadeira ocorreu o atraso de 500ms
+			flag_int = 0;								        // Reset flag_int
+    1340:	10 92 ec 02 	sts	0x02EC, r1
+			PORTB ^= (1 << PORTB0);								// Liga ou desliga led consoante o seu estado anterior
+    1344:	85 b1       	in	r24, 0x05	; 5
+    1346:	8c 27       	eor	r24, r28
+    1348:	85 b9       	out	0x05, r24	; 5
+		}
+		
+		segundo = ds1307_read_second();							// Le o valor dos segundos no DS1307 e guarda na variavel
+    134a:	fa d7       	rcall	.+4084   	; 0x2340 <__data_load_end+0xc1a>
+    134c:	80 93 e8 02 	sts	0x02E8, r24
+		minuto = ds1307_read_minute();							// Le o valor dos minutos no DS1307 e guarda na variavel				
+    1350:	01 d8       	rcall	.-4094   	; 0x354 <ds1307_read_minute>
+    1352:	80 93 e7 02 	sts	0x02E7, r24
+		hora = ds1307_read_hour();								// Le o valor dos hora no DS1307 e guarda na variavel
+    1356:	08 d8       	rcall	.-4080   	; 0x368 <ds1307_read_hour>
+    1358:	80 93 e6 02 	sts	0x02E6, r24
+		dia = ds1307_read_day();								// Le o valor dos dias no DS1307 e guarda na variavel
+    135c:	0f d8       	rcall	.-4066   	; 0x37c <ds1307_read_day>
+    135e:	80 93 e5 02 	sts	0x02E5, r24
+		data = ds1307_read_date();								// Le o valor dos data no DS1307 e guarda na variavel
+    1362:	16 d8       	rcall	.-4052   	; 0x390 <ds1307_read_date>
+    1364:	80 93 e4 02 	sts	0x02E4, r24
+		mes = ds1307_read_month();								// Le o valor dos mes no DS1307 e guarda na variavel
+    1368:	1d d8       	rcall	.-4038   	; 0x3a4 <ds1307_read_month>
+    136a:	80 93 e3 02 	sts	0x02E3, r24
+		ano = ds1307_read_year();								// Le o valor dos ano no DS1307 e guarda na variavel
+    136e:	24 d8       	rcall	.-4024   	; 0x3b8 <ds1307_read_year>
+    1370:	80 93 e2 02 	sts	0x02E2, r24
+
+
+
+		hora = convert_bcd_to_decimal((hora & 0x3f));			//Converte o valor da variavel, que guarda o a hora lida do rtc, de binario para decimal e imprime no lcd
+    1374:	80 91 e6 02 	lds	r24, 0x02E6
+    1378:	8f 73       	andi	r24, 0x3F	; 63
+    137a:	a8 d8       	rcall	.-3760   	; 0x4cc <convert_bcd_to_decimal>
+    137c:	80 93 e6 02 	sts	0x02E6, r24
+																// O mesmo vai suceder-se para os minutos, segundos, dia, data, hora, ano
+		LCDWriteIntXY(0,1,hora,2);
+    1380:	6c 2f       	mov	r22, r28
+    1382:	80 e0       	ldi	r24, 0x00	; 0
+    1384:	44 d7       	rcall	.+3720   	; 0x220e <__data_load_end+0xae8>
+    1386:	80 91 e6 02 	lds	r24, 0x02E6
+    138a:	62 e0       	ldi	r22, 0x02	; 2
+    138c:	70 e0       	ldi	r23, 0x00	; 0
+    138e:	90 e0       	ldi	r25, 0x00	; 0
+    1390:	e0 d6       	rcall	.+3520   	; 0x2152 <__data_load_end+0xa2c>
+		LCDWriteStringXY(2,1,":");
+    1392:	6c 2f       	mov	r22, r28
+    1394:	82 e0       	ldi	r24, 0x02	; 2
+    1396:	3b d7       	rcall	.+3702   	; 0x220e <__data_load_end+0xae8>
+    1398:	8f ea       	ldi	r24, 0xAF	; 175
+    139a:	92 e0       	ldi	r25, 0x02	; 2
+    139c:	af d6       	rcall	.+3422   	; 0x20fc <__data_load_end+0x9d6>
+		
+		minuto = convert_bcd_to_decimal(minuto);
+    139e:	80 91 e7 02 	lds	r24, 0x02E7
+    13a2:	94 d8       	rcall	.-3800   	; 0x4cc <convert_bcd_to_decimal>
+    13a4:	80 93 e7 02 	sts	0x02E7, r24
+		
+		LCDWriteIntXY(3,1,minuto,2);
+    13a8:	6c 2f       	mov	r22, r28
+    13aa:	83 e0       	ldi	r24, 0x03	; 3
+    13ac:	30 d7       	rcall	.+3680   	; 0x220e <__data_load_end+0xae8>
+    13ae:	80 91 e7 02 	lds	r24, 0x02E7
+    13b2:	62 e0       	ldi	r22, 0x02	; 2
+    13b4:	70 e0       	ldi	r23, 0x00	; 0
+    13b6:	90 e0       	ldi	r25, 0x00	; 0
+    13b8:	cc d6       	rcall	.+3480   	; 0x2152 <__data_load_end+0xa2c>
+		LCDWriteStringXY(5,1,":");
+    13ba:	6c 2f       	mov	r22, r28
+    13bc:	85 e0       	ldi	r24, 0x05	; 5
+    13be:	27 d7       	rcall	.+3662   	; 0x220e <__data_load_end+0xae8>
+    13c0:	8f ea       	ldi	r24, 0xAF	; 175
+    13c2:	92 e0       	ldi	r25, 0x02	; 2
+    13c4:	9b d6       	rcall	.+3382   	; 0x20fc <__data_load_end+0x9d6>
+
+		segundo = convert_bcd_to_decimal(segundo);
+    13c6:	80 91 e8 02 	lds	r24, 0x02E8
+    13ca:	80 d8       	rcall	.-3840   	; 0x4cc <convert_bcd_to_decimal>
+    13cc:	80 93 e8 02 	sts	0x02E8, r24
+		
+		LCDWriteIntXY(6,1,segundo,2);
+    13d0:	6c 2f       	mov	r22, r28
+    13d2:	86 e0       	ldi	r24, 0x06	; 6
+    13d4:	1c d7       	rcall	.+3640   	; 0x220e <__data_load_end+0xae8>
+    13d6:	80 91 e8 02 	lds	r24, 0x02E8
+    13da:	62 e0       	ldi	r22, 0x02	; 2
+    13dc:	70 e0       	ldi	r23, 0x00	; 0
+    13de:	90 e0       	ldi	r25, 0x00	; 0
+    13e0:	b8 d6       	rcall	.+3440   	; 0x2152 <__data_load_end+0xa2c>
+		LCDWriteStringXY(8,1," ");
+    13e2:	6c 2f       	mov	r22, r28
+    13e4:	88 e0       	ldi	r24, 0x08	; 8
+    13e6:	13 d7       	rcall	.+3622   	; 0x220e <__data_load_end+0xae8>
+    13e8:	8a e0       	ldi	r24, 0x0A	; 10
+    13ea:	92 e0       	ldi	r25, 0x02	; 2
+    13ec:	87 d6       	rcall	.+3342   	; 0x20fc <__data_load_end+0x9d6>
+
+		data = convert_bcd_to_decimal(data);
+    13ee:	80 91 e4 02 	lds	r24, 0x02E4
+    13f2:	6c d8       	rcall	.-3880   	; 0x4cc <convert_bcd_to_decimal>
+    13f4:	80 93 e4 02 	sts	0x02E4, r24
+		LCDWriteIntXY(0,0,data,2);
+    13f8:	60 e0       	ldi	r22, 0x00	; 0
+    13fa:	80 e0       	ldi	r24, 0x00	; 0
+    13fc:	08 d7       	rcall	.+3600   	; 0x220e <__data_load_end+0xae8>
+    13fe:	80 91 e4 02 	lds	r24, 0x02E4
+    1402:	62 e0       	ldi	r22, 0x02	; 2
+    1404:	70 e0       	ldi	r23, 0x00	; 0
+    1406:	90 e0       	ldi	r25, 0x00	; 0
+    1408:	a4 d6       	rcall	.+3400   	; 0x2152 <__data_load_end+0xa2c>
+		LCDWriteStringXY(2,0,":");
+    140a:	60 e0       	ldi	r22, 0x00	; 0
+    140c:	82 e0       	ldi	r24, 0x02	; 2
+    140e:	ff d6       	rcall	.+3582   	; 0x220e <__data_load_end+0xae8>
+    1410:	8f ea       	ldi	r24, 0xAF	; 175
+    1412:	92 e0       	ldi	r25, 0x02	; 2
+    1414:	73 d6       	rcall	.+3302   	; 0x20fc <__data_load_end+0x9d6>
+
+		mes = convert_bcd_to_decimal(mes);
+    1416:	80 91 e3 02 	lds	r24, 0x02E3
+    141a:	58 d8       	rcall	.-3920   	; 0x4cc <convert_bcd_to_decimal>
+    141c:	80 93 e3 02 	sts	0x02E3, r24
+		LCDWriteIntXY(3,0,mes,2);
+    1420:	60 e0       	ldi	r22, 0x00	; 0
+    1422:	83 e0       	ldi	r24, 0x03	; 3
+    1424:	f4 d6       	rcall	.+3560   	; 0x220e <__data_load_end+0xae8>
+    1426:	80 91 e3 02 	lds	r24, 0x02E3
+    142a:	62 e0       	ldi	r22, 0x02	; 2
+    142c:	70 e0       	ldi	r23, 0x00	; 0
+    142e:	90 e0       	ldi	r25, 0x00	; 0
+    1430:	90 d6       	rcall	.+3360   	; 0x2152 <__data_load_end+0xa2c>
+		LCDWriteStringXY(5,0,":");
+    1432:	60 e0       	ldi	r22, 0x00	; 0
+    1434:	85 e0       	ldi	r24, 0x05	; 5
+    1436:	eb d6       	rcall	.+3542   	; 0x220e <__data_load_end+0xae8>
+    1438:	8f ea       	ldi	r24, 0xAF	; 175
+    143a:	92 e0       	ldi	r25, 0x02	; 2
+    143c:	5f d6       	rcall	.+3262   	; 0x20fc <__data_load_end+0x9d6>
+
+		ano = convert_bcd_to_decimal(ano);
+    143e:	80 91 e2 02 	lds	r24, 0x02E2
+    1442:	44 d8       	rcall	.-3960   	; 0x4cc <convert_bcd_to_decimal>
+    1444:	80 93 e2 02 	sts	0x02E2, r24
+		LCDWriteIntXY(6,0,ano,2);
+    1448:	60 e0       	ldi	r22, 0x00	; 0
+    144a:	86 e0       	ldi	r24, 0x06	; 6
+    144c:	e0 d6       	rcall	.+3520   	; 0x220e <__data_load_end+0xae8>
+    144e:	80 91 e2 02 	lds	r24, 0x02E2
+    1452:	62 e0       	ldi	r22, 0x02	; 2
+    1454:	70 e0       	ldi	r23, 0x00	; 0
+    1456:	90 e0       	ldi	r25, 0x00	; 0
+    1458:	7c d6       	rcall	.+3320   	; 0x2152 <__data_load_end+0xa2c>
+		LCDWriteStringXY(8,0," ");
+    145a:	60 e0       	ldi	r22, 0x00	; 0
+    145c:	88 e0       	ldi	r24, 0x08	; 8
+    145e:	d7 d6       	rcall	.+3502   	; 0x220e <__data_load_end+0xae8>
+    1460:	8a e0       	ldi	r24, 0x0A	; 10
+    1462:	92 e0       	ldi	r25, 0x02	; 2
+    1464:	4b d6       	rcall	.+3222   	; 0x20fc <__data_load_end+0x9d6>
+		
+		switch(dia)
+    1466:	80 91 e5 02 	lds	r24, 0x02E5
+    146a:	90 e0       	ldi	r25, 0x00	; 0
+    146c:	fc 01       	movw	r30, r24
+    146e:	31 97       	sbiw	r30, 0x01	; 1
+    1470:	e7 30       	cpi	r30, 0x07	; 7
+    1472:	f1 05       	cpc	r31, r1
+    1474:	98 f5       	brcc	.+102    	; 0x14dc <main+0x28c>
+    1476:	ef 5d       	subi	r30, 0xDF	; 223
+    1478:	ff 4f       	sbci	r31, 0xFF	; 255
+    147a:	09 94       	ijmp
+		{
+			case 1:
+			
+			LCDWriteStringXY(9,0,"Segunda");
+    147c:	60 e0       	ldi	r22, 0x00	; 0
+    147e:	89 e0       	ldi	r24, 0x09	; 9
+    1480:	c6 d6       	rcall	.+3468   	; 0x220e <__data_load_end+0xae8>
+    1482:	81 eb       	ldi	r24, 0xB1	; 177
+    1484:	92 e0       	ldi	r25, 0x02	; 2
+    1486:	3a d6       	rcall	.+3188   	; 0x20fc <__data_load_end+0x9d6>
+			break;
+    1488:	29 c0       	rjmp	.+82     	; 0x14dc <main+0x28c>
+			
+			case 2:
+			
+			LCDWriteStringXY(9,0,"Terca");
+    148a:	60 e0       	ldi	r22, 0x00	; 0
+    148c:	89 e0       	ldi	r24, 0x09	; 9
+    148e:	bf d6       	rcall	.+3454   	; 0x220e <__data_load_end+0xae8>
+    1490:	89 eb       	ldi	r24, 0xB9	; 185
+    1492:	92 e0       	ldi	r25, 0x02	; 2
+    1494:	33 d6       	rcall	.+3174   	; 0x20fc <__data_load_end+0x9d6>
+			break;
+    1496:	22 c0       	rjmp	.+68     	; 0x14dc <main+0x28c>
+			
+			case 3:
+			
+			LCDWriteStringXY(9,0,"Quarta");
+    1498:	60 e0       	ldi	r22, 0x00	; 0
+    149a:	89 e0       	ldi	r24, 0x09	; 9
+    149c:	b8 d6       	rcall	.+3440   	; 0x220e <__data_load_end+0xae8>
+    149e:	8f eb       	ldi	r24, 0xBF	; 191
+    14a0:	92 e0       	ldi	r25, 0x02	; 2
+    14a2:	2c d6       	rcall	.+3160   	; 0x20fc <__data_load_end+0x9d6>
+			break;
+    14a4:	1b c0       	rjmp	.+54     	; 0x14dc <main+0x28c>
+			
+			case 4:
+			
+			LCDWriteStringXY(9,0,"Quinta");
+    14a6:	60 e0       	ldi	r22, 0x00	; 0
+    14a8:	89 e0       	ldi	r24, 0x09	; 9
+    14aa:	b1 d6       	rcall	.+3426   	; 0x220e <__data_load_end+0xae8>
+    14ac:	86 ec       	ldi	r24, 0xC6	; 198
+    14ae:	92 e0       	ldi	r25, 0x02	; 2
+    14b0:	25 d6       	rcall	.+3146   	; 0x20fc <__data_load_end+0x9d6>
+			break;
+    14b2:	14 c0       	rjmp	.+40     	; 0x14dc <main+0x28c>
+			
+			case 5:
+			
+			LCDWriteStringXY(9,0,"Sexta");
+    14b4:	60 e0       	ldi	r22, 0x00	; 0
+    14b6:	89 e0       	ldi	r24, 0x09	; 9
+    14b8:	aa d6       	rcall	.+3412   	; 0x220e <__data_load_end+0xae8>
+    14ba:	8d ec       	ldi	r24, 0xCD	; 205
+    14bc:	92 e0       	ldi	r25, 0x02	; 2
+    14be:	1e d6       	rcall	.+3132   	; 0x20fc <__data_load_end+0x9d6>
+			break;
+    14c0:	0d c0       	rjmp	.+26     	; 0x14dc <main+0x28c>
+			
+			case 6:
+			
+			LCDWriteStringXY(9,0,"Sabado");
+    14c2:	60 e0       	ldi	r22, 0x00	; 0
+    14c4:	89 e0       	ldi	r24, 0x09	; 9
+    14c6:	a3 d6       	rcall	.+3398   	; 0x220e <__data_load_end+0xae8>
+    14c8:	83 ed       	ldi	r24, 0xD3	; 211
+    14ca:	92 e0       	ldi	r25, 0x02	; 2
+    14cc:	17 d6       	rcall	.+3118   	; 0x20fc <__data_load_end+0x9d6>
+			break;
+    14ce:	06 c0       	rjmp	.+12     	; 0x14dc <main+0x28c>
+			
+			case 7:
+			
+			LCDWriteStringXY(9,0,"Domingo");
+    14d0:	60 e0       	ldi	r22, 0x00	; 0
+    14d2:	89 e0       	ldi	r24, 0x09	; 9
+    14d4:	9c d6       	rcall	.+3384   	; 0x220e <__data_load_end+0xae8>
+    14d6:	8a ed       	ldi	r24, 0xDA	; 218
+    14d8:	92 e0       	ldi	r25, 0x02	; 2
+    14da:	10 d6       	rcall	.+3104   	; 0x20fc <__data_load_end+0x9d6>
+			break;
+			
+		}
+
+		if(flag_rega == 0 && flag_seguranca == 0)					//Garante que so entra nas funÁoes autom·ticas se as funÁoes manuais nao estiverem ativas
+    14dc:	80 91 eb 02 	lds	r24, 0x02EB
+    14e0:	81 11       	cpse	r24, r1
+    14e2:	29 cf       	rjmp	.-430    	; 0x1336 <main+0xe6>
+    14e4:	80 91 ea 02 	lds	r24, 0x02EA
+    14e8:	81 11       	cpse	r24, r1
+    14ea:	25 cf       	rjmp	.-438    	; 0x1336 <main+0xe6>
+		{
+			rega_automatica();										//Chama funÁao rega autom·tica
+    14ec:	da d8       	rcall	.-3660   	; 0x6a2 <rega_automatica>
+			seguranca_automatica();									//Chama funÁao seguranÁa autom·tica
+    14ee:	a2 d8       	rcall	.-3772   	; 0x634 <seguranca_automatica>
+    14f0:	22 cf       	rjmp	.-444    	; 0x1336 <main+0xe6>
+
+000014f2 <__divmodhi4>:
+    14f2:	97 fb       	bst	r25, 7
+    14f4:	07 2e       	mov	r0, r23
+    14f6:	16 f4       	brtc	.+4      	; 0x14fc <__divmodhi4+0xa>
+    14f8:	00 94       	com	r0
+    14fa:	06 d0       	rcall	.+12     	; 0x1508 <__divmodhi4_neg1>
+    14fc:	77 fd       	sbrc	r23, 7
+    14fe:	08 d0       	rcall	.+16     	; 0x1510 <__divmodhi4_neg2>
+    1500:	0b d0       	rcall	.+22     	; 0x1518 <__udivmodhi4>
+    1502:	07 fc       	sbrc	r0, 7
+    1504:	05 d0       	rcall	.+10     	; 0x1510 <__divmodhi4_neg2>
+    1506:	3e f4       	brtc	.+14     	; 0x1516 <__divmodhi4_exit>
+
+00001508 <__divmodhi4_neg1>:
+    1508:	90 95       	com	r25
+    150a:	81 95       	neg	r24
+    150c:	9f 4f       	sbci	r25, 0xFF	; 255
+    150e:	08 95       	ret
+
+00001510 <__divmodhi4_neg2>:
+    1510:	70 95       	com	r23
+    1512:	61 95       	neg	r22
+    1514:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00001516 <__divmodhi4_exit>:
+    1516:	08 95       	ret
+
+00001518 <__udivmodhi4>:
+    1518:	aa 1b       	sub	r26, r26
+    151a:	bb 1b       	sub	r27, r27
+    151c:	51 e1       	ldi	r21, 0x11	; 17
+    151e:	07 c0       	rjmp	.+14     	; 0x152e <__udivmodhi4_ep>
+
+00001520 <__udivmodhi4_loop>:
+    1520:	aa 1f       	adc	r26, r26
+    1522:	bb 1f       	adc	r27, r27
+    1524:	a6 17       	cp	r26, r22
+    1526:	b7 07       	cpc	r27, r23
+    1528:	10 f0       	brcs	.+4      	; 0x152e <__udivmodhi4_ep>
+    152a:	a6 1b       	sub	r26, r22
+    152c:	b7 0b       	sbc	r27, r23
+
+0000152e <__udivmodhi4_ep>:
+    152e:	88 1f       	adc	r24, r24
+    1530:	99 1f       	adc	r25, r25
+    1532:	5a 95       	dec	r21
+    1534:	a9 f7       	brne	.-22     	; 0x1520 <__udivmodhi4_loop>
+    1536:	80 95       	com	r24
+    1538:	90 95       	com	r25
+    153a:	bc 01       	movw	r22, r24
+    153c:	cd 01       	movw	r24, r26
+    153e:	08 95       	ret
+
+00001540 <_exit>:
+    1540:	f8 94       	cli
+
+00001542 <__stop_program>:
+    1542:	ff cf       	rjmp	.-2      	; 0x1542 <__stop_program>
